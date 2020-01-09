@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="257" height="241" viewBox="0 0 257 241">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="128.5" cy="120.5" rx="128.5" ry="120.5" transform="translate(335 3202)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_5" data-name="Mask Group 5" transform="translate(-335 -3202)" clip-path="url(#clip-path)">
+    <g id="surface1" transform="translate(343 3202)">
+      <path id="Path_44" data-name="Path 44" d="M241,120.5A120.5,120.5,0,1,1,120.5,0,120.5,120.5,0,0,1,241,120.5Zm0,0" fill="#4a7aff"/>
+      <path id="Path_45" data-name="Path 45" d="M240.125,135.04,177.687,72.6,63.313,199.464l40.361,40.361A120.547,120.547,0,0,0,240.125,135.04Zm0,0" fill="#2864f0"/>
+      <path id="Path_46" data-name="Path 46" d="M148.86,43.775H63.313V199.464H177.687V72.6Zm0,0" fill="#fff"/>
+      <path id="Path_47" data-name="Path 47" d="M177.687,72.6,148.86,43.775H120.388V199.464h57.3Zm0,0" fill="#f2f6fc"/>
+      <path id="Path_48" data-name="Path 48" d="M148.86,72.6h28.827L148.86,43.775Zm0,0" fill="#cdd2e1"/>
+      <path id="Path_49" data-name="Path 49" d="M153.105,78.992h-9.469V69.522H132.793v9.469h-9.469V89.834h9.469V99.3h10.843V89.834h9.469Zm0,0" fill="#ef3800"/>
+      <path id="Path_50" data-name="Path 50" d="M76.754,144.458h87.49V155.3H76.754Zm0,0" fill="#dce1eb"/>
+      <path id="Path_51" data-name="Path 51" d="M120.388,144.458h43.858V155.3H120.388Zm0,0" fill="#cdd2e1"/>
+      <path id="Path_52" data-name="Path 52" d="M76.754,164.211h87.49v10.843H76.754Zm0,0" fill="#dce1eb"/>
+      <path id="Path_53" data-name="Path 53" d="M120.388,164.211h43.858v10.843H120.388Zm0,0" fill="#cdd2e1"/>
+      <path id="Path_54" data-name="Path 54" d="M119.18,132.582h12.461L111.354,74.167H96.046L75.759,132.582H88.22l5.13-14.774h20.7ZM97.5,105.866l6.2-17.859,6.2,17.859Zm0,0" fill="#fa5d0f"/>
+      <path id="Path_55" data-name="Path 55" d="M120.388,100.179v32.4h11.253Zm0,0" fill="#ef3800"/>
+    </g>
+  </g>
+</svg>
