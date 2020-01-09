@@ -1,0 +1,639 @@
+
+*{
+
+    font-family: Coolvetica;
+
+}
+
+html{
+
+  scroll-behavior: smooth;
+
+}
+
+
+
+header{
+
+    background-color: #60757C;
+    width: 100%;
+    height: 986px;
+    background-size: cover;
+    position: center;
+    background-attachment: fixed;
+
+
+}
+
+header::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 986px;
+  background-image: url(../images/header/cover.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: strencht;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .35;
+  z-index: 0;
+
+}
+
+header > * {
+
+    z-index: 10;
+    position: relative;
+
+}
+
+
+.navbar-brand{
+
+    margin-left: 80px;
+    font-size: 60px;
+    padding: 20px 20px 0px 0px;
+
+}
+
+.navbar .navbar-brand{
+
+    color: white;
+    transition: 0.5s;
+
+}
+
+.nav-item{
+
+    font-size: 25px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    padding: 20px 20px 0px 0px;
+
+}
+
+.navbar .nav-item .nav-link{
+
+    color: #D6D5D5;
+    transition: 0.6s;
+
+}
+
+
+/* nav-item hovering effect */
+
+.nav-item:before, .nav-item:after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    margin-left: 10px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    width: 20px;
+    background-color: #2BCC63;
+  }
+  .nav-item:before {
+    opacity: 0;
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+    transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .nav-item:after {
+    opacity: 0;
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+    transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .nav-item:hover:before, .nav-item:hover:after, .nav-item:focus:before, .nav-item:focus:after {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .nav-item:hover:before, .nav-item:focus:before {
+    transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .nav-item:hover:after, .nav-item:focus:after {
+    transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+    transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+
+
+  /* Image and Typography alignment */
+
+  #main-presentation-row{
+
+    margin-top: 122px;
+    text-align: left;
+
+  }
+
+
+  /* Image */
+
+  #img-wrapper{
+
+    padding: 0px;
+    margin: 0px 0px 0px 80px;
+    text-align: right;
+
+  }
+
+  #profile-photo{
+
+    width: 330px;
+    height: auto;
+    border-radius:50%;
+    box-shadow: -20px 10px 0 3px rgb(66, 146, 94);
+
+  }
+
+
+  /* Typograhpy */
+
+  #presentation{
+
+    margin-top: 50px;
+    margin-left: 30px;
+    text-align: left;
+
+  }
+
+  #presentation .h1-md{
+
+    font-size: 40px;
+    color: #292727;
+
+  }
+
+  #presentation .h1-lg{
+
+    font-size: 50px;
+    color: #292727;
+
+  }
+
+  #presentation .h1-sm{
+
+    font-size: 30px;
+    color: #D6D5D5;
+
+  }
+
+
+
+  /* Download Resume */
+
+  #download-resume-row{
+    margin-top: 110px;
+    padding: 100px;
+    text-align: center;
+
+  }
+
+  #download-resume{
+
+    padding: 20px 40px 20px 40px;
+    border: 20px 20px 20px 20px;
+    font-size: 22px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    padding: 20px 20px 0px 0px;
+
+  }
+
+
+  /* download resume button hovering effect */
+
+  #download-resume:before, #download-resume:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  margin-left: 20px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 130px;
+  background-color: #2BCC63;
+}
+
+#download-resume:before {
+  opacity: 0;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#download-resume:after {
+  opacity: 0;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#download-resume:hover:before, #download-resume:hover:after, #download-resume:focus:before, #download-resume:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+#download-resume:hover:before, #download-resume:focus:before {
+  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#download-resume:hover:after, #download-resume:focus:after {
+  transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Styles to devices smaller than 991px of width*/
+
+@media(max-width: 659px) and (min-width:576px) {
+    .nav .navbar-nav{
+
+        margin-right: auto;
+        margin-left: 20px;
+        
+    }
+
+    .navbar-brand{
+
+        font-size: 35px;
+        margin-left: 0px;
+        padding: 0px 0px 0px 0px;
+
+    }
+
+    .nav-item{
+
+        font-size: 20px;
+        padding: 0px;
+
+    }
+
+    .nav-item:before, .nav-item:after {
+        content: '';
+        position: absolute;
+        bottom: 1px;
+        margin-left: 0px;
+        left: 0;
+        right: 0;
+        height: 4px;
+        width: 20px;
+        background-color: #2BCC63;
+      }
+
+      #main-presentation-row{
+
+        margin-top: 90px;
+        text-align: center;
+    
+      }
+
+      #img-wrapper{
+
+        padding: 10px;
+        margin: 20px 0px 0px 60px;
+        text-align: center;
+
+      }
+
+      #profile-photo{
+
+        width: 200px;
+        height: auto;
+    
+      }
+
+      #presentation{
+
+        margin-top: 50px;
+        margin-left: -5px;
+        text-align: left;
+    
+      }
+    
+      #presentation .h1-md{
+    
+        font-size: 35px;
+        color: #292727;
+        text-align: left;
+    
+      }
+    
+      #presentation .h1-lg{
+    
+        font-size: 45px;
+        color: #292727;
+        text-align: left;
+    
+      }
+    
+      #presentation .h1-sm{
+    
+        font-size: 25px;
+        color: #D6D5D5;
+        text-align: left;
+    
+      }
+
+      #download-resume-row{
+        margin-top: 40px;
+        padding: 80px;
+        text-align: center;
+    
+      }
+
+      #download-resume{
+        margin-left: 40px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        position: relative;
+        text-decoration: none;
+    
+      }
+
+      #download-resume:before, #download-resume:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        margin-left: 20px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        width: 120px;
+        background-color: #2BCC63;
+      }
+
+}
+
+@media(max-width:575px) and (min-width: 403px) {
+  .nav .navbar-nav{
+
+      margin-right: auto;
+      margin-left: 20px;
+      
+  }
+
+  .navbar-brand{
+
+      font-size: 35px;
+      margin-left: 0px;
+      padding: 0px 0px 0px 0px;
+
+  }
+
+  .nav-item{
+
+      font-size: 20px;
+      padding: 0px;
+
+  }
+
+  .nav-item:before, .nav-item:after {
+      content: '';
+      position: absolute;
+      bottom: 1px;
+      margin-left: 0px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      width: 20px;
+      background-color: #2BCC63;
+    }
+
+    #main-presentation-row{
+
+      margin-top: 90px;
+      text-align: center;
+  
+    }
+
+    #img-wrapper{
+
+      padding: 0px;
+      margin: 20px 0px 0px 20px;
+      text-align: center;
+
+    }
+
+    #profile-photo{
+
+      width: 200px;
+      height: auto;
+  
+    }
+
+    #presentation{
+
+      margin-top: 50px;
+      margin-left: 10px;
+      text-align: center;
+  
+    }
+  
+    #presentation .h1-md{
+  
+      font-size: 35px;
+      color: #292727;
+      text-align: center;
+  
+    }
+  
+    #presentation .h1-lg{
+  
+      font-size: 45px;
+      color: #292727;
+      text-align: center;
+  
+    }
+  
+    #presentation .h1-sm{
+  
+      font-size: 25px;
+      color: #D6D5D5;
+      text-align: center;
+  
+    }
+
+    #download-resume-row{
+      margin-top: 10px;
+      padding: 80px;
+      text-align: center;
+  
+    }
+
+    #download-resume{
+      margin-left: 40px;
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      position: relative;
+      text-decoration: none;
+  
+    }
+
+    #download-resume:before, #download-resume:after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      margin-left: 20px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      width: 115px;
+      background-color: #2BCC63;
+    }
+
+}
+
+@media(max-width:402px){
+
+
+  .nav .navbar-nav{
+
+    margin-right: auto;
+    margin-left: 20px;
+    
+}
+
+.navbar-brand{
+
+    font-size: 35px;
+    margin-left: 0px;
+    padding: 0px 0px 0px 0px;
+
+}
+
+.nav-item{
+
+    font-size: 20px;
+    padding: 0px;
+
+}
+
+.nav-item:before, .nav-item:after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    margin-left: 0px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    width: 20px;
+    background-color: #2BCC63;
+  }
+
+  #main-presentation-row{
+
+    margin-top: 90px;
+    text-align: center;
+
+  }
+
+  #img-wrapper{
+
+    padding: 0px;
+    margin: 20px 0px 0px 20px;
+    text-align: center;
+
+  }
+
+  #profile-photo{
+
+    width: 200px;
+    height: auto;
+
+  }
+
+  #presentation{
+
+    margin-top: 50px;
+    margin-left: 10px;
+    text-align: center;
+
+  }
+
+  #presentation .h1-md{
+
+    font-size: 35px;
+    color: #292727;
+    text-align: center;
+
+  }
+
+  #presentation .h1-lg{
+
+    font-size: 45px;
+    color: #292727;
+    text-align: center;
+
+  }
+
+  #presentation .h1-sm{
+
+    font-size: 25px;
+    color: #D6D5D5;
+    text-align: center;
+
+  }
+
+  #download-resume-row{
+    margin-top: 10px;
+    padding: 30px;
+    text-align: center;
+
+  }
+
+  #download-resume{
+    margin-left: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+
+  }
+
+  #download-resume:before, #download-resume:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    margin-left: 20px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 100px;
+    background-color: #2BCC63;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
