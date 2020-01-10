@@ -38,12 +38,12 @@ header::after{
   height: 986px;
   background-image: url(../images/header/cover.jpg);
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-position: center;
   background-size: strencht;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: .35;
+  opacity: .45;
   z-index: 0;
 
 }
