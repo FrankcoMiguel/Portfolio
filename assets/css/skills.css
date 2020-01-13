@@ -1,12 +1,12 @@
 .skills{
 
-    background-color: #5D5D5D;
+    background-color: #025159;
     width: 100%;
     height: 110%;
     background-size: cover;
     position: center;
     background-attachment: fixed;
-    box-shadow: #5D5D5D;
+    box-shadow: #025159;
 
 }
 
@@ -14,14 +14,14 @@
 
     font-size: 60px;
     margin-top: 60px;
-    color: #D6D5D5;; 
+    color: #FFFFFF;
     text-align: center;
 
 }
 
 .h1-skill:after{
 
-    border-bottom:9px solid #2BCC63;
+    border-bottom:9px solid #FEBD15;
     display: block;
 	margin: 0 auto;
 	content: " ";
