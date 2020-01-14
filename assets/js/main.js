@@ -19,8 +19,8 @@ Vue.component('project-card', {
 
               <h5 class="mt-4">Actual Version: {{ version }}</h5>
 
-              <div class="row justify-content-end">
-                <a v-bind:href="link"><img src="assets/images/contact/github.svg"></a>
+              <div class="row justify-content-center">
+                <a class="github-project" v-bind:href="link"><img src="assets/images/projects/github-project.svg"></a>
               </div>
 
             </div>
