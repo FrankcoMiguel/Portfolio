@@ -17,6 +17,12 @@ html{
 
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 
 
 header{
@@ -71,6 +77,13 @@ header > * {
 
 }
 
+.navbar .navbar-brand:hover{
+
+  color: #025159;
+  transition: 0.5s;
+
+}
+
 .nav-item{
 
     font-size: 25px;
@@ -83,8 +96,14 @@ header > * {
 
 .navbar .nav-item .nav-link{
 
-    color: #D6D5D5;
+    color: #FFFFFF;
     transition: 0.6s;
+
+}
+
+.navbar .nav-item .nav-link:hover{
+
+  color: #FFFFFF;
 
 }
 
@@ -100,7 +119,7 @@ header > * {
     right: 0;
     height: 4px;
     width: 20px;
-    background-color: #2BCC63;
+    background-color: #FEBD15;
   }
   .nav-item:before {
     opacity: 0;
@@ -161,7 +180,7 @@ header > * {
     width: 330px;
     height: auto;
     border-radius:50%;
-    box-shadow: -20px 10px 0 3px rgb(66, 146, 94);
+    box-shadow: -20px 10px 0 3px #025059af;
 
   }
 
@@ -232,7 +251,7 @@ header > * {
   right: 0;
   height: 2px;
   width: 130px;
-  background-color: #2BCC63;
+  background-color: #FEBD15;
 }
 
 #download-resume:before {
@@ -301,7 +320,7 @@ header > * {
         right: 0;
         height: 4px;
         width: 20px;
-        background-color: #2BCC63;
+        background-color: #FEBD15;
       }
 
       #main-presentation-row{
@@ -384,7 +403,7 @@ header > * {
         right: 0;
         height: 2px;
         width: 120px;
-        background-color: #2BCC63;
+        background-color: #FEBD15;
       }
 
 }
@@ -421,7 +440,7 @@ header > * {
       right: 0;
       height: 4px;
       width: 20px;
-      background-color: #2BCC63;
+      background-color: #FEBD15;
     }
 
     #main-presentation-row{
@@ -504,7 +523,7 @@ header > * {
       right: 0;
       height: 2px;
       width: 115px;
-      background-color: #2BCC63;
+      background-color: #FEBD15;
     }
 
 }
@@ -543,7 +562,7 @@ header > * {
     right: 0;
     height: 4px;
     width: 20px;
-    background-color: #2BCC63;
+    background-color: #FEBD15;
   }
 
   #main-presentation-row{
@@ -626,10 +645,8 @@ header > * {
     right: 0;
     height: 2px;
     width: 100px;
-    background-color: #2BCC63;
+    background-color: #FEBD15;
   }
-
-
 
 }
 
