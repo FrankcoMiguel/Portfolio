@@ -69,9 +69,16 @@ footer{
 
 .img-contact{
 
-    width: 100%;
+    width: 90%;
     height: auto;
-    padding: 50px;
+    padding: 30px;
+
+}
+
+.img-contact:hover{
+
+    fill: #FEBD15;
+    transition: 1s;
 
 }
 
