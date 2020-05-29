@@ -2,9 +2,10 @@ header{
   
     background-color: #60757C;
     width: 100%;
-    height: 986px;
+    height: 971px;
     background-size: cover;
     background-attachment: fixed;
+
 
 
 }
@@ -13,7 +14,7 @@ header::after{
   content: "";
   display: block;
   width: 100%;
-  height: 986px;
+  height: 971px;
   background-image: url('../static/cover2.jpg');
   background-attachment: fixed;
   background-position: center;
