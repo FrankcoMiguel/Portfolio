@@ -1,0 +1,19 @@
+@import '../styles/Variables.scss';
+
+section {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #2C2C2C;
+    display: flex;
+    flex-flow: column wrap;
+
+    .row {
+        padding-top: 80px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+}
+
