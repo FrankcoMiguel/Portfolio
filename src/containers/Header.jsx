@@ -3,6 +3,7 @@ import '../assets/styles/Header.scss';
 import NavigationBar from '../components/NavigationBar';
 import Profile from '../components/Profile';
 
+
 const Header = () => {
 
   return (
