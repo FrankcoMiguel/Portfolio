@@ -1,7 +1,7 @@
 
 // @include font-face('Coolvetica', font-files('coolvetica.ttf'));
 
-@import "../styles/Variables.scss";
+@import "./Variables.scss";
 
 
 
@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   font-family: $PrimaryFontFamily;
-  padding-top: 100px;
+  padding: 50px 0px;
   margin: 0px;
 
   /* xs sm */
