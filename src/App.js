@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './containers/Header';
-import Skills from './containers/Skills';
+import Summary from './containers/Summary';
 
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <>
       <Header />
-      <Skills />
+      <Summary />
       </>
     );
   }
