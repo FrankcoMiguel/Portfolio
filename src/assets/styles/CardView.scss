@@ -27,9 +27,14 @@
         p {
             font-size: 25px;
 
-            &:nth-child(2){
+            &:nth-child(1){
                 font-size: 22px;
-                text-align: start;
+            }
+
+            &:nth-child(2){
+                font-size: 18px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
             }
         }
     }
