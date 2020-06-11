@@ -1,0 +1,56 @@
+@import '../styles/Variables.scss';
+
+section {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #2C2C2C;
+
+    .container {
+
+        .row {
+
+            &:nth-child(2){
+
+                padding-top: 10px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 60px;
+                
+                @media only screen and (max-width: 1199px) {
+                    justify-content: center;
+                }
+            }
+
+            .col-12 {
+                
+                &:nth-child(2){
+
+                    text-align: center;
+
+                    h1 {
+                        font-size: 40px;                    
+                        color: $PrimaryTextColor;
+                    }        
+                }
+
+                &:nth-child(3){
+
+                    text-align: center;
+                    margin-top: 60px;
+                    font-size: 20px;
+                    p {     
+                        text-align: left;              
+                        color: $PrimaryTextColor;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }        
+                }
+
+            }
+
+        }
+
+    }
+}
+
