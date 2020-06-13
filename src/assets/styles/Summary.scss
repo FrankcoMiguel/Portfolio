@@ -11,34 +11,34 @@ section {
 
         .row {
 
-            .col-12 {
-                
-                &:nth-child(1) {
-                    padding-top: 60px;
+            &:nth-child(1){
+
+                .col-12 {
+                    &:nth-child(1) {
+                        padding-top: 60px;
+                    }
+
+                    &:nth-child(2){
+                        text-align: center;
+
+                        h1 {
+                            font-size: 40px;                    
+                            color: $PrimaryTextColor;
+                        }        
+                    }
+
+                    &:nth-child(3){
+                        text-align: center;
+                        margin-top: 60px;
+                        font-size: 20px;
+                        p {     
+                            text-align: left;              
+                            color: $PrimaryTextColor;
+                            font-family: Arial, Helvetica, sans-serif;
+                        }        
+                    }
+
                 }
-
-                &:nth-child(2){
-
-                    text-align: center;
-
-                    h1 {
-                        font-size: 40px;                    
-                        color: $PrimaryTextColor;
-                    }        
-                }
-
-                &:nth-child(3){
-
-                    text-align: center;
-                    margin-top: 60px;
-                    font-size: 20px;
-                    p {     
-                        text-align: left;              
-                        color: $PrimaryTextColor;
-                        font-family: Arial, Helvetica, sans-serif;
-                    }        
-                }
-
             }
 
             &:nth-child(2){
@@ -51,8 +51,31 @@ section {
                 }
             }
 
-        }
+            &:nth-child(3) {
 
+                .col-12 {
+
+                    text-align: left;
+                    margin-top: 30px;
+                    font-size: 20px;
+                    q {
+                        font-style: italic;
+                        color: $PrimaryTextColor;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                    p { 
+                        padding: 30px 0;
+                        text-align: right;
+                        font-style: italic;
+                        color: $PrimaryTextColor;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 1.0em;
+                    }
+
+                }
+
+            }
+        }
     }
 }
 

@@ -26,7 +26,15 @@ const Summary = () => {
 
                 <Row>
                     {CardsView}
-                </Row>    
+                </Row>
+
+                <Row>
+                    <Col xs={12}>
+                        <q>The best specialization is the ability to adapt the fundamentals you know into the technologies you will eventually use.</q>
+                        <p> - Frank M. Orozco</p>
+                    </Col>
+                </Row>
+
             </Container>
         </section>
     )
