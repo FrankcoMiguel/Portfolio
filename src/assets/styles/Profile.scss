@@ -81,17 +81,18 @@
     }
 }
 
-#download-resume {
-    font-size: 20px;
+.download-resume {
+    font-size: 22px;
     color: white;
     text-decoration: none;
-    padding: 18px 28px 18px 28px;
-    background-color: #025059;
-    box-shadow: 0px 3px 1px #2a2a2a;
+    margin: 18px 28px 0px 28px;
 
-    &:active {
-        transform: translateY(4px);
-        box-shadow: 0px 1.5px 1px #2a2a2a;
+    &:hover {
+        color: $PrimaryTextColor;
+        text-decoration: $AccentTextColor;
+        border-bottom: 2px solid $AccentTextColor;
+        transition: 400ms;
+        
     }
 
 }
