@@ -32,9 +32,23 @@ section {
                         margin-top: 40px;
                         font-size: 20px;
                         p {     
-                            text-align: left;              
+                            text-align: center;              
                             color: $PrimaryTextColor;
                             font-family: $SecondaryFontFamily;
+
+                            a {
+                                font-family: $SecondaryFontFamily;
+                                color: $AccentTextColor;
+                                text-decoration: none;
+                                
+                                &:hover {
+                                    border-bottom: 2px solid $AccentTextColor;
+                                    transition: 400ms;
+                                    cursor: pointer;
+                                    
+                                }
+                            }
+
                         }        
                     }
 

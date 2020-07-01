@@ -12,14 +12,13 @@ import SkillsData from '../data/SkillsData';
 const Summary = () => {
     
     const CardsView = SkillsData.map(skill => <CardView key={skill.id} image={skill.image} imageAlt={skill.imageAlt} 
-    title={skill.title} description={skill.description} />) //This an Array of CardViews Components using the skill data.
+    title={skill.title} description={skill.description} tags={skill.tags} />) //This an Array of CardViews Components using the skill data.
 
     return (
         <section>
             <Container>
-
                 <Row>
-                    <Col xs={12}><Image src={Logotype} alt="Logotype" /></Col>
+                    <Col xs={12}><a href='./'><Image src={Logotype} alt="Logotype" /></a></Col>
                     <Col xs={12}><h1>Summary</h1></Col>
                     <Col xs={12}><p>I consider myself as an Agnostic Technology Computer Programmer specialized on Web Technologies both Frontend and Backend.</p></Col>
                 </Row>
@@ -30,7 +29,7 @@ const Summary = () => {
 
                 <Row>
                     <Col xs={12}>
-                        <q>The best specialization is the ability to adapt the fundamentals you know into the technologies you will eventually use.</q>
+                        <q>The best specialization is the ability to adapt the fundamentals you know, into the technologies you will eventually use.</q>
                         <p> - Frank M. Orozco</p>
                     </Col>
                 </Row>

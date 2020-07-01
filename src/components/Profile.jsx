@@ -19,7 +19,7 @@ const Profile = () => {
       </Row>
 
       <Row className='button-container'>
-          <a className='download-resume' href='/' role='button'>Download Resume</a>
+          <a className='download-resume' href='./'>Download Resume</a>
       </Row>
     </Container>
   );
