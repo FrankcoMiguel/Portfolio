@@ -1,13 +1,14 @@
 import React from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import '../assets/styles/BoxView.scss';
+import { Container, Image } from 'react-bootstrap';
 
 
 const BoxView = (props) => {
-    const {image, imageAlt} = props;
+    const {image, imageAlt, width} = props;
+
     return (
         <Container className='BoxView'>
-            <Image className='BoxImage' src={image} alt={imageAlt} />
-            
+            <Image className='BoxImage' src={image} alt={imageAlt} width={width} height='auto;' />     
         </Container>
     );
 }
