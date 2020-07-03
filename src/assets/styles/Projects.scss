@@ -1,0 +1,68 @@
+@import '../styles/Variables.scss';
+
+section {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #2C2C2C;
+    padding-bottom: 40px;
+
+    .container {
+
+        .row {
+
+            &:nth-child(1){
+
+                .col-12 {
+                    &:nth-child(1) {
+                        padding-top: 60px;
+                    }
+
+                    &:nth-child(2){
+                        text-align: center;
+
+                        h1 {
+                            font-size: 36px;                    
+                            color: $PrimaryTextColor;
+                        }        
+                    }
+
+                    &:nth-child(3){
+                        text-align: center;
+                        margin-top: 40px;
+                        font-size: 20px;
+                        p {     
+                            text-align: center;              
+                            color: $PrimaryTextColor;
+
+                            a {
+                                color: $AccentTextColor;
+                                text-decoration: none;
+                                
+                                &:hover {
+                                    border-bottom: 2px solid $AccentTextColor;
+                                    transition: 400ms;
+                                    cursor: pointer;
+                                    
+                                }
+                            }
+
+                        }        
+                    }
+
+                }
+            }
+
+            &:nth-child(2){
+                justify-content: center;
+                padding-top: 30px;
+                text-align: center;
+                @media only screen and (max-width: 1199px) {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+

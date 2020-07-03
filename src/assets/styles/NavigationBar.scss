@@ -1,0 +1,143 @@
+
+// @include font-face('Coolvetica', font-files('coolvetica.ttf'));
+
+@import "./Variables.scss";
+
+
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $PrimaryFontFamily;
+  padding: 50px 0px;
+  margin: 0px;
+  /* xs sm */
+
+  @media only screen and (max-width: 767px){
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+}
+
+.navbar-brand{
+  
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar-brand > img {
+  padding-left: 10px
+}
+
+.navbar-nav {
+  @media only screen and (max-width: 767px){
+    margin-top: 30px;
+    padding: 30px;
+    align-items: center;
+    z-index: -2;
+  }
+  
+}
+
+.nav-item{
+
+    font-size: 30px;
+    color: $PrimaryTextColor;
+    position: relative;
+    text-decoration: none;
+    padding: 40px 25px 0px 25px;
+    @media only screen and (max-width: 767px){
+      padding: 20px 0px 0px 0px;
+    }
+
+}
+
+.navbar .nav-item .nav-link{
+
+    color: $PrimaryTextColor;
+    transition: 0.6s;
+    @media only screen and (max-width: 767px){
+      padding: 0px;
+    }
+}
+
+.navbar .nav-item .nav-link:hover{
+
+  color: $PrimaryTextColor;
+
+}
+
+.nav-item {
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    margin-left: 34px;
+    left: 0;
+    right: 0;
+    height: 4.5px;
+    width: 20px;
+    background-color: $AccentTextColor;
+
+    @media only screen and (max-width: 767px){
+      margin-left: 0px;
+      bottom: 2px;
+    }
+
+  }
+
+    &:before {
+      opacity: 0;
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+      transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+      transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    &:after {
+      opacity: 0;
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+      transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    }
+
+    &:hover:before, &:hover:after, &:focus:before, &:focus:after {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+
+    &:hover:before, &:focus:before {
+      transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    &:hover:after, &:focus:after {
+      transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+      transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+}
+
+
+  .navbar-light .navbar-toggler {
+
+    border-color: rgba(0,0,0,0);
+  
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+  
+    background-image: url('../static/menu-bar.svg');
+  
+  }

@@ -1,0 +1,12 @@
+@import '../styles/Variables.scss';
+
+
+.BoxView {
+    width: 238px;
+    height: auto;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px 40px;
+}

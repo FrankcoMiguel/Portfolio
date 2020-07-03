@@ -1,0 +1,99 @@
+@import "./Variables.scss";
+
+* {
+    font-family: $PrimaryFontFamily;
+}
+
+.picture-headers-row { 
+
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.picture-container {
+
+    display: flex;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: 767px) {
+        justify-content: center;
+    }
+}
+
+.profile-photo{
+    width: 258px;
+    height: auto;
+    border-radius:50%;
+    box-shadow: -20px 10px 0 3px #025059af;
+    @media only screen and (max-width: 576px){
+        width: 200px;
+    }
+}
+
+.headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+
+    > * {
+        margin-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 40px;
+        > * {
+            text-align: center;
+        }
+    }
+
+    .greet {
+        font-size: 40px;
+        @media only screen and (max-width: 767px) {
+            font-size: 35px
+        }
+    }
+    
+    .name {
+        font-size: 50px;
+        @media only screen and (max-width: 767px) {
+            font-size: 45px
+        }
+    }
+
+    .career {
+        font-size: 32px;
+        color: $PrimaryTextColor;
+        @media only screen and (max-width: 767px) {
+            font-size: 28px
+        }
+    }
+}
+
+.button-container {
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 160px;
+
+    @media only screen and (max-width: 767px){
+        padding-top: 40px;
+    }
+}
+
+.download-resume {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    margin: 18px 28px 0px 28px;
+
+    &:hover {
+        color: $PrimaryTextColor;
+        text-decoration: $AccentTextColor;
+        border-bottom: 2px solid $AccentTextColor;
+        transition: 400ms;
+        
+    }
+
+}
+  
