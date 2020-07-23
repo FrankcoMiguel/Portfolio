@@ -1,0 +1,54 @@
+.NavbarContainer {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .NavbarContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .NavList {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            .NavItem {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                padding: 10px;
+                color: #2F3537;
+                text-decoration: none;
+            }
+            
+        }
+
+        .NavSeparator {
+            border-left: 6px solid #FDBD15; 
+            height: 40px; 
+        }
+
+        .NavLinks {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            .NavLink {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                font-size: 10px;
+                padding: 10px;
+                color: #2F3537;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+}
+
+
+
+
+
+   
