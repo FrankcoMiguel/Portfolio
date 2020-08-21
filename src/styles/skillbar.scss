@@ -1,0 +1,64 @@
+.SkillBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px !important;
+
+    .BarTitle {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .BarContainer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 30vw;
+        height: 1.5vh;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        background-color: #FEE7AA;
+        z-index: -10; 
+
+        .BarStatus {
+            background-color: #FDBD15;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            z-index: 5;    
+        }
+
+        .Web {
+            width: 85%;
+            height: 100%;
+        }
+
+        .Frontend {
+            width: 90%;
+            height: 100%;
+        }
+
+        .Db {
+            width: 89%;
+            height: 100%;
+        }
+
+        .Backend {
+            width: 52%;
+            height: 100%;
+        }
+
+        .Teamwork {
+            width: 98%;
+            height: 100%;
+        }
+
+        .Solid {
+            width: 84%;
+            height: 100%;
+        }
+
+    }
+}
