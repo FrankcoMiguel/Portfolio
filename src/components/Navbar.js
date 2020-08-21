@@ -15,9 +15,9 @@ const NavigationBar = () => {
             <Row className="NavContainer">
                 <Link to="/"><Image className="NavLogo" src={Logotype} /></Link>
                 <ul className="NavContent">
-                    <li className="NavItem"><Link to='/404'>About me</Link></li>
-                    <li className="NavItem"><Link to='/'>Portfolio</Link></li>
-                    <li className="NavItem"><Link to='/'>Blog</Link></li>
+                    <li className="NavItem"><Link to='/about'>About me</Link></li>
+                    <li className="NavItem"><Link to='/portfolio'>Portfolio</Link></li>
+                    <li className="NavItem"><Link to='/blog'>Blog</Link></li>
                     <li className="NavItem"><Link to='/'>Contacts</Link></li>
                     <li className="NavDivider"></li>
                     <div className="NavIcons">
