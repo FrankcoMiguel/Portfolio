@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import Layout from '../components/Layout'
 import 'bootstrap/dist/css/bootstrap.min.css'
