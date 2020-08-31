@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import NavigationBar from './Navbar'
-import '../styles/layout.scss'
+import '../styles/Layout.scss'
 
 
 const Layout = (props) => {
