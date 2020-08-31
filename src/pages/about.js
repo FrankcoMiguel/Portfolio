@@ -2,63 +2,83 @@ import React from 'react'
 import Layout from '../components/Layout'
 import SkillBar from '../components/Skillbar'
 import { Container, Row, Col, Image } from 'react-bootstrap'
-import ProfilePicture from '../images/profile-picture.svg'
+import AboutPicture from '../images/about-picture.jpg'
+
+// Skill Icons
+import html5 from '../images/html-skill.svg'
+import sass from '../images/sass-skill.svg'
+import bootstrap from '../images/bootstrap-skill.svg'
+import js from '../images/js-skill.svg'
+import react from '../images/react-skill.svg'
+import gatsby from '../images/gatsby-skill.svg'
+import mysql from '../images/mysql-skill.svg'
+import oracle from '../images/oracle-skill.svg'
+import java from '../images/java-skill.svg'
+import dotnet from '../images/dotnet-skill.svg'
+import asana from '../images/asana-skill.svg'
+import jira from '../images/jira-skill.svg'
+import github from '../images/github-skill.svg'
+import python from '../images/python-skill.svg'
+
+import '../styles/about.scss'
 
 
 export default function About() {
     return (
         <Layout>
-            <Container>
-                <Row>
-                    <Col>
-                        <span>
-                            <Image src={ProfilePicture} />
-                        </span>
+            <Container className="AboutContainer">
+                <Row className="AboutRow">
+                    <Col className="ImageContent">
+                        <div className="ImageContainer">
+                            <Image src={AboutPicture} fluid="true" />
+                        </div>
                     </Col>
-                    <Col>
-                        <ul>
-                            <li>Who am I?</li>
-                            <li>Frank Miguel Orozco</li>
+                    <Col className="AboutContent">
+                        <ul className="AboutInfo">
+                            <li className="AboutTitle">Who am I?</li>
+                            <li className="AboutSpecial">Frank Miguel Orozco Ogando</li>
                             {/* 20 years old - Dominican - Developer */}
-                            <li> 20 years old   Dominican   Developer</li>
-                            <li>I am a computer programmer born and raised in the Dominican Republic,
-                                currently living in Anchorage, Alaska.
+                            <li className="AboutList">
+                                <p>20 years old</p>   
+                                <p>Dominican</p>   
+                                <p>Developer</p>
+                            </li>
+                            <li className="AboutParagraph">
+                                <p>
+                                    I am a computer programmer born and raised in the Dominican Republic,
+                                    currently living in Anchorage, Alaska.
+                                </p>
+                                <p>
+                                    With more than 3 years of experience, I love programming because 
+                                    it's the nicest way to make ideas come true.
+                                </p>
                             </li> 
-                            <li>With more than 3 years of experience, I love programming because 
-                                it's the nicest way to make ideas come true.
-                            </li>
                         </ul>
-                        
-                        <ul>
-                            <li>Where did I learn coding</li>
-                            <li>I studied Sofware Development at ITLA, 
-                                one of the most popular institutes of Dominican Republic, 
-                                and specialized my career in Web development and data 
-                                analysis.
+                        <ul className="AboutInfo">
+                            <li className="AboutTitle">Where did I learn coding</li>
+                            <li className="AboutParagraph">
+                                <p>
+                                    I studied Sofware Development at ITLA, 
+                                    one of the most popular institutes of Dominican Republic, 
+                                    and specialized my career in Web development and data 
+                                    analysis.
+                                </p>
                             </li>
                         </ul>
                     </Col>
-                </Row>
-            
-            <Container>
+                </Row>         
+            </Container>
+            <div className="BottomAbout">
                 <h1>What am I good at?</h1>
-                <Row>
-                    <Col>
-                        <SkillBar title="Web Design" skill="Web" />
-                        <SkillBar title="Frontend Development" skill="Frontend" />
-                        <SkillBar title="Database Administration" skill="Db" />
-                    </Col>
-                    <Col>
-                        <SkillBar title="Backend Development" skill="Backend" />
-                        <SkillBar title="Teamwork" skill="Teamwork" />
-                        <SkillBar title="SOLID Implementation" skill="Solid" />
-                    </Col>
+                <Row className="SkillsContent">
+                    <SkillBar title="Web Design" percentage="85" threeIcons= "true" firstIcon={html5} secondIcon={sass} thirdIcon={bootstrap}/>
+                    <SkillBar title="Backend" percentage="78" twoIcons ="true"firstIcon={java} secondIcon={dotnet}/>
+                    <SkillBar title="Frontend" percentage="92" threeIcons = "true" firstIcon={js} secondIcon={react} thirdIcon={gatsby}/>
+                    <SkillBar title="Teamwork" percentage="95" threeIcons= "true" firstIcon={asana} secondIcon={jira} thirdIcon={github}/>
+                    <SkillBar title="Databases" percentage="76" twoIcons ="true"firstIcon={mysql} secondIcon={oracle}/>
+                    <SkillBar title="Algorithms" percentage="88" singleIcon = "true" firstIcon={python}/>
                 </Row>
-
-            </Container>
-
-            
-            </Container>
+            </div>  
         </Layout>
     )
 }
