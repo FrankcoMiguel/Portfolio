@@ -1,25 +1,44 @@
 .SkillBar {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: center;
-    margin: 60px !important;
+    margin: 40px 40px !important;
+    width: 440px;
 
-    .BarTitle {
-        font-family: Arial, Helvetica, sans-serif;
+    .BarTop {
+        width: 420px;
+        display: flex;
+        justify-content: space-between;
+
+        .BarTitle {
+            font-size: 24px;
+            color: #FFFFFF;
+            font-weight: bold;
+            font-stretch: expanded;
+        }
+
+        .BarIcons {
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+
+            li {
+                margin: 0 10px;
+            }
+        }
     }
 
     .BarContainer {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        width: 30vw;
-        height: 1.5vh;
+        width: 420px;
+        height: 20px;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
         background-color: #FEE7AA;
-        z-index: -10; 
 
         .BarStatus {
             background-color: #FDBD15;
@@ -27,38 +46,7 @@
             border-top-right-radius: 25px;
             border-bottom-left-radius: 25px;
             border-bottom-right-radius: 25px;
-            z-index: 5;    
+            height: 100%;    
         }
-
-        .Web {
-            width: 85%;
-            height: 100%;
-        }
-
-        .Frontend {
-            width: 90%;
-            height: 100%;
-        }
-
-        .Db {
-            width: 89%;
-            height: 100%;
-        }
-
-        .Backend {
-            width: 52%;
-            height: 100%;
-        }
-
-        .Teamwork {
-            width: 98%;
-            height: 100%;
-        }
-
-        .Solid {
-            width: 84%;
-            height: 100%;
-        }
-
     }
 }
