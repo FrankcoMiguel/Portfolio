@@ -1,0 +1,40 @@
+.PortfolioContainer {
+
+    margin: 40px 0px 0 80px !important;
+
+    .PortfolioRow {
+        display: flex;
+        justify-content: space-between !important;
+        padding: 0 0 0 80px;
+
+        .PortfolioTitle {
+            display: flex !important;
+            flex-flow: column wrap;
+            justify-content: center;
+
+            h1 {
+                font-size: 38px;
+                font-weight: bold;
+                margin: 0 0 16px 0 !important;
+                color: #FDBD15;
+            }
+
+            p {
+                font-size: 22px;
+                color: #2F3537;
+            }
+
+        }
+
+        .PortfolioCarousel {
+            display: flex;
+            justify-content: center;
+            flex-grow: 2;
+            margin: 100px 0 0 0;
+            padding: 0;
+
+        }
+
+    }
+
+}
