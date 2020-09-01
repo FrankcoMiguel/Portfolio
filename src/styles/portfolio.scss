@@ -1,6 +1,7 @@
 .PortfolioContainer {
 
     margin: 40px 0px 0 80px !important;
+    overflow: hidden;
 
     .PortfolioRow {
         display: flex;
@@ -10,7 +11,8 @@
         .PortfolioTitle {
             display: flex !important;
             flex-flow: column wrap;
-            justify-content: center;
+            justify-content: flex-start;
+            margin: 240px 0 0 0;
 
             h1 {
                 font-size: 38px;
@@ -29,8 +31,8 @@
         .PortfolioCarousel {
             display: flex;
             justify-content: center;
-            flex-grow: 2;
-            margin: 100px 0 0 0;
+            flex-grow: 3;
+            margin: 70px 0 0 0;
             padding: 0;
 
         }
