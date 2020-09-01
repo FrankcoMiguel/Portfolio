@@ -1,0 +1,41 @@
+.CarouselContainer {
+
+    .ProjectsContainer {
+
+
+
+    }
+
+    .CarouselControls {
+
+        margin: 40px 0 0 0;
+
+        .CarouselButtons {
+            display: flex !important;
+            list-style-type: none;
+            margin-top: 20px;
+            padding-left: 20px;
+
+            .CarouselButton {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #FDBD15;
+                margin: 0 30px 0 0;
+                padding: 20px;
+
+                .PrevButton{
+
+                    background-image: url('../images/prevButton.svg');
+                }
+
+            }
+
+        }
+
+    }
+
+}
