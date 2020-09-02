@@ -17,6 +17,7 @@ import OracleTechnology from '../images/oracle-technology.svg'
 import ProBackPack from '../images/probackpack-project.svg'
 import CinemaPremium from '../images/cinemapremium-project.svg'
 import DaytoDay from '../images/daytoday-project.svg'
+import ExpressCourier from '../images/expresscourier-project.svg'
 
 
 
@@ -37,14 +38,19 @@ const ProjectCarousel = () => {
                             firstTag="Restaurant" secondTag="Service" thirdTag="PWA" firstTechnology={IJTechnology} secondTechnology={JavaTechnology} thirdTechnology={OracleTechnology}/>
                     </li>
 
-                    <li id="far">
+                    <li id="beside">
                         <ProjectCard logotype={CinemaPremium} title="Cinema Premium" detail="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren."
                             firstTag="Movies" secondTag="API" thirdTag="REST" firstTechnology={VSCodeTechnology} secondTechnology={MsSQLTechnolgy} thirdTechnology={DotNetTechnology}/>
                     </li>
 
-                    <li id="sofar">
+                    <li id="hide">
                         <ProjectCard logotype={DaytoDay} title="DayToDay" detail="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren."
                             firstTag="Projects" secondTag="Scheduler" thirdTag="Desktop" firstTechnology={VSCodeTechnology} secondTechnology={MsSQLTechnolgy} thirdTechnology={DotNetTechnology}/>
+                    </li>
+                
+                    <li id="hide">
+                        <ProjectCard logotype={ExpressCourier} title="Express Courier" detail="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren."
+                            firstTag="Courier" secondTag="Shipping" thirdTag="Mobile" firstTechnology={VSCodeTechnology} secondTechnology={MsSQLTechnolgy} thirdTechnology={ReactTechnology}/>
                     </li>
                 </ul>
             </div>
