@@ -1,0 +1,53 @@
+
+
+.container{
+    padding: 0px;
+    margin: 180px 0px 0 100px;
+
+    .LandingContainer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .LandingContent {
+            list-style-type: none;
+            margin: 0;
+
+            li {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+
+                //Hello! I am
+                &:nth-child(1) {
+                    font-size: 50px;
+                }
+
+                // Frank Miguel
+                &:nth-child(2) {
+                    font-size: 60px;
+                    font-weight: bold;
+                    color: #0066CC;
+                }
+
+                // Full-Stack Developer
+                &:nth-child(3) {
+                    font-size: 33px;
+                    color: #FDBD15;
+                }
+            }
+        }
+
+        .LandingPicture {
+
+            width: 28%;
+            height: auto;
+        
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 100%;
+            }
+        }
+    }
+}
+

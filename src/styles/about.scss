@@ -1,0 +1,91 @@
+
+.AboutContainer {
+
+    margin: 100px 80px 80px 100px !important;
+
+    .AboutRow {
+        
+        align-items: center;
+
+        .ImageContent {
+            flex-grow: 1;
+        }
+
+        .AboutContent {
+
+            display: flex;
+            flex-flow: column wrap;
+            flex-grow: 1;
+            justify-content: space-evenly;
+            .AboutInfo {
+
+                font-family: Arial, Helvetica, sans-serif;
+                list-style-type: none;
+            
+                .AboutTitle {
+                    font-size: 40px;
+                    color: #0066CC;
+                    font-weight: bold;
+                    padding: 5px 5px 5px 0;
+                }
+            
+                .AboutSpecial{
+                    font-size: 25px;
+                    color: #5F6365;
+                }
+            
+                .AboutList {
+                    display: flex;
+            
+                    p {
+                        margin-right: 40px;
+                        color: #5F6365     
+                    }
+            
+                }
+            
+                .AboutParagraph {
+            
+                    p {
+            
+                        font-size: 20px;
+                        color: #2F3537;
+            
+                    }
+            
+                }
+            
+            }
+        }
+
+    }
+
+}
+
+
+
+
+.BottomAbout {
+    width: 100%;
+    margin: 120px 0 0px 0 !important;
+    padding: 120px 0 150px 0 !important;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #0066CC;
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    .SkillsContent {
+        margin: 100px;
+        justify-content: center;
+
+    }
+
+}
+
