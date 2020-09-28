@@ -1,0 +1,96 @@
+
+.ContactContainer {
+    .ContactRow {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 200px 0 200px;
+
+        .ContactInfo {
+            display: flex !important;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 120px 20px;
+
+            h1 {
+                font-size: 38px;
+                font-weight: bold;
+                margin: 0 0 3px 8px;
+                color: #0066CC;
+            }
+
+            h2 {
+                font-size: 35px;
+                font-weight: bold;
+                margin: 0 0 16px 0;
+            }
+
+            p {
+                font-size: 20px;
+                margin: 16px 0 16px 0;
+                color: #2F3537;
+            }
+
+            .ContactList {
+                display: flex;
+                flex-flow: column wrap;
+                align-items: flex-start;
+                list-style-type: none;
+                margin-top: 20px;
+                padding-left: 0;
+
+                li {
+                    font-weight: bold;
+                    color: #2F3537;
+                    font-size: 18px;
+                }
+
+                .ContactItem {
+                    display: flex;
+                    justify-content: baseline;
+                    align-items: flex-start;
+                    margin-top: 25px;
+                    font-weight: normal;
+                    color: #5F6365;
+                    font-weight: 550;
+                    font-size: 16px;
+
+                    .phone {
+                        display: inline;
+                    }                    
+
+                }
+                
+            }
+
+        }
+
+        .ContactMessage {
+            width: 100%;
+            display: flex;
+            border-radius: 15px;
+            flex-direction: column;
+            padding: 70px 120px 70px 70px;
+            margin-top: 65px;
+
+            .form-group {
+
+                .form-control {
+                    border-radius: 0;
+                    padding: 15px;
+                    font-weight: 540;
+                }
+            }
+
+            button {
+                border-radius: 0;
+                padding: 10px 20px;
+                font-weight: 550;
+                background-color: #0066CC;
+                color: #fff;
+            }
+
+        }
+
+    }
+
+}

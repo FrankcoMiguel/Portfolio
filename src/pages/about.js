@@ -11,12 +11,13 @@ import bootstrap from '../images/bootstrap-skill.svg'
 import js from '../images/js-skill.svg'
 import react from '../images/react-skill.svg'
 import gatsby from '../images/gatsby-skill.svg'
+import mssql from '../images/mssql-skill.svg'
 import mysql from '../images/mysql-skill.svg'
 import oracle from '../images/oracle-skill.svg'
 import java from '../images/java-skill.svg'
 import dotnet from '../images/dotnet-skill.svg'
 import asana from '../images/asana-skill.svg'
-import jira from '../images/jira-skill.svg'
+import office365 from '../images/office365-skill.svg'
 import github from '../images/github-skill.svg'
 import python from '../images/python-skill.svg'
 
@@ -72,10 +73,10 @@ export default function About() {
                 <h1>What am I good at?</h1>
                 <Row className="SkillsContent">
                     <SkillBar title="Web Design" percentage="85" threeIcons= "true" firstIcon={html5} secondIcon={sass} thirdIcon={bootstrap}/>
-                    <SkillBar title="Backend" percentage="78" twoIcons ="true"firstIcon={java} secondIcon={dotnet}/>
+                    <SkillBar title="Backend" percentage="78" twoIcons ="true"firstIcon={dotnet} secondIcon={java}/>
                     <SkillBar title="Frontend" percentage="92" threeIcons = "true" firstIcon={js} secondIcon={react} thirdIcon={gatsby}/>
-                    <SkillBar title="Teamwork" percentage="95" threeIcons= "true" firstIcon={asana} secondIcon={jira} thirdIcon={github}/>
-                    <SkillBar title="Databases" percentage="76" twoIcons ="true"firstIcon={mysql} secondIcon={oracle}/>
+                    <SkillBar title="Teamwork" percentage="95" threeIcons= "true" firstIcon={asana} secondIcon={office365} thirdIcon={github}/>
+                    <SkillBar title="Databases" percentage="76" threeIcons ="true"firstIcon={mssql} secondIcon={mysql} thirdIcon={oracle}/>
                     <SkillBar title="Algorithms" percentage="88" singleIcon = "true" firstIcon={python}/>
                 </Row>
             </div>  
