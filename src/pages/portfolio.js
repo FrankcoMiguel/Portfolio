@@ -1,23 +1,25 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { Container, Row, Col, Image } from 'react-bootstrap'
-import ProfilePicture from '../images/profile-picture.svg'
+import ProjectCarousel from '../components/ProjectCarousel'
+
+import '../styles/portfolio.scss'
 
 
-export default function About() {
+export default function Portfolio() {
     return (
         <Layout>
-            <Container>
-                <Row>
-                    <Col>
+            <div className="PortfolioContainer">
+                <Row className="PortfolioRow">
+                    <Col className="PortfolioTitle">
                         <h1>Personal Projects</h1>
                         <p>Here are few personal projects I’ve worked on recently.</p>
                     </Col>
-                    <Col>
-                        <h2>Carousel</h2>
+                    <Col className="PortfolioCarousel"> 
+                        <ProjectCarousel />
                     </Col>
                 </Row>
-            </Container>
+            </div>
         </Layout>
     )
 }
