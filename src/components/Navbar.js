@@ -18,7 +18,7 @@ const NavigationBar = () => {
                     <li className="NavItem"><Link to='/about'>About me</Link></li>
                     <li className="NavItem"><Link to='/portfolio'>Portfolio</Link></li>
                     <li className="NavItem"><Link to='/blog'>Blog</Link></li>
-                    <li className="NavItem"><Link to='/'>Contacts</Link></li>
+                    <li className="NavItem"><Link to='/contact'>Contact</Link></li>
                     <li className="NavDivider"></li>
                     <div className="NavIcons">
                         <li className="NavLink"><a href="https://github.com/FrankcoMiguel" target="_blank"><Image src={GithubIcon} /></a></li>
