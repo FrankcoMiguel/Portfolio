@@ -21,7 +21,7 @@ import office365 from "../images/office365-skill.svg"
 import github from "../images/github-skill.svg"
 import python from "../images/python-skill.svg"
 
-//import '../styles/about.scss'
+import "./about.scss"
 
 export default function About() {
   return (

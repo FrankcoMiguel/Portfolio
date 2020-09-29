@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Container, Row, Image, Button } from "react-bootstrap"
 import ProjectCard from "./ProjectCard"
-//import '../styles/ProjectCarousel.scss'
+import "./ProjectCarousel.scss"
 
 import Chick4All from "../images/chick4all-project.svg"
 import ReactTechnology from "../images/react-technology.svg"

@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { Form, Button } from "react-bootstrap"
-//import '../styles/contact.scss'
+import "./contact.scss"
 
 export default function Contact() {
   return (

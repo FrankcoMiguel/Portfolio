@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import ProjectCarousel from "../components/ProjectCarousel"
 
-//import '../styles/portfolio.scss'
+import "./portfolio.scss"
 
 export default function Portfolio() {
   return (

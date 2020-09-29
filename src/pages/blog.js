@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import ProfilePicture from "../images/profile-picture.svg"
 import BlogCard from "../components/BlogCard"
-//import '../styles/blog.scss'
+import "./blog.scss"
 
 import FirstBlogBackground from "../images/first-blog-background.png"
 import SecondBlogBackground from "../images/second-blog-background.png"

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { Row, Image } from "react-bootstrap"
 
-//import '../styles/Navbar.scss'
+import "./Navbar.scss"
 import Logotype from "../images/logotype.svg"
 import GithubIcon from "../images/github-icon.svg"
 import InstagramIcon from "../images/ig-icon.svg"

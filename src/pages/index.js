@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import Layout from "../components/Layout"
 import "bootstrap/dist/css/bootstrap.min.css"
-//import '../styles/index.scss'
+import "./index.scss"
 import ProfilePicture from "../images/profile-picture.svg"
 
 export default function Home() {

@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Image } from "react-bootstrap"
-//import '../styles/BlogCard.scss'
+import "./BlogCard.scss"
 
 const BlogCard = props => {
   return (

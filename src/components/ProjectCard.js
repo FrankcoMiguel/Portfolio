@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Image } from "react-bootstrap"
-//import '../styles/ProjectCard.scss'
+import "./ProjectCard.scss"
 
 const ProjectCard = props => {
   return (

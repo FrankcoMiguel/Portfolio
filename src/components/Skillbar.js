@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Image } from "react-bootstrap"
-//import '../styles/Skillbar.scss'
+import "./Skillbar.scss"
 
 const SkillBar = props => {
   let element
