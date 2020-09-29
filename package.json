@@ -1,8 +1,8 @@
 {
-  "name": "portfolio",
+  "name": "Portfolio",
   "private": true,
-  "description": "This my personal website",
-  "version": "1.0",
+  "description": "A Portfolio created with React",
+  "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
-    "gatsby": "^2.23.12",
+    "gatsby": "^2.24.66",
     "gatsby-plugin-sass": "^2.3.12",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
@@ -23,11 +23,11 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "prettier": "2.1.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/FrankcoMiguel/Portfolio"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
