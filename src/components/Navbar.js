@@ -20,13 +20,13 @@ const NavigationBar = () => {
             <Link to="/about">About me</Link>
           </li>
           <li className="NavItem">
-            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/portfolio">Projects</Link>
           </li>
-          <li className="NavItem">
+          {/*<li className="NavItem">
             <Link to="/blog">Blog</Link>
-          </li>
+          </li>*/}
           <li className="NavItem">
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Gallery</Link>
           </li>
           <li className="NavDivider"></li>
           <div className="NavIcons">

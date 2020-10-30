@@ -1,53 +1,65 @@
-
-
-.container{
+.LandingPage {
+  .container {
     padding: 0px;
-    margin: 180px 0px 0 100px;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
     .LandingContainer {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-        .LandingContent {
-            list-style-type: none;
-            margin: 0;
+      .LandingPicture {
+        width: 42%;
+        height: auto;
+        margin-left: 40px;
 
-            li {
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 30px;
-
-                //Hello! I am
-                &:nth-child(1) {
-                    font-size: 50px;
-                }
-
-                // Frank Miguel
-                &:nth-child(2) {
-                    font-size: 60px;
-                    font-weight: bold;
-                    color: #0066CC;
-                }
-
-                // Full-Stack Developer
-                &:nth-child(3) {
-                    font-size: 33px;
-                    color: #FDBD15;
-                }
-            }
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 100%;
         }
+      }
 
-        .LandingPicture {
+      .LandingContent {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        margin-left: 70px;
 
-            width: 28%;
-            height: auto;
-        
-            img {
-                width: 100%;
-                height: auto;
-                border-radius: 100%;
-            }
+        li {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 30px;
+
+          //Hello! I am
+          &:nth-child(1) {
+            font-size: 45px;
+            font-weight: bold;
+          }
+
+          // Frank Miguel
+          &:nth-child(2) {
+            font-size: 55px;
+            font-weight: bold;
+            color: #0066cc;
+          }
+
+          // Full-Stack Developer
+          &:nth-child(3) {
+            font-size: 36px;
+            color: #fdbd15;
+          }
         }
+      }
     }
+  }
 }
 
+@media screen and (max-width: 991px) {
+  .LandingContainer {
+    flex-direction: column-reverse;
+  }
+}
