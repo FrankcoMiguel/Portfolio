@@ -1,9 +1,8 @@
-
 .NavContainer {
-    margin: 50px 0px 0px 70px;
-    justify-content: space-between;
+  margin: 50px 0px 0px 70px;
+  justify-content: space-between;
 
-    /*
+  /*
     @media (max-width: 1023px) {
 
         display: flex;
@@ -15,37 +14,36 @@
         background-color: #0066CC;
     } */
 
-    .NavLogo {
-        width: 96px;
-        height: auto;
+  .NavLogo {
+    width: 96px;
+    height: auto;
+  }
+
+  .NavContent {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 60px 0 0;
+
+    .NavItem {
+      padding: 16px 18px;
+
+      a {
+        font-size: 21px;
+        text-decoration: none;
+        color: #2f3537;
+        font-family: Helvetica;
+        font-weight: 550;
+      }
     }
 
-    .NavContent {
-        display: flex;
-        list-style-type: none;
-        justify-content: center;
-        align-items: center;
-        margin: 0 60px 0 0;
+    .NavDivider {
+      border-left: 5px solid #fdbd15;
+      height: 38px;
+      margin: 0 10px 0 0;
 
-        .NavItem {
-            padding: 16px 18px;
-
-            a {
-                font-size: 21px;
-                text-decoration: none;
-                color: #2F3537;
-                font-family: Helvetica;
-                font-weight: 550;
-            }
-
-        }
-        
-        .NavDivider {
-            border-left: 5px solid #FDBD15;
-            height: 38px;
-            margin: 0 10px 0 0;
-
-            /*
+      /*
             @media (max-width: 1023px) {
                 border-left: 0;
                 border-top: 2px solid #FDBD15;
@@ -53,31 +51,68 @@
                 width: 128px;
                 margin: 0 0 10px 0;
             } */
-        }
-
-        .NavIcons {
-            display: flex;
-            list-style-type: none;
-            justify-content: center;
-            align-items: center;
-            margin: 0 60px 0 0;
-
-            .NavLink {
-                padding: 8px;
-    
-                img {
-                    width: 28px;
-                    height: 28px;
-                }
-            }
-
-        }
     }
+
+    .NavIcons {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      align-items: center;
+      margin: 0 60px 0 0;
+
+      .NavLink {
+        padding: 8px;
+
+        img {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
 }
 
+@media screen and (max-width: 832px) {
+  .NavContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 0px 0px 70px;
+    //width: 865.6px;
 
+    .NavLogo {
+      margin-bottom: 20px;
+    }
 
+    .NavContent {
+      display: flex;
+      flex-flow: column wrap;
+      list-style-type: none;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-left: 0px;
+      margin: 0 60px 0 0;
 
+      .NavItem {
+        padding: 16px 0px;
 
+        a {
+          font-size: 21px;
+          text-decoration: none;
+          color: #2f3537;
+          font-family: Helvetica;
+          font-weight: 550;
+        }
+      }
 
-   
+      .NavDivider {
+        border-left: 0px solid #fdbd15;
+        border-top: 5px solid #fdbd15;
+        width: 80px;
+        height: 5px;
+        margin: 20px 0px 20px 0;
+      }
+    }
+  }
+}

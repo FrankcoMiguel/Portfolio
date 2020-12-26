@@ -1,58 +1,64 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { Form, Button } from "react-bootstrap"
-import "./contact.scss"
+import { Row } from "react-bootstrap"
+import GalleryCard from "../components/GalleryCard"
+import "./gallery.scss"
 
-export default function Contact() {
+
+import FirstBlogBackground from "../images/first-blog-background.png"
+import SecondBlogBackground from "../images/second-blog-background.png"
+import ThirdBlogBackground from "../images/third-blog-background.png"
+import FourthBlogBackground from "../images/fourth-blog-background.png"
+import FifthBlogBackground from "../images/fifth-blog-background.png"
+import SixthBlogBackground from "../images/sixth-blog-background.png"
+
+export default function Gallery() {
   return (
     <Layout>
-      <div className="ContactContainer">
-        <div className="ContactRow">
-          <div className="ContactInfo">
-            <h1>Don't be a stranger</h1>
-            <h2>Just say hello.</h2>
-            <p>
-              Feel free to get in touch with me. I am always open to discussing
-              new projects, creative ideas or opportunities to be part of your
-              visions.
-            </p>
-            <ul className="ContactList">
-              <li className="ContactItem">
-                <span className="phone">Need help?</span>
-              </li>
-              <li>frank_miguel29@outlook.com</li>
-              <li className="ContactItem">
-                <span className="phone">Do you wanna talk?</span>
-              </li>
-              <li>+1 907 538 3889</li>
-            </ul>
-          </div>
-          <div className="ContactMessage">
-            <Form>
-              <Form.Group controlId="FirstNameTextField">
-                <Form.Control type="text" placeholder="First Name" />
-              </Form.Group>
-
-              <Form.Group controlId="LastNameTextField">
-                <Form.Control type="text" placeholder="Last Name" />
-              </Form.Group>
-
-              <Form.Group controlId="EmailTextField">
-                <Form.Control type="email" placeholder="E-mail" />
-              </Form.Group>
-
-              <Form.Group controlId="MessageTextField">
-                <Form.Control
-                  as="textarea"
-                  rows="10"
-                  placeholder="Type here your message.."
-                />
-              </Form.Group>
-
-              <Button type="submit">Send over</Button>
-            </Form>
-          </div>
+      <div className="GalleryContainer">
+        <div>
+          <h1 className="GalleryTitle">Gallery</h1>
+          <ul className="GalleryTags">
+            <li className="GalleryTag">javascript</li>
+            <li className="GalleryTag">sass</li>
+            <li className="GalleryTag">oracle apex</li>
+            <li className="GalleryTag">android</li>
+            <li className="GalleryTag">sql</li>
+          </ul>
         </div>
+
+        <Row className="GalleryList">
+          <GalleryCard
+            background={FirstBlogBackground}
+            title="Lorem ipsum"
+            paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          />
+          <GalleryCard
+            background={SecondBlogBackground}
+            title="Lorem ipsum"
+            paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          />
+          <GalleryCard
+            background={ThirdBlogBackground}
+            title="Lorem ipsum"
+            paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          />
+          <GalleryCard
+            background={FourthBlogBackground}
+            title="Lorem ipsum"
+            paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          />
+          <GalleryCard
+            background={FifthBlogBackground}
+            title="Lorem ipsum"
+            paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          />
+          <GalleryCard
+            background={SixthBlogBackground}
+            title="Lorem ipsum"
+            paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          />
+        </Row>
       </div>
     </Layout>
   )

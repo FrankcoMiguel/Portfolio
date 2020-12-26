@@ -22,11 +22,8 @@ const NavigationBar = () => {
           <li className="NavItem">
             <Link to="/portfolio">Projects</Link>
           </li>
-          {/*<li className="NavItem">
-            <Link to="/blog">Blog</Link>
-          </li>*/}
           <li className="NavItem">
-            <Link to="/contact">Gallery</Link>
+            <Link to="/gallery">Gallery</Link>
           </li>
           <li className="NavDivider"></li>
           <div className="NavIcons">

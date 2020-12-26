@@ -4,10 +4,10 @@ import Layout from "../components/Layout"
 import SkillBar from "../components/Skillbar"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./index.scss"
-import "./about.scss"
-import "./contact.scss"
+
 import ProfilePicture from "../images/profile-picture.svg"
 
+//skills
 import html5 from "../images/html-skill.svg"
 import sass from "../images/sass-skill.svg"
 import bootstrap from "../images/bootstrap-skill.svg"
@@ -61,6 +61,7 @@ export default function Home() {
         </div>
 
         {/* Skills section */}
+
         <div className="BottomAbout">
           <h1>What am I good at?</h1>
           <Row className="SkillsContent">
