@@ -26,13 +26,13 @@ import "./about.scss"
 export default function About() {
   return (
     <Layout>
-      <Container className="AboutContainer">
-        <Row className="AboutRow">
-          <Col className="ImageContent">
+      <div className="AboutContainer">
+        <div className="AboutRow">
+          <div className="ImageContent">
             <div className="ImageContainer">
-              <Image src={AboutPicture} fluid="true" />
+              <Image src={AboutPicture} />
             </div>
-          </Col>
+          </div>
           <Col className="AboutContent">
             <ul className="AboutInfo">
               <li className="AboutTitle">Who am I?</li>
@@ -65,8 +65,8 @@ export default function About() {
               </li>
             </ul>
           </Col>
-        </Row>
-      </Container>
+        </div>
+      </div>
     </Layout>
   )
 }

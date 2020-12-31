@@ -18,13 +18,7 @@ export default function Gallery() {
       <div className="GalleryContainer">
         <div>
           <h1 className="GalleryTitle">Gallery</h1>
-          <ul className="GalleryTags">
-            <li className="GalleryTag">javascript</li>
-            <li className="GalleryTag">sass</li>
-            <li className="GalleryTag">oracle apex</li>
-            <li className="GalleryTag">android</li>
-            <li className="GalleryTag">sql</li>
-          </ul>
+          <p className="GalleryParagraph">Here's a collection of every side project I've worked on</p>
         </div>
 
         <Row className="GalleryList">

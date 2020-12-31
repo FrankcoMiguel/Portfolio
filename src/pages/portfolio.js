@@ -9,15 +9,15 @@ export default function Portfolio() {
   return (
     <Layout>
       <div className="PortfolioContainer">
-        <Row className="PortfolioRow">
-          <Col className="PortfolioTitle">
+        <div className="PortfolioRow">
+          <div className="PortfolioTitle">
             <h1>Personal Projects</h1>
             <p>Here are few personal projects I’ve worked on recently.</p>
-          </Col>
-          <Col className="PortfolioCarousel">
+          </div>
+          <div className="PortfolioCarousel">
             <ProjectCarousel />
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
     </Layout>
   )

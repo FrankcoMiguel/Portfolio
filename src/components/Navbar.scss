@@ -1,5 +1,11 @@
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
+
 .NavContainer {
-  margin: 50px 0px 0px 70px;
+  margin: 50px 0px 25px 70px;
   justify-content: space-between;
 
   /*
@@ -73,16 +79,40 @@
 }
 
 @media screen and (max-width: 832px) {
+  nav {
+    position: relative;
+  }
+
   .NavContainer {
     display: flex;
+    position: fixed;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    margin: 50px 0px 0px 70px;
-    //width: 865.6px;
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0 0px;
+    width: 100%;
+    transition: all 0.3s ease-out;
 
-    .NavLogo {
-      margin-bottom: 20px;
+    .NavTop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #ffffff;
+      padding: 60px 90px 30px 90px;
+
+      .NavLogo {
+      }
+
+      .NavHamburger {
+        cursor: pointer;
+
+        .line {
+          width: 30px;
+          height: 2.5px;
+          background: #fdbd15;
+          margin: 5px;
+        }
+      }
     }
 
     .NavContent {
@@ -90,15 +120,26 @@
       flex-flow: column wrap;
       list-style-type: none;
       justify-content: flex-start;
-      align-items: flex-start;
-      padding-left: 0px;
-      margin: 0 60px 0 0;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 0px;
+      margin-right: 0px;
+      padding: 90px 0px;
+      height: 100vh;
+      clip-path: circle(0px at 90% -10%);
+      -webkit-clip-path: circle(0px at 90% -10%);
+      transition: all 1.3s ease-out;
+
+      .NavContent.open {
+        clip-path: circle(3000px at 90% -10%);
+        -webkit-clip-path: circle(3000px at 90% -10%);
+      }
 
       .NavItem {
         padding: 16px 0px;
 
         a {
-          font-size: 21px;
+          font-size: 35px;
           text-decoration: none;
           color: #2f3537;
           font-family: Helvetica;
@@ -109,9 +150,17 @@
       .NavDivider {
         border-left: 0px solid #fdbd15;
         border-top: 5px solid #fdbd15;
-        width: 80px;
+        width: 160px;
         height: 5px;
         margin: 20px 0px 20px 0;
+      }
+
+      .NavIcons {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0px 0 0;
       }
     }
   }
