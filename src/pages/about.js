@@ -26,13 +26,13 @@ import "./about.scss"
 export default function About() {
   return (
     <Layout>
-      <Container className="AboutContainer">
-        <Row className="AboutRow">
-          <Col className="ImageContent">
+      <div className="AboutContainer">
+        <div className="AboutRow">
+          <div className="ImageContent">
             <div className="ImageContainer">
-              <Image src={AboutPicture} fluid="true" />
+              <Image src={AboutPicture} />
             </div>
-          </Col>
+          </div>
           <Col className="AboutContent">
             <ul className="AboutInfo">
               <li className="AboutTitle">Who am I?</li>
@@ -65,57 +65,7 @@ export default function About() {
               </li>
             </ul>
           </Col>
-        </Row>
-      </Container>
-      <div className="BottomAbout">
-        <h1>What am I good at?</h1>
-        <Row className="SkillsContent">
-          <SkillBar
-            title="Web Design"
-            percentage="85"
-            threeIcons="true"
-            firstIcon={html5}
-            secondIcon={sass}
-            thirdIcon={bootstrap}
-          />
-          <SkillBar
-            title="Backend"
-            percentage="78"
-            twoIcons="true"
-            firstIcon={dotnet}
-            secondIcon={java}
-          />
-          <SkillBar
-            title="Frontend"
-            percentage="92"
-            threeIcons="true"
-            firstIcon={js}
-            secondIcon={react}
-            thirdIcon={gatsby}
-          />
-          <SkillBar
-            title="Teamwork"
-            percentage="95"
-            threeIcons="true"
-            firstIcon={asana}
-            secondIcon={office365}
-            thirdIcon={github}
-          />
-          <SkillBar
-            title="Databases"
-            percentage="76"
-            threeIcons="true"
-            firstIcon={mssql}
-            secondIcon={mysql}
-            thirdIcon={oracle}
-          />
-          <SkillBar
-            title="Algorithms"
-            percentage="88"
-            singleIcon="true"
-            firstIcon={python}
-          />
-        </Row>
+        </div>
       </div>
     </Layout>
   )
