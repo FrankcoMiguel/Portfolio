@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import SkillBar from "../components/Skillbar"
 import { Container, Row, Col, Image } from "react-bootstrap"
-import AboutPicture from "../images/about_pic.jpg"
+import AboutPicture from "../images/about-pic.jpg"
 
 // Skill Icons
 import html5 from "../images/html-skill.svg"
