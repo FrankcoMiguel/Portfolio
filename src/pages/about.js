@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import SkillBar from "../components/Skillbar"
 import { Container, Row, Col, Image } from "react-bootstrap"
-import AboutPicture from "../images/about-picture.jpg"
+import AboutPicture from "../images/about_pic.jpg"
 
 // Skill Icons
 import html5 from "../images/html-skill.svg"
@@ -25,7 +25,7 @@ import "./about.scss"
 
 export default function About() {
   return (
-    <Layout>
+    <Layout title="About Frank">
       <div className="AboutContainer">
         <div className="AboutRow">
           <div className="ImageContent">

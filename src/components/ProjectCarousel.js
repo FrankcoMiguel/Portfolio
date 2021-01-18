@@ -95,7 +95,7 @@ const ProjectCarousel = () => {
             <ProjectCard
               logotype={ProBackPack}
               title="ProBackPack"
-              detail="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren."
+              detail="An android application to remind your homeworks and assignments from college or school, also to show your school summary."
               firstTag="School"
               secondTag="Android"
               thirdTag="Mobile"
@@ -109,7 +109,7 @@ const ProjectCarousel = () => {
             <ProjectCard
               logotype={Chick4All}
               title="Chick-4-All"
-              detail="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren."
+              detail="A desktop software created to manage a restaurant, its employees, stock and display statistics to make better decisions and see the income growth."
               firstTag="Restaurant"
               secondTag="Service"
               thirdTag="PWA"
@@ -123,7 +123,7 @@ const ProjectCarousel = () => {
             <ProjectCard
               logotype={CinemaPremium}
               title="Cinema Premium"
-              detail="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren."
+              detail="A REST API that collect a wide variety of Cinema information which can be consumed by HTTP."
               firstTag="Movies"
               secondTag="API"
               thirdTag="REST"
@@ -137,7 +137,7 @@ const ProjectCarousel = () => {
             <ProjectCard
               logotype={DaytoDay}
               title="DayToDay"
-              detail="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren."
+              detail="A desktop TODO List to manage the daily tasks and shows the professional development."
               firstTag="Projects"
               secondTag="Scheduler"
               thirdTag="Desktop"
@@ -151,7 +151,7 @@ const ProjectCarousel = () => {
             <ProjectCard
               logotype={ExpressCourier}
               title="Express Courier"
-              detail="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren."
+              detail="A mobile application to help courier customers to track and manage their packages."
               firstTag="Courier"
               secondTag="Shipping"
               thirdTag="Mobile"

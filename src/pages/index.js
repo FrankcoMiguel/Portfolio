@@ -26,7 +26,7 @@ import python from "../images/python-skill.svg"
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout title="Frank's Homepage">
       <div className="LandingPage">
         <Container>
           <Row className="LandingContainer">

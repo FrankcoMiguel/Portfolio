@@ -7,7 +7,7 @@ import "./portfolio.scss"
 
 export default function Portfolio() {
   return (
-    <Layout>
+    <Layout title="Frank's Projects">
       <div className="PortfolioContainer">
         <div className="PortfolioRow">
           <div className="PortfolioTitle">

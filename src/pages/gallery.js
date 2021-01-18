@@ -14,7 +14,7 @@ import SixthBlogBackground from "../images/sixth-blog-background.png"
 
 export default function Gallery() {
   return (
-    <Layout>
+    <Layout title="Frank's Gallery">
       <div className="GalleryContainer">
         <div>
           <h1 className="GalleryTitle">Gallery</h1>
