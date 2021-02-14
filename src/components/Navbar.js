@@ -27,7 +27,7 @@ function NavigationBar() {
 
   return (
     <nav>
-      <Row className="NavContainer">
+      <Row className={`NavContainer ${menu ? 'open' : ''}`}>
         <div className="NavTop">
           <Link to="/">
             <Image className="NavLogo" src={Logotype} />
