@@ -8,21 +8,13 @@ nav {
   margin: 50px 0px 25px 70px;
   justify-content: space-between;
 
-  /*
-    @media (max-width: 1023px) {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: space-evenly;
-        margin: 0 0 0 0;
-        width: 865.6px;
-        background-color: #0066CC;
-    } */
-
   .NavLogo {
     width: 96px;
     height: auto;
+  }
+
+  .NavHamburger {
+    display: none;
   }
 
   .NavContent {
@@ -48,15 +40,6 @@ nav {
       border-left: 5px solid #fdbd15;
       height: 38px;
       margin: 0 10px 0 0;
-
-      /*
-            @media (max-width: 1023px) {
-                border-left: 0;
-                border-top: 2px solid #FDBD15;
-                height: 0;
-                width: 128px;
-                margin: 0 0 10px 0;
-            } */
     }
 
     .NavIcons {
@@ -69,16 +52,46 @@ nav {
       .NavLink {
         padding: 8px;
 
-        img {
-          width: 28px;
-          height: 28px;
+        &:nth-child(1) {
+          svg {
+            &:hover {
+              color: #313131;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          svg {
+            &:hover {
+              color: #e02975;
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          svg {
+            &:hover {
+              color: #0066cc;
+            }
+          }
+        }
+
+        svg {
+          width: 30px;
+          height: 30px;
+          color: #fdbd15;
+          transition: 0.4s;
+
+          &:hover {
+            transition: 0.4s;
+          }
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 832px) {
+@media screen and (max-width: 837px) {
   nav {
     position: relative;
   }
@@ -104,18 +117,17 @@ nav {
       }
 
       .NavHamburger {
+        display: flex;
+        width: 35px;
+        height: 35px;
+        color: #fdbd15;
         cursor: pointer;
-
-        .line {
-          width: 30px;
-          height: 2.5px;
-          background: #fdbd15;
-          margin: 5px;
-        }
       }
     }
 
-    .NavContent {
+    .NavContent.shown {
+      width: 100%;
+      margin-top: -5px;
       display: flex;
       flex-flow: column wrap;
       list-style-type: none;
@@ -126,14 +138,9 @@ nav {
       margin-right: 0px;
       padding: 90px 0px;
       height: 100vh;
-      clip-path: circle(0px at 90% -10%);
-      -webkit-clip-path: circle(0px at 90% -10%);
-      transition: all 1.3s ease-out;
-
-      .NavContent.open {
-        clip-path: circle(3000px at 90% -10%);
-        -webkit-clip-path: circle(3000px at 90% -10%);
-      }
+      clip-path: circle(3000px at 90% -10%);
+      -webkit-clip-path: circle(2000px at 100% -50%);
+      transition: all 0.6s ease-out;
 
       .NavItem {
         padding: 16px 0px;
@@ -162,6 +169,14 @@ nav {
         align-items: center;
         margin: 0 0px 0 0;
       }
+    }
+
+    .NavContent.hidden {
+      display: flex;
+      flex-flow: column wrap;
+      clip-path: circle(0px at 90% 10%);
+      -webkit-clip-path: circle(0px at 90% -10%);
+      transition: all 0s ease-out;
     }
   }
 }
