@@ -32,6 +32,7 @@
     .CardDescription {
       font-size: 16px;
       color: #2f3537;
+      text-align: center;
     }
 
     .CardTags {
@@ -41,8 +42,10 @@
       padding: 10px 0;
 
       li {
-        padding-right: 20px;
+        padding: 0 5px;
         font-size: 14px;
+        text-align: center;
+
 
         &.highlighted {
           font-weight: bold;
@@ -58,13 +61,14 @@
 
       li {
         padding: 5px 20px;
-        align-self: baseline;
 
         i {
           color: #0073e6;
           font-size: 32px;
           cursor: pointer;
           font-weight: lighter;
+        text-align: center;
+
         }
 
       }
