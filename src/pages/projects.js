@@ -1,4 +1,5 @@
 import React from 'react'
+import {CgMouse} from 'react-icons/cg'
 
 import Layout from '../components/Layout'
 import projects from '../data/projects.json'
@@ -8,7 +9,6 @@ import proBackPack from '../images/projects/probackpack-project.svg'
 import chick4all from '../images/projects/chick4all-project.svg'
 import cinemaPremium from '../images/projects/cinemapremium-project.svg'
 import dayToDay from '../images/projects/daytoday-project.svg'
-
 
 
 import "./projects.scss"
@@ -25,6 +25,8 @@ export default function Projects() {
         <h4>Here are a few personal projects
           I have worked since started.
         </h4>
+        <CgMouse />
+        <p>Scroll down to explore more</p>
       </div>
 
       <div className="Projects">
