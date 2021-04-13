@@ -5,7 +5,6 @@ import { Image } from "react-bootstrap"
 import "./NavBar.scss"
 import Logotype from "../images/logotype.svg"
 
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'

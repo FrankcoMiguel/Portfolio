@@ -1,122 +1,99 @@
-.PortfolioContainer {
-  margin: 150px 0px 0 80px !important;
-  overflow: hidden;
-
-  .PortfolioRow {
-    display: flex;
-    justify-content: space-between !important;
-    padding: 0 0 0 80px;
-
-    .PortfolioTitle {
-      display: flex !important;
-      flex-flow: column wrap;
-      justify-content: flex-start;
-      margin: 260px 0px 0 0;
-
-      h1 {
-        font-size: 38px;
-        font-weight: bold;
-        margin: 0 0 16px 0 !important;
-        color: #fdbd15;
-      }
-
-      p {
-        font-size: 22px;
-        color: #2f3537;
-      }
-    }
-
-    .PortfolioCarousel {
-      display: flex;
-      justify-content: center;
-      margin: 70px 0 0 0;
-      padding: 0;
-    }
-  }
+body {
+  overflow-x: hidden !important;
 }
 
-@media screen and (max-width: 1600px) {
-  .PortfolioContainer {
-    margin: 100px 0px 0 80px !important;
-    overflow: hidden;
+.TopMessage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 350px;
+  margin-bottom: 200px;
 
-    .PortfolioRow {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between !important;
-      padding: 0 0 0 0px;
+  h1 {
+    color: #1D60AA;
+    margin-bottom: 35px;
+  }
 
-      .PortfolioTitle {
-        display: flex !important;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 130px 0 0 0;
+  h4 {
+    width: 440px;
+    text-align: center;
+  }
 
-        h1 {
-          font-size: 38px;
-          font-weight: bold;
-          margin: 0 0 16px 0 !important;
-          color: #fdbd15;
-        }
+  @media screen and (max-width: 650px) and (min-width: 425px) {
+  
+    margin-top: 280px;
 
-        p {
-          font-size: 22px;
-          color: #2f3537;
-        }
-      }
+    h1 {
+      font-size: 32px;
+    }
 
-      .PortfolioCarousel {
-        display: flex;
-        justify-content: center;
-        margin: 100px 0 0 0;
-        padding: 0;
-      }
+    h4 {
+      font-size: 20px;
+      width: 420px;
     }
   }
-}
 
-@media screen and (max-width: 1229px) {
-  .PortfolioContainer {
-    margin: 100px 0px 0 40px !important;
-    overflow: hidden;
-  }
-}
+  @media screen and (max-width: 425px) and (min-width: 380px) {
 
-@media screen and (max-width: 1189px) {
-  .PortfolioContainer {
-    margin: 20px 0px 0 40px !important;
-    overflow: hidden;
+    margin-top: 265px;
 
-    .PortfolioRow {
-      display: flex;
-      padding: 0 0 0 0;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-
-      .PortfolioTitle {
-        display: flex !important;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin: 260px 0px 0 0;
-
-        h1 {
-          font-size: 38px;
-          font-weight: bold;
-          margin: 0 0 16px 0 !important;
-          color: #fdbd15;
-        }
-
-        p {
-          font-size: 22px;
-          color: #2f3537;
-        }
-      }
-
-      .PortfolioCarousel {
-      }
+    h1 {
+      font-size: 30px;
     }
+
+    h4 {
+      font-size: 18px;
+      width: 380px;
+    }
+
   }
+
+  @media screen and (max-width: 380px) {
+
+    margin-top: 265px;
+
+    h1 {
+      font-size: 26px;
+    }
+
+    h4 {
+      font-size: 14px;
+      width: 260px;
+    }
+
+  }
+
+}
+
+.Projects {
+
+  width: 100vw;
+  padding-top: 500px;
+  padding-bottom: 200px;
+  background-image: url('../images/projects/waves/wave-lg.svg');
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media screen and (max-width: 1330px) and (min-width: 896px) {
+
+    grid-template-columns: auto auto;
+
+  }
+
+  @media screen and (max-width: 896px) {
+
+    padding-top: 350px;
+    grid-template-columns: auto;
+  background-image: url('../images/projects/waves/wave-sm.svg');
+
+
+  }
+
+  
+
 }

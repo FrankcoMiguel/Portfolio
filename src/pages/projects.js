@@ -1,23 +1,41 @@
-import React from "react"
-import Layout from "../components/Layout"
-import { Container, Row, Col, Image } from "react-bootstrap"
-import ProjectCarousel from "../components/ProjectCarousel"
+import React from 'react'
+
+import Layout from '../components/Layout'
+import projects from '../data/projects.json'
+import ProjectCard from '../components/ProjectCard'
+
+import proBackPack from '../images/projects/probackpack-project.svg'
+import chick4all from '../images/projects/chick4all-project.svg'
+import cinemaPremium from '../images/projects/cinemapremium-project.svg'
+import dayToDay from '../images/projects/daytoday-project.svg'
+
+
 
 import "./projects.scss"
 
 export default function Projects() {
+
+  const logotypes = [proBackPack, chick4all, cinemaPremium, dayToDay]
+
   return (
-    <Layout title="Frank's Projects">
-      <div className="PortfolioContainer">
-        <div className="PortfolioRow">
-          <div className="PortfolioTitle">
-            <h1>Personal Projects</h1>
-            <p>Here are few personal projects I’ve worked on recently.</p>
-          </div>
-          <div className="PortfolioCarousel">
-            <ProjectCarousel />
-          </div>
-        </div>
+    <Layout title="Projects">
+
+      <div className="TopMessage">
+        <h1>Personal Projects</h1>
+        <h4>Here are a few personal projects
+          I have worked since started.
+        </h4>
+      </div>
+
+      <div className="Projects">
+      {projects[0].items.map(p => (
+        <ProjectCard 
+              logo={logotypes[p.id - 1]}
+              title={p.name}
+              description={p.description}
+              tags={p.tags}
+              icons={p.toolsUsed}/>
+      ))}
       </div>
     </Layout>
   )

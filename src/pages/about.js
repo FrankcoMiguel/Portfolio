@@ -1,24 +1,8 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { Container, Row, Col, Image } from "react-bootstrap"
-import AboutPicture from "../images/about-pic.jpg"
 
 // Skill Icons
-import html5 from "../images/html-skill.svg"
-import sass from "../images/sass-skill.svg"
-import bootstrap from "../images/bootstrap-skill.svg"
-import js from "../images/js-skill.svg"
-import react from "../images/react-skill.svg"
-import gatsby from "../images/gatsby-skill.svg"
-import mssql from "../images/mssql-skill.svg"
-import mysql from "../images/mysql-skill.svg"
-import oracle from "../images/oracle-skill.svg"
-import java from "../images/java-skill.svg"
-import dotnet from "../images/dotnet-skill.svg"
-import asana from "../images/asana-skill.svg"
-import office365 from "../images/office365-skill.svg"
-import github from "../images/github-skill.svg"
-import python from "../images/python-skill.svg"
 
 import "./about.scss"
 
@@ -29,7 +13,6 @@ export default function About() {
         <div className="AboutRow">
           <div className="ImageContent">
             <div className="ImageContainer">
-              <Image src={AboutPicture} />
             </div>
           </div>
           <Col className="AboutContent">

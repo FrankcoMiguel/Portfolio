@@ -1,34 +1,31 @@
 import React from "react"
-import { Container, Image } from "react-bootstrap"
+
+import Tippy from '@tippyjs/react'
+import 'tippy.js/dist/tippy.css'
+
 import "./ProjectCard.scss"
 
-const ProjectCard = props => {
+const ProjectCard = ({logo, title, description, tags = [], icons = []}) => {
   return (
-    <Container className="CardContainer">
-      <div className="CardImageContainer">
-        <Image src={props.logotype} />
-      </div>
+    <div className="CardContainer">
+      <img className="CardLogo" src={logo} />
       <div className="CardContent">
-        <h2 className="CardTitle">{props.title}</h2>
-        <p className="CardDetail">{props.detail}</p>
+        <h2 className="CardTitle">{title}</h2>
+        <p className="CardDescription">{description}</p>
         <ul className="CardTags">
-          <li>{props.firstTag}</li>
-          <li>{props.secondTag}</li>
-          <li>{props.thirdTag}</li>
+          {tags.map(t => (
+            <li className={t.highlighted ? 'highlighted' : ''} id={t.id}>{t.name}</li>
+          ))}
         </ul>
-        <ul className="CardTechnologies">
-          <li>
-            <Image src={props.firstTechnology} />
-          </li>
-          <li>
-            <Image src={props.secondTechnology} />
-          </li>
-          <li>
-            <Image src={props.thirdTechnology} />
-          </li>
+        <ul className="CardIcons">
+          {icons.map(i => (
+            <Tippy id={i.id} content={i.name} >
+              <li><i className={i.path}></i></li>
+            </Tippy>
+          ))}
         </ul>
       </div>
-    </Container>
+    </div>
   )
 }
 

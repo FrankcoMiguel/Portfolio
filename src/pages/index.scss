@@ -133,7 +133,7 @@ body {
 
   }
 
-  @media screen and (max-width: 400px) and (min-width: 320px) {
+  @media screen and (max-width: 400px) {
     
     width: 100vw;
     flex-flow: column wrap;
@@ -188,7 +188,7 @@ body {
   width: 100vw;
   height: 1150px;
   padding-top: 200px;
-  background-image: url('../images/wave.svg');
+  background-image: url('../images/index/waves/wave-lg.svg');
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,7 +214,7 @@ body {
   @media screen and (max-width: 1065px) and (min-width: 632px) {
 
     height: 1400px;
-    background-image: url('../images/wave-md.svg') !important;
+    background-image: url('../images/index/waves/wave-md.svg') !important;
     padding-top: 100px;
 
 
@@ -239,7 +239,7 @@ body {
   @media screen and (max-width:  632px) and (min-width: 495px) {
 
     height: 1500px;
-    background-image: url('../images/wave-sm.svg') !important;
+    background-image: url('../images/index/waves/wave-sm.svg') !important;
     padding-top: 100px;
 
 
@@ -261,10 +261,10 @@ body {
 
   }
 
-  @media screen and (max-width:  495px) and (min-width: 320px) {
+  @media screen and (max-width:  495px) {
 
     height: 1500px;
-    background-image: url('../images/wave-xs.svg') !important;
+    background-image: url('../images/index/waves/wave-xs.svg') !important;
     padding-top: 100px;
 
 
@@ -487,7 +487,7 @@ body {
     }
   }
 
-  @media screen and (max-width: 470px) and (min-width: 320px) {
+  @media screen and (max-width: 470px) {
     display: flex;
     flex-direction: column !important;
     justify-content: center;

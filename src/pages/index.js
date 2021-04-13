@@ -1,6 +1,6 @@
 import React from "react"
 import { Form, Button } from 'react-bootstrap'
-import Profile from '../images/about-picture.jpg'
+import Profile from '../images/index/about-picture.jpg'
 
 import Layout from '../components/Layout'
 import Skill from '../components/Skill'
