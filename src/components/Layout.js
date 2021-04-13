@@ -1,20 +1,20 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
-import NavigationBar from "./Navbar"
+import Navbar from "./Navbar"
 import { Helmet } from "react-helmet"
 import "./Layout.scss"
 
-const Layout = props => {
+const Layout = ({children, title}) => {
   return (
-    <div className="Body">
+    <div>
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{props.title}</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        <title>{title}</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       </Helmet>
-      <NavigationBar />
-      {props.children}
+      <Navbar />
+      {children}
     </div>
   )
 }

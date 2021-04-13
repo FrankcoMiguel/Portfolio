@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import { Row, Image } from "react-bootstrap"
+import { Image } from "react-bootstrap"
 
-import "./Navbar.scss"
+import "./NavBar.scss"
 import Logotype from "../images/logotype.svg"
 
 
@@ -27,22 +27,20 @@ function NavigationBar() {
 
   return (
     <nav>
-      <Row className={`NavContainer ${menu ? 'open' : ''}`}>
+      <div className={`NavContainer ${menu ? 'open' : ''}`}>
         <div className="NavTop">
-          <Link to="/">
-            <Image className="NavLogo" src={Logotype} />
-          </Link>
+          <Image className="NavLogo" src={Logotype} />
           <FontAwesomeIcon className="NavHamburger" icon={menu ? faTimes : faBars} onClick={toggle} />
         </div>
         <ul className={`NavContent ${menu ? 'shown' : 'hidden'}`}>
           <li className="NavItem">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="NavItem">
             <Link to="/about">About me</Link>
           </li>
           <li className="NavItem">
-            <Link to="/portfolio">Projects</Link>
-          </li>
-          <li className="NavItem">
-            <Link to="/gallery">Gallery</Link>
+            <Link to="/projects">Projects</Link>
           </li>
           <li className="NavDivider"></li>
           <div className="NavIcons">
@@ -63,7 +61,7 @@ function NavigationBar() {
             </li>
           </div>
         </ul>
-      </Row>
+      </div>
     </nav>
   )
 }

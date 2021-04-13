@@ -1,0 +1,176 @@
+[
+    {
+        "id": 1,
+        "name": "Skills",
+        "items": [
+            {
+                "id": 1,
+                "name": "Web Design",
+                "percentage": 85,
+                "icons": [
+                    {
+                        "id": 1,
+                        "name":"HTML 5",
+                        "path": "devicon-html5-plain",
+                        "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Sass",
+                        "path": "devicon-sass-original",
+                        "moreInfo": "https://sass-lang.com/documentation"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Bootstrap",
+                        "path": "devicon-bootstrap-plain",
+                        "moreInfo": "https://getbootstrap.com/docs/4.1/getting-started/introduction/"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Backend",
+                "percentage": 66,
+                "icons": [
+                    {
+                        "id": 1,
+                        "name": "Java",
+                        "path": "devicon-java-plain",
+                        "moreInfo": "https://docs.oracle.com/javase/7/docs/api/"
+                    },
+                    {
+                        "id": 2,
+                        "name":"C Sharp",
+                        "path": "devicon-csharp-plain",
+                        "moreInfo": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "DotNet Framework Core",
+                        "path": "devicon-dotnetcore-plain",
+                        "moreInfo": "https://docs.microsoft.com/en-us/dotnet/"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Frontend",
+                "percentage": 76,
+                "icons": [
+                    {
+                        "id": 1,
+                        "name": "JavaScript ECMAScript",
+                        "path": "devicon-javascript-plain",
+                        "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                    },
+                    {
+                        "id": 2,
+                        "name": "React",
+                        "path": "devicon-react-original",
+                        "moreInfo": "https://reactjs.org/docs/getting-started.html"
+                    },
+                    {
+                        "id": 3,
+                        "name": "GatsbyJS",
+                        "path": "devicon-gatsby-plain",
+                        "moreInfo": "https://www.gatsbyjs.com/get-started/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "NextJS",
+                        "path": "devicon-nextjs-original",
+                        "moreInfo": "https://nextjs.org/docs/getting-started"
+                    },
+                    {
+                        "id": 5,
+                        "name": "GraphQL",
+                        "path": "devicon-graphql-plain",
+                        "moreInfo": "https://graphql.org/learn/"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Databases",
+                "percentage": 92,
+                "icons": [
+                    {
+                        "id": 1,
+                        "name": "Microsoft SQL Server",
+                        "path": "devicon-microsoftsqlserver-plain",
+                        "moreInfo": "https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Oracle PL/SQL",
+                        "path": "devicon-oracle-original",
+                        "moreInfo": "https://www.oracle.com/database/technologies/appdev/plsql.html"
+                    },
+                    {
+                        "id": 3,
+                        "name": "MongoDB",
+                        "path": "devicon-mongodb-plain",
+                        "moreInfo": "https://docs.mongodb.com/"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "name": "Mobile",
+                "percentage": 42,
+                "icons": [
+                    {
+                        "id": 1,
+                        "name": "Android Studio",
+                        "path": "devicon-android-plain",
+                        "moreInfo": "https://developer.android.com/docs"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Swift",
+                        "path": "devicon-swift-plain",
+                        "moreInfo": "https://swift.org/documentation/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Adobe Xd",
+                        "path": "devicon-xd-plain",
+                        "moreInfo": "https://www.adobe.io/xd/uxp/"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "name": "Other",
+                "percentage": 76,
+                "icons": [
+                    {
+                        "id": 1,
+                        "name": "Python 3x",
+                        "path": "devicon-python-plain",
+                        "moreInfo": "https://docs.python.org/3/"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Node Package Manager",
+                        "path": "devicon-npm-original-wordmark",
+                        "moreInfo": "https://docs.npmjs.com/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Webpack",
+                        "path": "devicon-webpack-plain",
+                        "moreInfo": "https://devdocs.io/webpack~4/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Spring Framework",
+                        "path": "devicon-spring-plain",
+                        "moreInfo": "https://docs.spring.io/spring-framework/docs/current/reference/html/"
+                    }
+                ]
+            }
+        ]
+    }
+]

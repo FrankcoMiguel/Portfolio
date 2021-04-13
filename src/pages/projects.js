@@ -3,9 +3,9 @@ import Layout from "../components/Layout"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import ProjectCarousel from "../components/ProjectCarousel"
 
-import "./portfolio.scss"
+import "./projects.scss"
 
-export default function Portfolio() {
+export default function Projects() {
   return (
     <Layout title="Frank's Projects">
       <div className="PortfolioContainer">

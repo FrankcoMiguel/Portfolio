@@ -1,12 +1,17 @@
 nav {
   position: fixed;
-  width: 100%;
+  width: 100vw;
+  top: 0;
   background-color: #fff;
+  height: 140px;
 }
 
 .NavContainer {
-  margin: 50px 0px 25px 70px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0px 70px 40px 70px;
+  height: 140px;
 
   .NavLogo {
     width: 96px;
@@ -22,22 +27,23 @@ nav {
     list-style-type: none;
     justify-content: center;
     align-items: center;
-    margin: 0 60px 0 0;
+    margin: 0;
+    padding: 0;
 
     .NavItem {
-      padding: 16px 18px;
+      padding: 15px 30px;
 
       a {
-        font-size: 21px;
+        font-size: 20px;
         text-decoration: none;
-        color: #2f3537;
-        font-family: Helvetica;
-        font-weight: 550;
+        color: #2D2D2D;
+        font-family: 'Segoe UI';
+        font-weight: 440;
       }
     }
 
     .NavDivider {
-      border-left: 5px solid #fdbd15;
+      border-left: 6px solid #1D60AA;
       height: 38px;
       margin: 0 10px 0 0;
     }
@@ -45,12 +51,12 @@ nav {
     .NavIcons {
       display: flex;
       list-style-type: none;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      margin: 0 60px 0 0;
+      
 
       .NavLink {
-        padding: 8px;
+        padding: 0px 16px;
 
         &:nth-child(1) {
           svg {
@@ -79,7 +85,7 @@ nav {
         svg {
           width: 30px;
           height: 30px;
-          color: #fdbd15;
+          color: #1D60AA;
           transition: 0.4s;
 
           &:hover {
@@ -93,7 +99,8 @@ nav {
 
 @media screen and (max-width: 837px) {
   nav {
-    position: relative;
+    position: fixed;
+    top: 0;
   }
 
   .NavContainer {
@@ -103,40 +110,40 @@ nav {
     justify-content: flex-start;
     margin: 0px 0px 0px 0px !important;
     padding: 0px 0px 0 0px;
-    width: 100%;
+    width: 100vw;
     // transition: all 0.3s ease-out;
 
     .NavTop {
+      width: 100vw;
       display: flex;
       align-items: center;
       justify-content: space-between;
       background-color: #ffffff;
-      padding: 60px 90px 30px 90px;
+      padding: 50px 60px;
 
       .NavLogo {
+        width: 72px;
+        height: auto;
       }
 
       .NavHamburger {
         display: flex;
-        width: 35px;
-        height: 35px;
-        color: #fdbd15;
+        width: 25px;
+        height: 25px;
+        color: #1D60AA;
         cursor: pointer;
       }
     }
 
     .NavContent.shown {
-      width: 100%;
-      margin-top: -5px;
+      width: 100vw;
       display: flex;
       flex-flow: column wrap;
       list-style-type: none;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       background-color: #ffffff;
-      padding: 0px;
-      margin-right: 0px;
-      padding: 90px 0px;
+      padding-top: 40px;
       height: 100vh;
       clip-path: circle(3000px at 90% -10%);
       -webkit-clip-path: circle(2000px at 100% -50%);
@@ -144,30 +151,21 @@ nav {
 
       .NavItem {
         padding: 16px 0px;
-
-        a {
-          font-size: 35px;
-          text-decoration: none;
-          color: #2f3537;
-          font-family: Helvetica;
-          font-weight: 550;
-        }
       }
 
       .NavDivider {
-        border-left: 0px solid #fdbd15;
-        border-top: 5px solid #fdbd15;
+        border-left: 0px solid #0066cc;
+        border-top: 5px solid #0066cc;
         width: 160px;
         height: 5px;
-        margin: 20px 0px 20px 0;
+        margin: 20px 0px 40px 0;
       }
 
       .NavIcons {
         display: flex;
         list-style-type: none;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        margin: 0 0px 0 0;
       }
     }
 
@@ -180,7 +178,7 @@ nav {
     }
 
     &.open {
-      height: 100%;
+      height: 100vh;
       background-color: #ffffff;
       display: flex;
       position: fixed;
@@ -188,7 +186,7 @@ nav {
       justify-content: flex-start;
       margin: 0px 0px 0px 0px !important;
       padding: 0px 0px 0 0px;
-      width: 100%;
+      width: 100vw;
       // transition: all 0.3s ease-out;
     }
   }

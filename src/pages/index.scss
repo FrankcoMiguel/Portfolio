@@ -1,354 +1,565 @@
-.LandingPage {
-  .container {
-    padding: 0px;
-    margin-top: 220px;
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+body {
+  overflow-x: hidden !important;
+}
 
-    .LandingContainer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+.Presentation {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+  margin-bottom: 200px;
 
-      .LandingPicture {
-        width: 42%;
-        height: auto;
-        margin-left: 40px;
 
-        img {
-          width: 100%;
-          height: auto;
-          border-radius: 100%;
-        }
-      }
-
-      .LandingContent {
-        list-style-type: none;
-        margin: 0;
-        padding: 10px;
-        margin-left: 70px;
-
-        li {
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 30px;
-
-          //Hello! I am
-          &:nth-child(1) {
-            font-size: 45px;
-            font-weight: bold;
-          }
-
-          // Frank Miguel
-          &:nth-child(2) {
-            font-size: 55px;
-            font-weight: bold;
-            color: #0066cc;
-          }
-
-          // Full-Stack Developer
-          &:nth-child(3) {
-            font-size: 36px;
-            color: #fdbd15;
-          }
-        }
-      }
-    }
+  img {
+    width: 320px;
+    height: auto;
+    border-radius: 100%;
+    margin-right: 100px;
   }
 
-  .wave {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .BottomAbout {
-    width: 100%;
-    margin: 0px 0 0px 0 !important;
-    padding: 120px 0 150px 0 !important;
+  .Greeting {
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
-    background-color: #0066cc;
+    justify-content: center;
+    align-items: flex-start;
 
     h1 {
-      text-align: center;
-      font-size: 40px;
-      font-weight: bold;
-      color: #ffffff;
+      margin-bottom: 60px;
     }
 
-    .SkillsContent {
-      margin: 100px;
-      justify-content: center;
+    h3 {
+      color: #1D60AA;
     }
+
+    p {
+      width: 380px;
+      color: #2D2D2D;
+      font-size: 20px;
+      font-weight: 550;
+
+    }
+
   }
 
-  .ContactContainer {
-    .ContactRow {
-      display: flex;
-      justify-content: space-between;
-      padding: 100px 200px 0 200px;
-
-      .ContactInfo {
-        display: flex !important;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 120px 20px;
-
-        h1 {
-          font-size: 38px;
-          font-weight: bold;
-          margin: 0 0 3px 8px;
-          color: #0066cc;
-        }
-
-        h2 {
-          font-size: 35px;
-          font-weight: bold;
-          margin: 0 0 16px 0;
-        }
-
-        p {
-          font-size: 20px;
-          margin: 16px 0 16px 0;
-          color: #2f3537;
-        }
-
-        .ContactList {
-          display: flex;
-          flex-flow: column wrap;
-          align-items: flex-start;
-          list-style-type: none;
-          margin-top: 20px;
-          padding-left: 0;
-
-          li {
-            font-weight: bold;
-            color: #2f3537;
-            font-size: 18px;
-          }
-
-          .ContactItem {
-            display: flex;
-            justify-content: baseline;
-            align-items: flex-start;
-            margin-top: 25px;
-            font-weight: normal;
-            color: #5f6365;
-            font-weight: 550;
-            font-size: 16px;
-
-            .phone {
-              display: inline;
-            }
-          }
-        }
-      }
-
-      .ContactMessage {
-        width: 100%;
-        display: flex;
-        border-radius: 15px;
-        flex-direction: column;
-        padding: 70px 120px 70px 70px;
-        margin-top: 65px;
-
-        .form-group {
-          .form-control {
-            border-radius: 0;
-            padding: 15px;
-            font-weight: 540;
-          }
-        }
-
-        button {
-          border-radius: 0;
-          padding: 10px 20px;
-          font-weight: 550;
-          background-color: #0066cc;
-          color: #fff;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .LandingPage {
-    .container {
-      justify-content: center;
-      margin-top: 220px;
-
-      .LandingContainer {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-
-        .LandingPicture {
-          width: 70%;
-          height: auto;
-          margin-left: 0px;
-
-          img {
-            width: 100%;
-            height: auto;
-            border-radius: 100%;
-          }
-        }
-
-        .LandingContent {
-          list-style-type: none;
-          margin: 0;
-          margin-top: 30px;
-          margin-left: 0px;
-          padding: 10px;
-
-          li {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 30px;
-            text-align: center;
-
-            //Hello! I am
-            &:nth-child(1) {
-              font-size: 45px;
-              font-weight: bold;
-            }
-
-            // Frank Miguel
-            &:nth-child(2) {
-              font-size: 55px;
-              font-weight: bold;
-              color: #0066cc;
-            }
-
-            // Full-Stack Developer
-            &:nth-child(3) {
-              font-size: 36px;
-              color: #fdbd15;
-            }
-          }
-        }
-      }
+  @media screen and (max-width: 950px) and (min-width: 495px) {
+    
+    body {
+      overflow-x: hidden !important;
     }
 
-    .wave {
-      display: flex;
-      justify-content: flex-end;
-    }
+    width: 100vw;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 
-    .BottomAbout {
-      width: 100%;
-      margin: 0px 0 0px 0 !important;
-      padding: 120px 0 150px 0 !important;
+    img {
+      width: 320px;
+      height: auto;
+      border-radius: 100%;
+      margin-right: 0;
+    }
+  
+    .Greeting {
       display: flex;
       flex-flow: column wrap;
+      justify-content: center;
       align-items: center;
-      background-color: #0066cc;
+      padding-top: 40px;
+  
+      h1 {
+        margin-bottom: 60px;
+      }
+  
+      h3 {
+        font-size: 24px;
+        color: #1D60AA;
+      }
+  
+      p {
+        width: 380px;
+        color: #2D2D2D;
+        font-size: 20px;
+        font-weight: 550;
+        text-align: center;
+  
+      }
+  
+    }
+
+  }
+
+  @media screen and (max-width: 495px) and (min-width: 400px) {
+    
+    width: 100vw;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 240px;
+      height: auto;
+      border-radius: 100%;
+      margin-right: 0;
+    }
+  
+    .Greeting {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px;
+  
+      h1 {
+        font-size: 32px;
+        margin-bottom: 60px;
+      }
+  
+      h3 {
+        font-size: 22px;
+        color: #1D60AA;
+      }
+  
+      p {
+        width: 380px;
+        color: #2D2D2D;
+        font-size: 18px;
+        font-weight: 550;
+        text-align: center;
+  
+      }
+  
+    }
+
+  }
+
+  @media screen and (max-width: 400px) and (min-width: 320px) {
+    
+    width: 100vw;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 220px;
+      height: auto;
+      border-radius: 100%;
+      margin-right: 0;
+    }
+  
+    .Greeting {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px;
+
+      h4 {
+        font-size: 18px;
+      }
+  
+      h1 {
+        font-size: 25px;
+        margin-bottom: 60px;
+      }
+  
+      h3 {
+        font-size: 20px;
+        color: #1D60AA;
+      }
+  
+      p {
+        width: 250px;
+        color: #2D2D2D;
+        font-size: 18px;
+        font-weight: 550;
+        text-align: center;
+  
+      }
+  
+    }
+
+  }
+
+}
+
+
+
+
+.Skills {
+  width: 100vw;
+  height: 1150px;
+  padding-top: 200px;
+  background-image: url('../images/wave.svg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .SkillsContent {
+
+    h1 {
+      color: #ffffff;
+      font-family: 'Segoe UI';
+      font-size: 45px;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    .SkillsGrid {
+      display: grid;
+      grid-template-columns: auto auto;
+
+    }
+
+  }
+
+  @media screen and (max-width: 1065px) and (min-width: 632px) {
+
+    height: 1400px;
+    background-image: url('../images/wave-md.svg') !important;
+    padding-top: 100px;
+
+
+    .SkillsContent {
+
+      padding-top: 0px;
 
       h1 {
-        text-align: center;
-        font-size: 40px;
-        font-weight: bold;
-        color: #ffffff;
+        font-size: 35px;
+        margin-bottom: 60px;
       }
 
-      .SkillsContent {
-        margin: 20px;
-        justify-content: center;
+      .SkillsGrid {
+        display: grid;
+        grid-template-columns: auto;
+      }
+
+    }
+
+  }
+
+  @media screen and (max-width:  632px) and (min-width: 495px) {
+
+    height: 1500px;
+    background-image: url('../images/wave-sm.svg') !important;
+    padding-top: 100px;
+
+
+    .SkillsContent {
+
+      padding-top: 0px;
+
+      h1 {
+        font-size: 35px;
+        margin-bottom: 60px;
+      }
+
+      .SkillsGrid {
+        display: grid;
+        grid-template-columns: auto;
+      }
+
+    }
+
+  }
+
+  @media screen and (max-width:  495px) and (min-width: 320px) {
+
+    height: 1500px;
+    background-image: url('../images/wave-xs.svg') !important;
+    padding-top: 100px;
+
+
+    .SkillsContent {
+
+      padding-top: 0px;
+
+      h1 {
+        font-size: 28px;
+        margin-bottom: 40px;
+      }
+
+      .SkillsGrid {
+        display: grid;
+        grid-template-columns: auto;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+.Contact {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 150px 0px 100px 0px;
+
+  .ContactMessage {
+
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      color: #1D60AA;
+    }
+
+    h3 {
+      font-weight: bold;
+      margin-bottom: 45px;
+    }
+
+    p {
+      width: 420px;
+      font-size: 21px;
+    }
+
+    .Quote {
+      width: 300px;
+      display: flex;
+      flex-flow: column wrap;
+      margin-top: 80px;
+  
+      q {
+        font-weight: 550;
+      }
+  
+      i {
+        padding-top: 10px;
+        text-align: end;
       }
     }
 
-    .ContactContainer {
-      .ContactRow {
+  }
+
+  .ContactForm {
+
+    width: 35vw;
+  
+    .form-group {
+      .form-control {
+        border-radius: 0;
+        padding: 15px;
+        font-weight: 540;
+      }
+    }
+      
+    button {
+      border-radius: 0;
+      padding: 10px 20px;
+      font-weight: 550;
+      background-color: #0066cc;
+      color: #fff;
+    }
+  }
+
+  @media screen and (max-width: 1025px) and (min-width: 924px) {
+
+    width: 100vw;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  
+    .ContactMessage {
+  
+      h1 {
+        font-size: 35px;
+        font-weight: bold;
+        color: #1D60AA;
+      }
+  
+      h3 {
+        font-weight: bold;
+        margin-bottom: 45px;
+      }
+  
+      p {
+        width: 360px;
+        font-size: 18px;
+      }
+  
+      .Quote {
+        width: 300px;
         display: flex;
-        justify-content: space-between;
-        padding: 60px 60px 0px 60px;
-
-        .ContactInfo {
-          width: 80%;
-          display: flex !important;
-          flex-direction: column;
-          align-items: flex-start;
-          margin: 120px 20px;
-
-          h1 {
-            font-size: 34px;
-            font-weight: bold;
-            margin: 0 0 3px 8px;
-            color: #0066cc;
-          }
-
-          h2 {
-            font-size: 30px;
-            font-weight: bold;
-            margin: 0 0 16px 0;
-          }
-
-          p {
-            font-size: 18px;
-            margin: 16px 0 16px 0;
-            width: 80%;
-            color: #2f3537;
-          }
-
-          .ContactList {
-            display: flex;
-            flex-flow: column wrap;
-            align-items: flex-start;
-            list-style-type: none;
-            margin-top: 20px;
-            padding-left: 0;
-
-            li {
-              font-weight: bold;
-              color: #2f3537;
-              font-size: 16px;
-            }
-
-            .ContactItem {
-              display: flex;
-              justify-content: baseline;
-              align-items: flex-start;
-              margin-top: 25px;
-              font-weight: normal;
-              color: #5f6365;
-              font-weight: 550;
-              font-size: 16px;
-
-              .phone {
-                display: inline;
-              }
-            }
-          }
+        flex-flow: column wrap;
+        margin-top: 80px;
+    
+        q {
+          font-weight: 550;
         }
-
-        .ContactMessage {
-          width: 100%;
-          display: flex;
-          border-radius: 15px;
-          flex-direction: column;
-          padding: 70px 0px;
-          margin-top: 65px;
-
-          .form-group {
-            .form-control {
-              border-radius: 0;
-              padding: 15px;
-              font-weight: 540;
-            }
-          }
-
-          button {
-            border-radius: 0;
-            padding: 10px 20px;
-            font-weight: 550;
-            background-color: #0066cc;
-            color: #fff;
-          }
+    
+        i {
+          padding-top: 10px;
+          text-align: end;
         }
+      }
+  
+    }
+  
+    .ContactForm {
+  
+      width: 35vw;
+    
+      .form-group {
+        .form-control {
+          border-radius: 0;
+          padding: 15px;
+          font-weight: 540;
+        }
+      }
+        
+      button {
+        border-radius: 0;
+        padding: 10px 20px;
+        font-weight: 550;
+        background-color: #0066cc;
+        color: #fff;
+      }
+    }
+  }
+
+  @media screen and (max-width: 924px) and (min-width: 470px) {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  
+    .ContactMessage {
+  
+      h1 {
+        font-size: 35px;
+        font-weight: bold;
+        color: #1D60AA;
+      }
+  
+      h3 {
+        font-weight: bold;
+        margin-bottom: 45px;
+      }
+  
+      p {
+        width: 360px;
+        font-size: 18px;
+      }
+  
+      .Quote {
+        width: 300px;
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 30px;
+    
+        q {
+          font-weight: 550;
+        }
+    
+        i {
+          padding-top: 10px;
+          text-align: end;
+        }
+      }
+  
+    }
+  
+    .ContactForm {
+  
+      width: 70vw;
+      margin-top: 80px;
+    
+      .form-group {
+        .form-control {
+          border-radius: 0;
+          padding: 15px;
+          font-weight: 540;
+        }
+      }
+        
+      button {
+        border-radius: 0;
+        padding: 10px 20px;
+        font-weight: 550;
+        background-color: #0066cc;
+        color: #fff;
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 470px) and (min-width: 320px) {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  
+    .ContactMessage {
+  
+      h1 {
+        font-size: 25px;
+        font-weight: bold;
+        color: #1D60AA;
+        text-align: center;
+      }
+  
+      h3 {
+        font-weight: bold;
+        margin-bottom: 45px;
+        font-size: 21px;
+        text-align: center;
+      }
+  
+      p {
+        width: 90vw;
+        font-size: 16px;
+        text-align: center;
+
+      }
+  
+      .Quote {
+        width: 80vw;
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 30px;
+    
+        q {
+          font-weight: 550;
+        }
+    
+        i {
+          padding-top: 10px;
+          text-align: end;
+        }
+      }
+  
+    }
+  
+    .ContactForm {
+  
+      width: 80vw;
+      margin-top: 80px;
+    
+      .form-group {
+        .form-control {
+          border-radius: 0;
+          padding: 15px;
+          font-weight: 540;
+        }
+      }
+        
+      button {
+        border-radius: 0;
+        padding: 10px 20px;
+        font-weight: 550;
+        background-color: #0066cc;
+        color: #fff;
+        margin-bottom: 0px;
       }
     }
   }
 }
+
+
