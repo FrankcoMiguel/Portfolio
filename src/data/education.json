@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "name": "Education",
+        "items": [
+            {
+                "id": 1,
+                "title": "Software Development",
+                "gpa": 3.5,
+                "school": "ITLA",
+                "location": "Dominican Republic",
+                "period": "2017 - 2020",
+                "schoolSpeciality": "classes",
+                "subjects": [
+                    {
+                        "id": 1,
+                        "name": "Data Structures and Algorithms with C++",
+                        "grade": "A"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Programming II - Android Development",
+                        "grade": "A"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Introduction to Programming with Python",
+                        "grade": "A"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Frontend Development",
+                "gpa": 0,
+                "school": "Platzi",
+                "location": "Internet",
+                "period": "2020 - 2022",
+                "schoolSpeciality": "courses",
+                "subjects": [
+                    {
+                        "id": 1,
+                        "name": "JavaScript ES8 - Fundamentals",
+                        "grade": "A+"
+                    },
+                    {
+                        "id": 2,
+                        "name": "React.JS - Professional Hooks Course",
+                        "grade": "B+"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Microsoft .NET Core",
+                        "grade": "A"
+                    }
+                ]
+            }
+        ]
+    }
+]

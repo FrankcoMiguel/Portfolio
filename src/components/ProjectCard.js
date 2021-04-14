@@ -1,13 +1,19 @@
-import React from "react"
-
+import React, { useEffect } from "react"
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 
 import "./ProjectCard.scss"
 
 const ProjectCard = ({logo, title, description, tags = [], icons = []}) => {
+  
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+  },[])
+
   return (
-    <div className="CardContainer">
+    <div data-aos="zoom-out" className="CardContainer">
       <img className="CardLogo" src={logo} />
       <div className="CardContent">
         <h2 className="CardTitle">{title}</h2>

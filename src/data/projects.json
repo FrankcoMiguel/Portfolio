@@ -26,13 +26,13 @@
                 "toolsUsed": [
                     {
                         "id": 1,
-                        "name": "Android Studio",
-                        "path": "devicon-android-plain"
+                        "name": "Java",
+                        "path": "devicon-java-plain"
                     },
                     {
                         "id": 2,
-                        "name": "Java",
-                        "path": "devicon-java-plain"
+                        "name": "Android Studio",
+                        "path": "devicon-android-plain"
                     },
                     {
                         "id": 3,
@@ -65,18 +65,18 @@
                 "toolsUsed": [
                     {
                         "id": 1,
-                        "name": "Visual Studio Code",
-                        "path": "devicon-visualstudio-plain"
-                    },
-                    {
-                        "id": 2,
                         "name": "ReactJS",
                         "path": "devicon-react-original"
                     },
                     {
-                        "id": 3,
+                        "id": 2,
                         "name": "MongoDB",
                         "path": "devicon-mongodb-plain"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Visual Studio Code",
+                        "path": "devicon-visualstudio-plain"
                     }
                 ]
             },
@@ -104,8 +104,8 @@
                 "toolsUsed": [
                     {
                         "id": 1,
-                        "name": "Visual Studio",
-                        "path": "devicon-visualstudio-plain"
+                        "name": "Micrsoft SQL Server",
+                        "path": "devicon-microsoftsqlserver-plain"
                     },
                     {
                         "id": 2,
@@ -114,8 +114,8 @@
                     },
                     {
                         "id": 3,
-                        "name": "Micrsoft SQL Server",
-                        "path": "devicon-microsoftsqlserver-plain"
+                        "name": "Visual Studio",
+                        "path": "devicon-visualstudio-plain"
                     }
                 ]
             },
@@ -143,18 +143,18 @@
                 "toolsUsed": [
                     {
                         "id": 1,
-                        "name": "Intellij IDEA",
-                        "path": "devicon-intellij-plain"
-                    },
-                    {
-                        "id": 2,
                         "name": "JavaFX",
                         "path": "devicon-java-plain"
                     },
                     {
-                        "id": 3,
+                        "id": 2,
                         "name": "CSS3",
                         "path": "devicon-css3-plain"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Intellij IDEA",
+                        "path": "devicon-intellij-plain"
                     }
                 ]
             }

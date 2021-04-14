@@ -1,8 +1,11 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import Navbar from "./Navbar"
 import { Helmet } from "react-helmet"
 import "./Layout.scss"
+
 
 const Layout = ({children, title}) => {
   return (

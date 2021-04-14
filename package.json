@@ -22,6 +22,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@icon/devicons": "^1.8.0-alpha.3",
     "@tippyjs/react": "^4.2.5",
+    "aos": "^2.3.4",
     "bootstrap": "^4.5.0",
     "devicon": "^2.11.0",
     "gatsby": "^2.29.3",

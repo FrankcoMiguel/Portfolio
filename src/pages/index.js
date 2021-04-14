@@ -1,7 +1,8 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Form, Button } from 'react-bootstrap'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import Profile from '../images/index/about-picture.jpg'
-
 import Layout from '../components/Layout'
 import Skill from '../components/Skill'
 
@@ -11,10 +12,15 @@ import landing from '../data/landing.json'
 import "./index.scss"
 
 export default function Home() {
+
+  useEffect(() => {
+    Aos.init({ duration: 1500 })
+  },[])
+
   return (
     <Layout title="Home">
       <div className="Presentation">
-        <img src={Profile} />
+        <img data-aos="zoom-right" src={Profile} />
         <div className="Greeting">
           <h4>Hey there, I am</h4>
           <h1>Frank Miguel Orozco</h1>
@@ -28,7 +34,7 @@ export default function Home() {
           <h1>What I am good at?</h1>
           <div className="SkillsGrid">
           {landing[0].items.map(s => (
-            <Skill id={s.id} 
+            <Skill key={s.id} 
                   title={s.name} 
                   percentage={s.percentage} 
                   icons={s.icons}/>

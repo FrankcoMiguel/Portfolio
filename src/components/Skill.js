@@ -1,19 +1,25 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 import "./Skill.scss"
 
 
-const Skill = ({title, percentage, icons = []}) => {
+const Skill = ({ title, percentage, icons = []}) => {
+
+  useEffect(() => {
+    Aos.init({ duration: 500 })
+  },[])
 
   return (
-    <div className="Skill">
+    <div data-aos="fade-down" className="Skill">
       <div className="BarTop">
         <p className="BarTitle">{title}</p>
         <ul className="BarIcons">
           {icons.map(i => (
-            <Tippy id={i.id} content={i.name} >
+            <Tippy key={i.id} content={i.name} >
               <li>
                 <a href={i.moreInfo} target="_blank"><i className={i.path}></i></a>
               </li>
