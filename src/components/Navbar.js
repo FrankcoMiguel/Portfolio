@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { Image } from "react-bootstrap"
 
-import "./NavBar.scss"
+import "./Navbar.scss"
 import Logotype from "../images/logotype.svg"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
