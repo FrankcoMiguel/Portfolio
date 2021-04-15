@@ -24,10 +24,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    
+
         p {
-            padding: 0 3px;
+            margin-left: 5px;
+            margin-right: 5px;
         }
+
 
         svg {
             height: auto;
@@ -38,8 +40,8 @@
             animation-direction: alternate-reverse;
 
             @keyframes heartEffect {
-                from {width: 6px; height: 6px;}
-                to {width: 14px; height: 14px;}
+                from {width: 9px; height: 9px;}
+                to {width: 17px; height: 17px;}
               }
 
         }
