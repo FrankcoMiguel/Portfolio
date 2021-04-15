@@ -1,0 +1,64 @@
+.Footer {
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    p {
+        font-size: 13px;
+        margin-bottom: 3px;
+        font-weight: 550;
+        color: #312d2a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        p {
+            padding: 0 3px;
+        }
+
+        svg {
+            height: auto;
+            color: #ce2828;  
+            animation-name: heartEffect;
+            animation-duration: 450ms;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+
+            @keyframes heartEffect {
+                from {width: 6px; height: 6px;}
+                to {width: 14px; height: 14px;}
+              }
+
+        }
+
+        a {
+            margin-top: 2px;
+            margin-left: 2px;
+            i {
+                font-size: 20px;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+
+
+
+    }
+
+}
