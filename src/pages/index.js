@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import { Form, Button } from 'react-bootstrap'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import emailjs from 'emailjs-com'
 import Profile from '../images/index/about-picture.jpg'
 import Layout from '../components/Layout'
 import Skill from '../components/Skill'
@@ -16,6 +17,20 @@ export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 1500 })
   },[])
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm('outlook_service', 'outlook_template', e.target, 'user_1ZCvBjDqmVodWw85yCqBZ')
+    .then((result) => {
+      console.log(result.text)
+    }, (error) => {
+      console.log(error.text)
+    })
+
+    e.target.reset()
+
+  }
 
   return (
     <Layout title="Home">
@@ -58,23 +73,25 @@ export default function Home() {
           </div>
         </div>
         <div className="ContactForm">
-          <Form>
+          <Form onSubmit={sendEmail}>
             <Form.Group controlId="FirstNameTextField">
-              <Form.Control type="text" placeholder="First Name" />
+              <Form.Control name="firstname" type="text" placeholder="First Name" required />
             </Form.Group>
 
             <Form.Group controlId="LastNameTextField">
-              <Form.Control type="text" placeholder="Last Name" />
+              <Form.Control name="lastname" type="text" placeholder="Last Name" required />
             </Form.Group>
 
             <Form.Group controlId="EmailTextField">
-              <Form.Control type="email" placeholder="E-mail" />
+              <Form.Control name="subject" type="text" placeholder="Subject" required />
             </Form.Group>
 
             <Form.Group controlId="MessageTextField">
               <Form.Control
+                name="message"
                 as="textarea"
                 rows="10"
+                required
                 placeholder="Type here your message.."/>
             </Form.Group>
 

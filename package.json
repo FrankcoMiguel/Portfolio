@@ -25,6 +25,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.5.0",
     "devicon": "^2.11.0",
+    "emailjs-com": "^2.6.4",
     "gatsby": "^2.29.3",
     "gatsby-cli": "^3.2.0",
     "gatsby-plugin-fontawesome-css": "^1.0.0",
