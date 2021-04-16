@@ -83,7 +83,7 @@ export default function Home() {
             </Form.Group>
 
             <Form.Group controlId="EmailTextField">
-              <Form.Control name="subject" type="text" placeholder="Subject" required />
+              <Form.Control name="email" type="email" placeholder="Email" required />
             </Form.Group>
 
             <Form.Group controlId="MessageTextField">
