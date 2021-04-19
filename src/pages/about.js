@@ -18,7 +18,7 @@ export default function About() {
   },[])
 
   return (
-    <Layout title="About Me">
+    <Layout title="About Me" page={2}>
       <div className="Introduction">
         <h1>About Me</h1>
         <h4>I am a computer programmer born and raised in

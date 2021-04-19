@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
-import { Image } from "react-bootstrap"
+import React, { useState, useEffect } from 'react'
+import { Link } from 'gatsby'
+import { Image } from 'react-bootstrap'
 
-import "./Navbar.scss"
-import Logotype from "../images/logotype.svg"
+import './Navbar.scss'
+import Logotype from '../images/logotype.svg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-
-function NavigationBar() {
+function NavigationBar({option, items = []}) {
 
   const [menu, showMenu] = useState(false)
 
@@ -32,15 +31,11 @@ function NavigationBar() {
           <FontAwesomeIcon className="NavHamburger" icon={menu ? faTimes : faBars} onClick={toggle} />
         </div>
         <ul className={`NavContent ${menu ? 'shown' : 'hidden'}`}>
-          <li className="NavItem">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="NavItem">
-            <Link to="/about">About me</Link>
-          </li>
-          <li className="NavItem">
-            <Link to="/projects">Projects</Link>
-          </li>
+          {items.map(o => (
+            <li key={o.id} className={o.id === option ? 'NavItem active' : 'NavItem'}>
+              <Link to={o.url}>{o.name}</Link>
+            </li>
+          ))}
           <li className="NavDivider"></li>
           <div className="NavIcons">
             <li className="NavLink">

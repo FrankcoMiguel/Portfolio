@@ -33,7 +33,7 @@ export default function Home() {
   }
 
   return (
-    <Layout title="Home">
+    <Layout title="Home" page={1}>
       <div className="Presentation">
         <img data-aos="zoom-right" src={Profile} />
         <div className="Greeting">

@@ -40,6 +40,13 @@ nav {
         color: #2D2D2D;
         font-weight: 440;
       }
+
+      &.active {
+        a {
+          font-weight: 550;
+        }
+      }
+
     }
 
     .NavDivider {

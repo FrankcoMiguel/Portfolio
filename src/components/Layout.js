@@ -3,10 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { Helmet } from 'react-helmet'
-import './Layout.scss'
 
+import navbar from '../data/navbar.json'
 
-const Layout = ({children, title}) => {
+const Layout = ({children, title, page}) => {
+
   return (
     <div>
       <Helmet>
@@ -15,7 +16,7 @@ const Layout = ({children, title}) => {
         <title>{title}</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       </Helmet>
-      <Navbar />
+      <Navbar option={page} items={navbar}/>
       {children}
       <Footer />
     </div>

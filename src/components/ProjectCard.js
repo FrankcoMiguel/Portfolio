@@ -25,7 +25,7 @@ const ProjectCard = ({logo, title, description, tags = [], icons = []}) => {
         </ul>
         <ul className="CardIcons">
           {icons.map(i => (
-            <Tippy id={i.id} placement="bottom" content={i.name} >
+            <Tippy key={i.id} placement="bottom" content={i.name} >
               <li><i className={i.path}></i></li>
             </Tippy>
           ))}

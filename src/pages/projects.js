@@ -18,7 +18,7 @@ export default function Projects() {
   const logotypes = [proBackPack, chick4all, cinemaPremium, dayToDay]
 
   return (
-    <Layout title="Projects">
+    <Layout title="Projects" page={3}>
 
       <div className="TopMessage">
         <h1>Personal Projects</h1>
@@ -32,6 +32,7 @@ export default function Projects() {
       <div className="Projects">
       {projects[0].items.map(p => (
         <ProjectCard 
+              key={p.id}
               logo={logotypes[p.id - 1]}
               title={p.name}
               description={p.description}
