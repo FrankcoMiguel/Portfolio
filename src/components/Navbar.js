@@ -50,12 +50,12 @@ function NavigationBar({option, items = []}) {
             </li>
             <li className="NavLink">
               <a href="https://www.instagram.com/franco.js/" target="_blank">
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
             </li>
             <li className="NavLink">
               <a href=" https://www.linkedin.com/in/frank-orozco-2a41b2185/" target="_blank">
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>
           </div>
