@@ -76,12 +76,20 @@ nav {
         &:nth-child(2) {
           svg {
             &:hover {
-              color: #e02975;
+              color: #ef8236;
             }
           }
         }
 
         &:nth-child(3) {
+          svg {
+            &:hover {
+              color: #e02975;
+            }
+          }
+        }
+
+        &:nth-child(4) {
           svg {
             &:hover {
               color: #0066cc;
