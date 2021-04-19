@@ -7,7 +7,7 @@ import Logotype from '../images/logotype.svg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faInstagram, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
 
 function NavigationBar({option, items = []}) {
 
@@ -44,13 +44,18 @@ function NavigationBar({option, items = []}) {
               </a>
             </li>
             <li className="NavLink">
-              <a href="https://www.instagram.com/franco.js/" target="_blank">
-                <FontAwesomeIcon icon={faInstagram} />
+              <a href="https://stackoverflow.com/users/15623280/franco-js" target="_blank">
+                <FontAwesomeIcon icon={faStackOverflow} />
               </a>
             </li>
             <li className="NavLink">
               <a href="https://www.linkedin.com/in/frank-orozco-2a41b2185/" target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+            </li>
+            <li className="NavLink">
+              <a href=" https://www.instagram.com/franco.js/" target="_blank">
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
             </li>
           </div>
