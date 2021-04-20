@@ -39,12 +39,15 @@ nav {
         text-decoration: none;
         color: #2D2D2D;
         font-weight: 440;
+        user-select: none;
+
       }
 
       &.active {
         a {
           color: #1D60AA;
           font-weight: 550;
+          font-size: 19.5px;
         }
       }
 

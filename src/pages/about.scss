@@ -133,6 +133,19 @@ body {
 
   }
 
+  .HobbyIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: 128px;
+      height: 128px;
+      color:#fff;
+    }
+
+  }
+
   .EducationTitle {
     margin-top: 40px;
   }

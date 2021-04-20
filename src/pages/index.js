@@ -15,7 +15,7 @@ import "./index.scss"
 export default function Home() {
 
   useEffect(() => {
-    Aos.init({ duration: 1500 })
+    Aos.init({ duration: 900 })
   },[])
 
   const sendEmail = (e) => {
