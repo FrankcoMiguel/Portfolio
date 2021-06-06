@@ -1,21 +1,31 @@
-.CardContainer {
+.ProjectCard {
   width: 390px;
   height: 540px;
   border-radius: 20px;
   background-color:#ffffff;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
   margin: 40px;
+  position: relative;
+
+  .CardContainer {
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
     img {
       width: 140px;
       height: auto;
       margin-top: 20px;
+      user-select: none;
     }
 
-  .CardContent {
+    .CardContent {
     width: 100%;
     display: flex;
     flex-flow: column wrap;
@@ -76,6 +86,79 @@
 
       }
     }
+    }
+
+  }
+
+  .CardOverlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    background-color: rgb(66, 99, 209);
+    width: 100%;
+    height: 40%;
+    opacity: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 0px;
+    transition: .35s ease-in-out;
+    z-index: -1;
+
+    h5 {
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 20px;
+      width: 65%;
+    }
+
+    ul {
+      width: 65%;
+      height: 60px;
+      display: flex;
+      list-style-type: none;
+      margin-bottom: 0;
+      padding: 15px;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            
+          svg {
+            font-size: 32px;
+            color: #ffffff;
+            transition: .3s ease-in-out;
+
+           
+            &:hover {
+              color: #000000;
+            }
+            
+          }
+
+        }
+
+      }
+
+    }
+
+    &.up {
+      opacity: 1;
+      height: 100%;
+      z-index: 1;
+    }
+
   }
 
   @media screen and (max-width: 1500px) and (min-width: 468px) {
@@ -83,11 +166,23 @@
     width: 350px;
     height: 500px;
 
-    img {
-      width: 120px;
-    }
+    .CardContainer {
 
-    .CardContent {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      img {
+        width: 120px;
+      }
+
+      .CardContent {
       padding: 30px 30px 0px 30px;
   
       .CardTitle {
@@ -107,74 +202,317 @@
           }
         }
       }
+      }
+
     }
+
+    .CardOverlay {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      bottom: 0;
+      background-color: rgb(66, 99, 209);
+      width: 100%;
+      height: 40%;
+      opacity: 0;
+      border-radius: 20px;
+      cursor: pointer;
+      padding: 0px;
+      transition: .35s ease-in-out;
+      z-index: -1;
+  
+      h5 {
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+        width: 65%;
+      }
+  
+      ul {
+      width: 65%;
+      height: 60px;
+      display: flex;
+      list-style-type: none;
+      margin-bottom: 0;
+      padding: 15px;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        
+
+        a {
+            
+          svg {
+            font-size: 32px;
+            color: #ffffff;
+            transition: .3s ease-in-out;
+
+           
+            &:hover {
+              color: #000000;
+            }
+            
+          }
+
+        }
+
+      }
+  
+      }
+  
+      &.up {
+        opacity: 1;
+        height: 100%;
+        z-index: 1;
+      }
+
+    }
+
   }
 
   @media screen and (max-width: 468px) and (min-width: 406px) {
     width: 320px;
     height: 470px;
 
-    img {
-      width: 105px;
-    }
+    .CardContainer {
 
-    .CardContent {
-      padding: 30px 30px 0px 30px;
-  
-      .CardTitle {
-        font-size: 18px;
-      }
-  
-      .CardDescription {
-        font-size: 14px;
-        color: #2f3537;
-      }
-  
-      .CardIcons {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
 
-        li {
-          i {
-            font-size: 28px;
+      img {
+        width: 105px;
+      }
+
+      .CardContent {
+        padding: 30px 30px 0px 30px;
+  
+        .CardTitle {
+          font-size: 18px;
+        }
+  
+        .CardDescription {
+          font-size: 14px;
+          color: #2f3537;
+        }
+  
+        .CardIcons {
+          li {
+            i {
+              font-size: 28px;
+            }
           }
         }
       }
     }
+
+    .CardOverlay {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      bottom: 0;
+      background-color: rgb(66, 99, 209);
+      width: 100%;
+      height: 40%;
+      opacity: 0;
+      border-radius: 20px;
+      cursor: pointer;
+      padding: 0px;
+      transition: .35s ease-in-out;
+      z-index: -1;
+  
+      h5 {
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 18px;
+        width: 65%;
+      }
+  
+      ul {
+        width: 65%;
+        height: 60px;
+        display: flex;
+        list-style-type: none;
+        margin-bottom: 0;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+  
+        li {
+          display: flex;
+          padding: 20px;
+          justify-content: center;
+          align-items: center;
+
+          a {
+            
+            svg {
+              font-size: 32px;
+              color: #ffffff;
+              transition: .3s ease-in-out;
+
+             
+              &:hover {
+                color: #000000;
+              }
+              
+            }
+  
+          }
+
+        }
+  
+      }
+  
+      &.up {
+        opacity: 1;
+        height: 100%;
+        z-index: 1;
+      }
+  
+    }
+
   }
 
   @media screen and (max-width: 406px) and (min-width: 345px) {
     width: 270px;
     height: 430px;
 
-    img {
-      width: 90px;
-    }
+    .CardContainer {
 
-    .CardContent {
-      padding: 30px 30px 0px 30px;
-  
-      .CardTitle {
-        font-size: 17px;
-      }
-  
-      .CardDescription {
-        font-size: 13px;
-        color: #2f3537;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      img {
+        width: 90px;
       }
 
-      .CardTags {
-        li {
-          font-size: 12px;
+      .CardContent {
+        padding: 30px 30px 0px 30px;
+    
+        .CardTitle {
+          font-size: 17px;
         }
-      }
-  
-      .CardIcons {
+    
+        .CardDescription {
+          font-size: 13px;
+          color: #2f3537;
+        }
 
-        li {
-          i {
-            font-size: 28px;
+        .CardTags {
+          li {
+            font-size: 12px;
+          }
+        }
+    
+        .CardIcons {
+
+          li {
+            i {
+              font-size: 28px;
+            }
           }
         }
       }
+    }
+
+    .CardOverlay {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      bottom: 0;
+      background-color: rgb(66, 99, 209);
+      width: 100%;
+      height: 40%;
+      opacity: 0;
+      border-radius: 20px;
+      cursor: pointer;
+      padding: 0px;
+      transition: .35s ease-in-out;
+      z-index: -1;
+  
+      h5 {
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 16.5px;
+        width: 65%;
+      }
+  
+      ul {
+        width: 65%;
+        height: 60px;
+        display: flex;
+        list-style-type: none;
+        margin-bottom: 0;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+  
+        li {
+          display: flex;
+          padding: 20px;
+          justify-content: center;
+          align-items: center;
+
+          a {
+            
+            svg {
+              font-size: 32px;
+              color: #ffffff;
+              transition: .3s ease-in-out;
+
+             
+              &:hover {
+                color: #000000;
+              }
+              
+            }
+  
+          }
+
+        }
+  
+      }
+  
+      &.up {
+        opacity: 1;
+        height: 100%;
+        z-index: 1;
+      }
+  
     }
   }
 
@@ -182,37 +520,122 @@
     width: 250px;
     height: 410px;
 
-    img {
-      width: 75px;
-    }
+    .CardContainer {
 
-    .CardContent {
-      padding: 30px 30px 0px 30px;
-  
-      .CardTitle {
-        font-size: 16px;
-      }
-  
-      .CardDescription {
-        font-size: 13px;
-        color: #2f3537;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      img {
+        width: 75px;
       }
 
-      .CardTags {
-        li {
-          font-size: 12px;
+      .CardContent {
+        padding: 30px 30px 0px 30px;
+    
+        .CardTitle {
+          font-size: 16px;
         }
-      }
-  
-      .CardIcons {
+    
+        .CardDescription {
+          font-size: 13px;
+          color: #2f3537;
+        }
 
-        li {
-          i {
-            font-size: 26px;
+        .CardTags {
+          li {
+            font-size: 12px;
+          }
+        }
+    
+        .CardIcons {
+
+          li {
+            i {
+              font-size: 26px;
+            }
           }
         }
       }
     }
+
+    .CardOverlay {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      bottom: 0;
+      background-color: rgb(66, 99, 209);
+      width: 100%;
+      height: 40%;
+      opacity: 0;
+      border-radius: 20px;
+      cursor: pointer;
+      padding: 0px;
+      transition: .35s ease-in-out;
+      z-index: -1;
+  
+      h5 {
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 16.5px;
+        width: 65%;
+      }
+  
+      ul {
+        width: 65%;
+        height: 60px;
+        display: flex;
+        list-style-type: none;
+        margin-bottom: 0;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+  
+        li {
+          display: flex;
+          padding: 20px;
+          justify-content: center;
+          align-items: center;
+          
+          a {
+            
+            svg {
+              font-size: 32px;
+              color: #ffffff;
+              transition: .3s ease-in-out;
+
+             
+              &:hover {
+                color: #000000;
+              }
+              
+            }
+  
+          }
+
+        }
+  
+      }
+  
+      &.up {
+        opacity: 1;
+        height: 100%;
+        z-index: 1;
+      }
+  
+    }
+
   }
   
 }
