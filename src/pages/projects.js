@@ -37,7 +37,9 @@ export default function Projects() {
               title={p.name}
               description={p.description}
               tags={p.tags}
-              icons={p.toolsUsed}/>
+              icons={p.toolsUsed}
+              download={p.download}
+              source={p.source}/>
       ))}
       </div>
     </Layout>
