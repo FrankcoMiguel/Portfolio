@@ -1,171 +1,160 @@
-[
-    {
-        "id": "Projects",
-        "items": [
-            {
-                "id": 1,
-                "name": "ProBackPack",
-                "description": "An android application to remind your homeworks and assignments, also notify your college progress.",
-                "tags": [
-                    {
-                        "id": 1,
-                        "name": "Android",
-                        "highlighted": false
-                    },
-                    {
-                        "id": 2,
-                        "name": "Mobile",
-                        "highlighted": false
-                    },
-                    {
-                        "id": 3,
-                        "name": "School",
-                        "highlighted": true
-                    }
-                ],
-                "toolsUsed": [
-                    {
-                        "id": 1,
-                        "name": "Java",
-                        "path": "devicon-java-plain"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Android Studio",
-                        "path": "devicon-android-plain"
-                    },
-                    {
-                        "id": 3,
-                        "name": "Firebase",
-                        "path": "devicon-firebase-plain"
-                    }
-                ],
-                "download": "no",
-                "source": "https://github.com/FrankcoMiguel/ProBackPack"
-            },
-            {
-                "id": 2,
-                "name": "Chick-4-All",
-                "description": "A WebApp devised to manage a restaurant, including stocking and human resource development, also statistics to track the sales process.",
-                "tags": [
-                    {
-                        "id": 1,
-                        "name": "Service",
-                        "highlighted": false
-                    },
-                    {
-                        "id": 2,
-                        "name": "Restaurant",
-                        "highlighted": true
-                    },
-                    {
-                        "id": 3,
-                        "name": "Responsive",
-                        "highlighted": false
-                    }
-                ],
-                "toolsUsed": [
-                    {
-                        "id": 1,
-                        "name": "ReactJS",
-                        "path": "devicon-react-original"
-                    },
-                    {
-                        "id": 2,
-                        "name": "MongoDB",
-                        "path": "devicon-mongodb-plain"
-                    },
-                    {
-                        "id": 3,
-                        "name": "Visual Studio Code",
-                        "path": "devicon-visualstudio-plain"
-                    }
-                ],
-                "download": "no",
-                "source": "https://github.com/FrankcoMiguel/Chick-4-All-Java"
-            },
-            {
-                "id": 3,
-                "name": "Cinema Premium",
-                "description": "A REST API that collect a wide variety of Cinema information from movies to actors.",
-                "tags": [
-                    {
-                        "id": 1,
-                        "name": "Cinema",
-                        "highlighted": true
-                    },
-                    {
-                        "id": 2,
-                        "name": "Open API",
-                        "highlighted": false
-                    },
-                    {
-                        "id": 3,
-                        "name": "REST",
-                        "highlighted": false
-                    }
-                ],
-                "toolsUsed": [
-                    {
-                        "id": 1,
-                        "name": "Micrsoft SQL Server",
-                        "path": "devicon-microsoftsqlserver-plain"
-                    },
-                    {
-                        "id": 2,
-                        "name": "C Sharp",
-                        "path": "devicon-csharp-plain"
-                    },
-                    {
-                        "id": 3,
-                        "name": "Visual Studio",
-                        "path": "devicon-visualstudio-plain"
-                    }
-                ],
-                "download": "no",
-                "source": "https://github.com/FrankcoMiguel/Cinema-API"
-            },
-            {
-                "id": 4,
-                "name": "DayToDay",
-                "description": "A Desktop Application to manage the daily tasks and the hours invested",
-                "tags": [
-                    {
-                        "id": 1,
-                        "name": "Desktop",
-                        "highlighted": false
-                    },
-                    {
-                        "id": 2,
-                        "name": "Work",
-                        "highlighted": false
-                    },
-                    {
-                        "id": 3,
-                        "name": "Tasks",
-                        "highlighted": true
-                    }
-                ],
-                "toolsUsed": [
-                    {
-                        "id": 1,
-                        "name": "JavaFX",
-                        "path": "devicon-java-plain"
-                    },
-                    {
-                        "id": 2,
-                        "name": "CSS3",
-                        "path": "devicon-css3-plain"
-                    },
-                    {
-                        "id": 3,
-                        "name": "Intellij IDEA",
-                        "path": "devicon-intellij-plain"
-                    }
-                ],
-                "download": "https://drive.google.com/file/d/1cKth7ShuLr2uxxPYxKXm0gpLF0qinwxL/view?usp=sharing",
-                "source": "https://github.com/FrankcoMiguel/DayToDay"
-            }
-        ]
-    }
-]
+[{
+    "id": "Projects",
+    "items": [{
+            "id": 1,
+            "name": "ProBackPack",
+            "description": "An android application to remind your homeworks and assignments, also notify your college progress.",
+            "tags": [{
+                    "id": 1,
+                    "name": "Android",
+                    "highlighted": false
+                },
+                {
+                    "id": 2,
+                    "name": "Mobile",
+                    "highlighted": false
+                },
+                {
+                    "id": 3,
+                    "name": "School",
+                    "highlighted": true
+                }
+            ],
+            "toolsUsed": [{
+                    "id": 1,
+                    "name": "Java",
+                    "path": "devicon-java-plain"
+                },
+                {
+                    "id": 2,
+                    "name": "Android Studio",
+                    "path": "devicon-android-plain"
+                },
+                {
+                    "id": 3,
+                    "name": "Firebase",
+                    "path": "devicon-firebase-plain"
+                }
+            ],
+            "download": "no",
+            "source": "https://github.com/FrankcoMiguel/ProBackPack"
+        },
+        {
+            "id": 2,
+            "name": "Chick-4-All",
+            "description": "A WebApp devised to manage a restaurant, including stocking and human resource development, also statistics to track the sales process.",
+            "tags": [{
+                    "id": 1,
+                    "name": "Service",
+                    "highlighted": false
+                },
+                {
+                    "id": 2,
+                    "name": "Restaurant",
+                    "highlighted": true
+                },
+                {
+                    "id": 3,
+                    "name": "Responsive",
+                    "highlighted": false
+                }
+            ],
+            "toolsUsed": [{
+                    "id": 1,
+                    "name": "ReactJS",
+                    "path": "devicon-react-original"
+                },
+                {
+                    "id": 2,
+                    "name": "MongoDB",
+                    "path": "devicon-mongodb-plain"
+                },
+                {
+                    "id": 3,
+                    "name": "Visual Studio Code",
+                    "path": "devicon-visualstudio-plain"
+                }
+            ],
+            "download": "no",
+            "source": "https://github.com/FrankcoMiguel/Chick-4-All-Java"
+        },
+        {
+            "id": 3,
+            "name": "Cinema Premium",
+            "description": "A REST API that collect a wide variety of Cinema information from movies to actors.",
+            "tags": [{
+                    "id": 1,
+                    "name": "Cinema",
+                    "highlighted": true
+                },
+                {
+                    "id": 2,
+                    "name": "Open API",
+                    "highlighted": false
+                },
+                {
+                    "id": 3,
+                    "name": "REST",
+                    "highlighted": false
+                }
+            ],
+            "toolsUsed": [{
+                    "id": 1,
+                    "name": "Micrsoft SQL Server",
+                    "path": "devicon-microsoftsqlserver-plain"
+                },
+                {
+                    "id": 2,
+                    "name": "C Sharp",
+                    "path": "devicon-csharp-plain"
+                },
+                {
+                    "id": 3,
+                    "name": "Visual Studio",
+                    "path": "devicon-visualstudio-plain"
+                }
+            ],
+            "download": "no",
+            "source": "https://github.com/FrankcoMiguel/CinemaAPI"
+        },
+        {
+            "id": 4,
+            "name": "DayToDay",
+            "description": "A Desktop Application to manage the daily tasks and the hours invested",
+            "tags": [{
+                    "id": 1,
+                    "name": "Desktop",
+                    "highlighted": false
+                },
+                {
+                    "id": 2,
+                    "name": "Work",
+                    "highlighted": false
+                },
+                {
+                    "id": 3,
+                    "name": "Tasks",
+                    "highlighted": true
+                }
+            ],
+            "toolsUsed": [{
+                    "id": 1,
+                    "name": "JavaFX",
+                    "path": "devicon-java-plain"
+                },
+                {
+                    "id": 2,
+                    "name": "CSS3",
+                    "path": "devicon-css3-plain"
+                },
+                {
+                    "id": 3,
+                    "name": "Intellij IDEA",
+                    "path": "devicon-intellij-plain"
+                }
+            ],
+            "download": "https://drive.google.com/file/d/1cKth7ShuLr2uxxPYxKXm0gpLF0qinwxL/view?usp=sharing",
+            "source": "https://github.com/FrankcoMiguel/DayToDay"
+        }
+    ]
+}]
