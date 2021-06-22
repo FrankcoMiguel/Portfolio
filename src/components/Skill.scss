@@ -74,37 +74,21 @@
 @media screen and (max-width:  530px) and (min-width: 475px) {
 
   .Skill {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    margin: 40px 40px !important;
     width: 340px;
   
     .BarTop {
       width: 340px;
-      display: flex;
-      justify-content: space-between;
   
       .BarTitle {
         font-size: 20px;
-        color: #ffffff;
-        font-stretch: expanded;
       }
   
       .BarIcons {
-        display: flex;
-        list-style-type: none;
-        align-items: center;
   
         li {
-          margin: 0 10px;
   
           i {
-            color: #fff;
             font-size: 28px;
-            cursor: pointer;
-            font-weight: lighter;
-            font-family: 'Segoe UI';
           }
   
         }
@@ -112,37 +96,7 @@
     }
   
     .BarContainer {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
       width: 340px;
-      height: 20px;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-      border-bottom-left-radius: 25px;
-      border-bottom-right-radius: 25px;
-      background-color: #FFFFFF;
-  
-      .BarStatus {
-        background-color: #557FAD;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-        height: 90%;
-        margin-left: 1.5px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-  
-        .Indicator {
-          width: 20%;
-          height: 100%;
-          color: aqua;
-          cursor: pointer;
-        }
-  
-      }
     }
   }
 
@@ -151,116 +105,59 @@
 @media screen and (max-width:  475px) and (min-width: 400px) {
 
   .Skill {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    margin: 40px 40px !important;
     width: 300px;
   
     .BarTop {
       width: 300px;
-      display: flex;
-      justify-content: space-between;
   
       .BarTitle {
         font-size: 20px;
-        color: #ffffff;
-        font-stretch: expanded;
       }
   
       .BarIcons {
-        display: flex;
-        list-style-type: none;
-        align-items: center;
   
         li {
           margin: 0 4px;
   
           i {
-            color: #fff;
             font-size: 24px;
-            cursor: pointer;
-            font-weight: lighter;
-            font-family: 'Segoe UI';
           }
   
         }
       }
     }
-  
+
     .BarContainer {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
       width: 300px;
       height: 15px;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-      border-bottom-left-radius: 25px;
-      border-bottom-right-radius: 25px;
-      background-color: #FFFFFF;
   
       .BarStatus {
-        background-color: #557FAD;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
         height: 80%;
-        margin-left: 1.5px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-  
-        .Indicator {
-          width: 20%;
-          height: 100%;
-          color: aqua;
-          cursor: pointer;
-        }
   
       }
     }
   }
-
-  
-
 }
 
 @media screen and (max-width:  400px) and (min-width: 320px) { 
 
   .Skill {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    margin: 40px 40px !important;
     width: 235px;
   
     .BarTop {
       width: 235px;
-      display: flex;
-      justify-content: space-between;
   
       .BarTitle {
         font-size: 17px;
-        color: #ffffff;
-        font-stretch: expanded;
       }
   
       .BarIcons {
-        display: flex;
-        list-style-type: none;
-        align-items: center;
   
         li {
           margin: 0 2px;
   
           i {
-            color: #fff;
             font-size: 22px;
-            cursor: pointer;
-            font-weight: lighter;
-            font-family: 'Segoe UI';
           }
   
         }
@@ -268,35 +165,11 @@
     }
   
     .BarContainer {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
       width: 235px;
       height: 15px;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-      border-bottom-left-radius: 25px;
-      border-bottom-right-radius: 25px;
-      background-color: #FFFFFF;
   
       .BarStatus {
-        background-color: #557FAD;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
         height: 80%;
-        margin-left: 1.5px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-  
-        .Indicator {
-          width: 20%;
-          height: 100%;
-          color: aqua;
-          cursor: pointer;
-        }
   
       }
     }
