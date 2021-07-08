@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Tippy from '@tippyjs/react'
@@ -12,9 +12,23 @@ import "./ProjectCard.scss"
 const ProjectCard = ({logo, title, description, tags = [], icons = [], download, source}) => {
 
   const [overlay, setOverlay] = useState(false)
+  let projectRef = useRef()
   
   useEffect(() => {
     Aos.init({ duration: 1000 })
+
+    let handler = (event) => {
+      if (!projectRef.current.contains(event.target)) {
+        setOverlay(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handler)
+
+    return () => {
+      document.removeEventListener("mousedown", handler)
+    }
+
   },[])
 
   const toggleOverlay = () => {
@@ -23,7 +37,7 @@ const ProjectCard = ({logo, title, description, tags = [], icons = [], download,
 
 
   return (
-    <div data-aos="zoom-out" className="ProjectCard">
+    <div ref={projectRef} data-aos="zoom-out" className="ProjectCard">
       <div className="CardContainer" onClick={toggleOverlay}>
         <img className="CardLogo" src={logo} />
         <div className="CardContent">
