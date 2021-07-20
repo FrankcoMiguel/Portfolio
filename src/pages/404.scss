@@ -31,7 +31,8 @@
             outline: 0;
         }
 
-        &:active {
+        &:hover {
+            color: #fff;
             transform: translateY(-8px);
         }
 

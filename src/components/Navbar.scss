@@ -40,6 +40,10 @@ nav {
         color: #2D2D2D;
         font-weight: 440;
         user-select: none;
+        
+        &:hover {
+          color: #1D60AA;
+        }
 
       }
 
@@ -147,9 +151,9 @@ nav {
 
       .NavHamburger {
         display: flex;
-        width: 46px;
-        height: 46px;
-        padding: 10px;
+        width: 66px;
+        height: 66px;
+        padding: 20px;
         color: #1D60AA;
         cursor: pointer;
       }
