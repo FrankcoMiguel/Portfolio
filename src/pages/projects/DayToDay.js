@@ -1,53 +1,64 @@
-import { set } from "lodash"
-import React, { useState, useEffect } from "react"
-import api from '../../data/api'
+import React, { useState, useEffect ,useRef } from "react"
+import Layout from "../../components/Layout"
+
+import image1 from '../../images/gallery/daytoday/image1.jpg'
+import image2 from '../../images/gallery/daytoday/image2.jpg'
+import image3 from '../../images/gallery/daytoday/image3.jpg'
+
+import gallery from '../../data/gallery.json'
+
+import './daytoday.scss'
 
 export default function DayToDay() {
 
-    const [genres, setGenres] = useState([])
-    const [authorization, setAuthorization] = useState()
+    const [popup, setPopup] = useState(false)
+    const [image, setImage] = useState(0)
+    let images = [image1, image2, image3]
 
-     const getToken = async (user, password) => {
-
-        const response = await api.post('/token', {
-            "user": "admin",
-            "password": "admin123"
-        })
-
-        setAuthorization(response.data)
-        console.log(response.data)
-        return response
+    const openImage = (image) => {
+        setImage(image)
+        setPopup(true)
     }
 
-    const fetchGenres = async () => {
-        const response = await api.get('/genre', {
-            headers: { "Authorization": `Bearer ${authorization !== undefined ? authorization.token : ''}` }
-        })
+    let popupRef = useRef()
 
-        console.log(response.data.data)
-        setGenres(response.data.data)
-    }
+    useEffect(() => {
 
-    // useEffect(() => {
-    //     axios.get('https://localhost:44389/actor')
-    //     .then(res => {
-    //         console.log(res)
-    //         setActors(res.data)
-    //     })
-    //     .catch(err => {
-    //         console.log(err)
-    //     })
-    // })
+        let handler = (event) => {
+            if (!popupRef.current.contains(event.target)) {
+                setPopup(false)
+            }
+          }
+          document.addEventListener("mousedown", handler)
+      
+          return () => {
+            document.removeEventListener("mousedown", handler)
+          }
+
+    })
 
     return (
-        <div>
-            <button onClick={() => getToken('admin','admin123')} type="button">Generar token</button>
-            <button onClick={fetchGenres} type="button">Print genres</button>
-            <ul>
-                {
-                    genres.map(genre => <li key={genre.id}>{genre.name}</li>)
-                }
-            </ul>
-        </div>
+        <Layout title="DayToDay">
+            <div className="TopMessageProject">
+                <h1>DayToDay</h1>
+                <h4>A Desktop Application to manage the daily tasks and 
+                    the track your productivity
+                </h4>
+            </div>
+            <div className="ActionBoxContainer">
+                {gallery[0].items[0].images.map(i => 
+                    <div key={i.id} className="ActionBox">
+                        <img onClick={() => openImage(i.image)} src={images[i.image]} alt={i.caption} />
+                    </div>
+                )}
+            </div>
+
+            <div className={popup ? 'ImagePopup' : 'ImagePopup_hidden'}>
+                <div ref={popupRef} className="ImagePopupInner">
+                    <img src={images[image]} />
+                </div>
+            </div>
+
+        </Layout>
     )
 }

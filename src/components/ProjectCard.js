@@ -3,6 +3,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
+import { Link } from 'gatsby'
 
 import { FaGithub } from 'react-icons/fa'
 import { ImDownload } from 'react-icons/im'
@@ -60,7 +61,7 @@ const ProjectCard = ({logo, title, description, tags = [], icons = [], page, sou
       <div className={overlay ? `CardOverlay up` : `CardOverlay`} onClick={toggleOverlay}>
         <h5>Here you can download the app and visualize the source code</h5>
         <ul>
-          {page === "no" ? '' : <li><a className="download" href={page} target="_blank"><ImDownload/></a></li>}
+          {page === "no" ? '' : <li><Link className="download" to={`/projects${page}`}><ImDownload/></Link></li>}
           <li><a className="github" href={source} target="_blank"><FaGithub/></a></li>
         </ul>
       </div>
