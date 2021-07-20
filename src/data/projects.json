@@ -36,7 +36,7 @@
                     "path": "devicon-firebase-plain"
                 }
             ],
-            "download": "no",
+            "page": "no",
             "source": "https://github.com/FrankcoMiguel/ProBackPack"
         },
         {
@@ -75,7 +75,7 @@
                     "path": "devicon-visualstudio-plain"
                 }
             ],
-            "download": "no",
+            "page": "no",
             "source": "https://github.com/FrankcoMiguel/Chick-4-All-Java"
         },
         {
@@ -114,7 +114,7 @@
                     "path": "devicon-visualstudio-plain"
                 }
             ],
-            "download": "no",
+            "page": "/apicinema",
             "source": "https://github.com/FrankcoMiguel/CinemaAPI"
         },
         {
@@ -153,7 +153,7 @@
                     "path": "devicon-intellij-plain"
                 }
             ],
-            "download": "https://drive.google.com/file/d/1cKth7ShuLr2uxxPYxKXm0gpLF0qinwxL/view?usp=sharing",
+            "page": "/daytoday",
             "source": "https://github.com/FrankcoMiguel/DayToDay"
         }
     ]

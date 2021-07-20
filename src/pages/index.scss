@@ -10,7 +10,6 @@ body {
   margin-top: 250px;
   margin-bottom: 200px;
 
-
   img {
     width: 320px;
     height: auto;
@@ -44,46 +43,17 @@ body {
 
   @media screen and (max-width: 950px) and (min-width: 495px) {
     
-    body {
-      overflow-x: hidden !important;
-    }
-
-    width: 100vw;
     flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
 
-    img {
-      width: 320px;
-      height: auto;
-      border-radius: 100%;
-      margin-right: 0;
-    }
+    img { margin-right: 0; }
   
     .Greeting {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
       align-items: center;
       padding-top: 40px;
   
-      h1 {
-        margin-bottom: 60px;
-      }
+      h3 { font-size: 24px; }
   
-      h3 {
-        font-size: 24px;
-        color: #1D60AA;
-      }
-  
-      p {
-        width: 380px;
-        color: #2D2D2D;
-        font-size: 20px;
-        font-weight: 550;
-        text-align: center;
-  
-      }
+      p { text-align: center; }
   
     }
 
@@ -91,42 +61,28 @@ body {
 
   @media screen and (max-width: 495px) and (min-width: 400px) {
     
-    width: 100vw;
     flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
 
     img {
       width: 240px;
-      height: auto;
-      border-radius: 100%;
       margin-right: 0;
     }
   
     .Greeting {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
       align-items: center;
       padding-top: 40px;
   
       h1 {
         font-size: 32px;
-        margin-bottom: 60px;
       }
   
       h3 {
         font-size: 22px;
-        color: #1D60AA;
       }
   
       p {
-        width: 380px;
-        color: #2D2D2D;
         font-size: 18px;
-        font-weight: 550;
         text-align: center;
-  
       }
   
     }
@@ -135,22 +91,14 @@ body {
 
   @media screen and (max-width: 400px) {
     
-    width: 100vw;
     flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
 
     img {
       width: 220px;
-      height: auto;
-      border-radius: 100%;
       margin-right: 0;
     }
   
     .Greeting {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
       align-items: center;
       padding-top: 40px;
 
@@ -160,23 +108,17 @@ body {
   
       h1 {
         font-size: 25px;
-        margin-bottom: 60px;
       }
   
       h3 {
         font-size: 20px;
-        color: #1D60AA;
       }
   
       p {
         width: 250px;
-        color: #2D2D2D;
         font-size: 18px;
-        font-weight: 550;
         text-align: center;
-  
       }
-  
     }
 
   }
@@ -212,7 +154,6 @@ body {
   }
 
   @media screen and (max-width: 1065px) and (min-width: 632px) {
-
     height: 1400px;
     background-image: url('../images/index/waves/wave-md.svg') !important;
     padding-top: 100px;
@@ -228,7 +169,6 @@ body {
       }
 
       .SkillsGrid {
-        display: grid;
         grid-template-columns: auto;
       }
 
@@ -253,7 +193,6 @@ body {
       }
 
       .SkillsGrid {
-        display: grid;
         grid-template-columns: auto;
       }
 
@@ -278,7 +217,6 @@ body {
       }
 
       .SkillsGrid {
-        display: grid;
         grid-template-columns: auto;
       }
 
@@ -287,8 +225,6 @@ body {
   }
 
 }
-
-
 
 .Contact {
   width: 100vw;
@@ -357,23 +293,12 @@ body {
 
   @media screen and (max-width: 1025px) and (min-width: 924px) {
 
-    width: 100vw;
     height: 450px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
   
     .ContactMessage {
   
       h1 {
         font-size: 35px;
-        font-weight: bold;
-        color: #1D60AA;
-      }
-  
-      h3 {
-        font-weight: bold;
-        margin-bottom: 45px;
       }
   
       p {
@@ -381,48 +306,11 @@ body {
         font-size: 18px;
       }
   
-      .Quote {
-        width: 300px;
-        display: flex;
-        flex-flow: column wrap;
-        margin-top: 80px;
-    
-        q {
-          font-weight: 550;
-        }
-    
-        i {
-          padding-top: 10px;
-          text-align: end;
-        }
-      }
-  
     }
   
-    .ContactForm {
-  
-      width: 35vw;
-    
-      .form-group {
-        .form-control {
-          border-radius: 0;
-          padding: 15px;
-          font-weight: 540;
-        }
-      }
-        
-      button {
-        border-radius: 0;
-        padding: 10px 20px;
-        font-weight: 550;
-        background-color: #0066cc;
-        color: #fff;
-      }
-    }
   }
 
   @media screen and (max-width: 924px) and (min-width: 470px) {
-    display: flex;
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
@@ -431,13 +319,6 @@ body {
   
       h1 {
         font-size: 35px;
-        font-weight: bold;
-        color: #1D60AA;
-      }
-  
-      h3 {
-        font-weight: bold;
-        margin-bottom: 45px;
       }
   
       p {
@@ -446,19 +327,7 @@ body {
       }
   
       .Quote {
-        width: 300px;
-        display: flex;
-        flex-flow: column wrap;
         margin-top: 30px;
-    
-        q {
-          font-weight: 550;
-        }
-    
-        i {
-          padding-top: 10px;
-          text-align: end;
-        }
       }
   
     }
@@ -467,28 +336,14 @@ body {
   
       width: 70vw;
       margin-top: 80px;
-    
-      .form-group {
-        .form-control {
-          border-radius: 0;
-          padding: 15px;
-          font-weight: 540;
-        }
-      }
         
       button {
-        border-radius: 0;
-        padding: 10px 20px;
-        font-weight: 550;
-        background-color: #0066cc;
-        color: #fff;
         margin-bottom: 60px;
       }
     }
   }
 
   @media screen and (max-width: 470px) {
-    display: flex;
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
@@ -498,14 +353,10 @@ body {
   
       h1 {
         font-size: 25px;
-        font-weight: bold;
-        color: #1D60AA;
         text-align: center;
       }
   
       h3 {
-        font-weight: bold;
-        margin-bottom: 45px;
         font-size: 21px;
         text-align: center;
       }
@@ -519,18 +370,8 @@ body {
   
       .Quote {
         width: 80vw;
-        display: flex;
-        flex-flow: column wrap;
         margin-top: 30px;
     
-        q {
-          font-weight: 550;
-        }
-    
-        i {
-          padding-top: 10px;
-          text-align: end;
-        }
       }
   
     }
@@ -539,21 +380,8 @@ body {
   
       width: 80vw;
       margin-top: 80px;
-    
-      .form-group {
-        .form-control {
-          border-radius: 0;
-          padding: 15px;
-          font-weight: 540;
-        }
-      }
         
       button {
-        border-radius: 0;
-        padding: 10px 20px;
-        font-weight: 550;
-        background-color: #0066cc;
-        color: #fff;
         margin-bottom: 0px;
       }
     }

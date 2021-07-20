@@ -1,20 +1,35 @@
-import React, { useEffect, useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
+import { Link } from 'gatsby'
 
 import { FaGithub } from 'react-icons/fa'
 import { ImDownload } from 'react-icons/im'
 
 import "./ProjectCard.scss"
 
-const ProjectCard = ({logo, title, description, tags = [], icons = [], download, source}) => {
+const ProjectCard = ({logo, title, description, tags = [], icons = [], page, source}) => {
 
   const [overlay, setOverlay] = useState(false)
+  let projectRef = useRef()
   
   useEffect(() => {
     Aos.init({ duration: 1000 })
+
+    let handler = (event) => {
+      if (!projectRef.current.contains(event.target)) {
+        setOverlay(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handler)
+
+    return () => {
+      document.removeEventListener("mousedown", handler)
+    }
+
   },[])
 
   const toggleOverlay = () => {
@@ -23,7 +38,7 @@ const ProjectCard = ({logo, title, description, tags = [], icons = [], download,
 
 
   return (
-    <div data-aos="zoom-out" className="ProjectCard">
+    <div ref={projectRef} data-aos="zoom-out" className="ProjectCard">
       <div className="CardContainer" onClick={toggleOverlay}>
         <img className="CardLogo" src={logo} />
         <div className="CardContent">
@@ -46,7 +61,7 @@ const ProjectCard = ({logo, title, description, tags = [], icons = [], download,
       <div className={overlay ? `CardOverlay up` : `CardOverlay`} onClick={toggleOverlay}>
         <h5>Here you can download the app and visualize the source code</h5>
         <ul>
-          {download === "no" ? '' : <li><a className="download" href={download} target="_blank"><ImDownload/></a></li>}
+          {page === "no" ? '' : <li><Link className="download" to={`/projects${page}`}><ImDownload/></Link></li>}
           <li><a className="github" href={source} target="_blank"><FaGithub/></a></li>
         </ul>
       </div>
