@@ -9,7 +9,7 @@ import { ImDownload } from 'react-icons/im'
 
 import "./ProjectCard.scss"
 
-const ProjectCard = ({logo, title, description, tags = [], icons = [], download, source}) => {
+const ProjectCard = ({logo, title, description, tags = [], icons = [], page, source}) => {
 
   const [overlay, setOverlay] = useState(false)
   let projectRef = useRef()
@@ -60,7 +60,7 @@ const ProjectCard = ({logo, title, description, tags = [], icons = [], download,
       <div className={overlay ? `CardOverlay up` : `CardOverlay`} onClick={toggleOverlay}>
         <h5>Here you can download the app and visualize the source code</h5>
         <ul>
-          {download === "no" ? '' : <li><a className="download" href={download} target="_blank"><ImDownload/></a></li>}
+          {page === "no" ? '' : <li><a className="download" href={page} target="_blank"><ImDownload/></a></li>}
           <li><a className="github" href={source} target="_blank"><FaGithub/></a></li>
         </ul>
       </div>
