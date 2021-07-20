@@ -1,0 +1,84 @@
+.NotFound {
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 140px;
+
+    h1 {
+        padding: 20px 20px 0px 20px;
+    }
+
+    img {
+        user-select: none;
+    }
+
+    a {
+        border: 0px;
+        padding: 6px 20px;
+        margin-top: 5px;
+        background-color: #1E61AB;
+        color: #fff;
+        transition: 300ms;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+
+        &:active {
+            transform: translateY(-8px);
+        }
+
+    }
+
+
+ @media screen and (max-width: 520px) and (min-width: 425px) {
+
+    margin-top: 110px;
+
+    h1 {
+        font-size: 30px;
+    }
+
+    img {
+        width: 380px;
+    }
+
+ }
+
+ @media screen and (max-width: 425px) and (min-width: 360px) {
+
+    margin-top: 90px;
+
+    h1 {
+        font-size: 30px;
+    }
+
+    img {
+        width: 340px;
+    }
+
+ }
+
+ @media screen and (max-width: 360px) {
+
+    margin-top: 60px;
+
+    h1 {
+        font-size: 27px;
+    }
+
+    img {
+        width: 300px;
+    }
+
+ }
+
+}
+
