@@ -68,7 +68,7 @@ nav {
       list-style-type: none;
       justify-content: space-between;
       align-items: center;
-      
+      user-select: none;
 
       .NavLink {
         padding: 0px 16px;
@@ -142,7 +142,7 @@ nav {
       align-items: center;
       justify-content: space-between;
       background-color: #ffffff;
-      padding: 30px 60px;
+      padding: 40px 40px 30px 60px;
 
       .NavLogo {
         width: 72px;
@@ -175,6 +175,8 @@ nav {
 
       .NavItem {
         padding: 16px 0px;
+        width: 100%;
+        text-align: center;
       }
 
       .NavDivider {
@@ -190,6 +192,7 @@ nav {
         list-style-type: none;
         justify-content: space-between;
         align-items: center;
+        user-select: none;
       }
     }
 
