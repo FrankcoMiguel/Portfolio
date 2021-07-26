@@ -39,7 +39,7 @@ export default function Home() {
         <div className="Greeting">
           <h4>Hey there, I am</h4>
           <h1>Frank Miguel Orozco</h1>
-          <h3>Software Developer</h3>
+          <h3>Full Stack Developer</h3>
           <p>I'm a young man who loves designing and coding solutions</p>
         </div>
       </div>
