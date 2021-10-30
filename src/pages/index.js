@@ -1,10 +1,11 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Form, Button } from 'react-bootstrap'
 import ReCAPTCHA from 'react-google-recaptcha'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import emailjs from 'emailjs-com'
 import Profile from '../images/index/about-picture.jpg'
+import EmailVector from '../images/index/email-vector.png'
 import Layout from '../components/Layout'
 import Skill from '../components/Skill'
 
@@ -16,6 +17,8 @@ import "./index.scss"
 export default function Home() {
 
   const [verified, isVerified] = useState(false)
+  const [email, setEmail] = useState(false)
+
 
   const handleCheck = () => {
     isVerified(true)
@@ -35,7 +38,8 @@ export default function Home() {
       console.log(error.text)
     })
 
-    e.target.reset()
+    setEmail(true)
+    // e.target.reset()
 
   }
 
@@ -80,7 +84,7 @@ export default function Home() {
           </div>
         </div>
         <div className="ContactForm">
-          <Form onSubmit={sendEmail}>
+          <Form class={email ? 'form-hidden' : ''} onSubmit={sendEmail}>
             <Form.Group controlId="FirstNameTextField">
               <Form.Control name="firstname" type="text" placeholder="First Name" required />
             </Form.Group>
@@ -112,6 +116,11 @@ export default function Home() {
               Send over
             </Button>
           </Form>
+
+          <div className={email ? 'Message' : 'Message-hidden'}>
+            <h4>Your email has been sent, I will respond to you shortly.</h4>
+            <img src={EmailVector} />
+          </div>
         </div>
       </div>
     </Layout>
