@@ -1,5 +1,6 @@
-import React, { useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import { Form, Button } from 'react-bootstrap'
+import RECAPTCHA from 'react-google-recaptcha'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import emailjs from 'emailjs-com'
@@ -13,6 +14,9 @@ import landing from '../data/landing.json'
 import "./index.scss"
 
 export default function Home() {
+
+  const [verified, isVerified] = useState(false)
+  const RECAPTCHA_SITE_KEY = "6LeyLAMdAAAAALiZ33I2gmCGOvp-rDawd4VaC2rf";
 
   useEffect(() => {
     Aos.init({ duration: 900 })
@@ -30,6 +34,11 @@ export default function Home() {
 
     e.target.reset()
 
+  }
+
+  const onChange = (value) => {
+    console.log("Captcha value: ", value)
+    isVerified(true)
   }
 
   return (
@@ -95,7 +104,14 @@ export default function Home() {
                 placeholder="Type here your message.."/>
             </Form.Group>
 
-            <Button type="submit">Send over</Button>
+            <RECAPTCHA
+                className="Recaptcha" 
+                sitekey={RECAPTCHA_SITE_KEY}
+                onChange={onChange} />
+
+            <Button type="submit" disabled = {!verified}>
+              Send over
+            </Button>
           </Form>
         </div>
       </div>
