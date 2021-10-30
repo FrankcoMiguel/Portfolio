@@ -104,7 +104,7 @@ export default function Home() {
 
             <ReCAPTCHA
                 className="Recaptcha" 
-                sitekey={process.env.RECAPTCHA_SITE_KEY} 
+                sitekey="6LfuOQMdAAAAAFGI70nLmOVkxEGEmnj58GU83Voo" 
                 size="normal"
                 onChange={handleCheck}/>
 
