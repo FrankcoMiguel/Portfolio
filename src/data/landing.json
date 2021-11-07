@@ -6,7 +6,8 @@
             {
                 "id": 1,
                 "name": "Web Design",
-                "percentage": 85,
+                "percentage": 90,
+                "time": 6,
                 "icons": [
                     {
                         "id": 1,
@@ -31,7 +32,8 @@
             {
                 "id": 2,
                 "name": "Backend",
-                "percentage": 66,
+                "percentage": 75,
+                "time": 4,
                 "icons": [
                     {
                         "id": 1,
@@ -56,7 +58,8 @@
             {
                 "id": 3,
                 "name": "Frontend",
-                "percentage": 76,
+                "percentage": 83,
+                "time": 5,
                 "icons": [
                     {
                         "id": 1,
@@ -94,6 +97,7 @@
                 "id": 4,
                 "name": "Databases",
                 "percentage": 92,
+                "time": 5,
                 "icons": [
                     {
                         "id": 1,
@@ -118,7 +122,8 @@
             {
                 "id": 5,
                 "name": "Mobile",
-                "percentage": 42,
+                "percentage": 30,
+                "time": 2,
                 "icons": [
                     {
                         "id": 1,
@@ -143,7 +148,8 @@
             {
                 "id": 6,
                 "name": "Other",
-                "percentage": 76,
+                "percentage": 47,
+                "time": 3,
                 "icons": [
                     {
                         "id": 1,

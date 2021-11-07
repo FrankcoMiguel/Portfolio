@@ -7,10 +7,10 @@ import 'aos/dist/aos.css'
 import "./Skill.scss"
 
 
-const Skill = ({ title, percentage, icons = []}) => {
+const Skill = ({ title, percentage, time, icons = []}) => {
 
   useEffect(() => {
-    Aos.init({ duration: 500 })
+    Aos.init({ duration: 400 })
   },[])
 
   return (
@@ -32,9 +32,9 @@ const Skill = ({ title, percentage, icons = []}) => {
         <span
           className="BarStatus"
           style={{ width: `${percentage}%` }}>  
-          <Tippy placement="bottom" content={`${percentage}% - ${percentage <= 50 ? 'Newbie' : 
+          <Tippy placement="bottom" content={`${percentage <= 50 ? 'Newbie' : 
             percentage > 50 && percentage <= 80 ? 'Good' : 
-            percentage > 80 && percentage <=100 ? 'Expert' : 'Percentage cannot be grather than 100'}`}>
+            percentage > 80 && percentage <=100 ? 'Expert' : 'Percentage cannot be grather than 100'} - ${time} Years of Experience`}>
               <span className="Indicator"></span>
           </Tippy> 
         </span>

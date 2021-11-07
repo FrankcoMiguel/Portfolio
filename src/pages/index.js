@@ -62,7 +62,8 @@ export default function Home() {
           {landing[0].items.map(s => (
             <Skill key={s.id} 
                   title={s.name} 
-                  percentage={s.percentage} 
+                  percentage={s.percentage}
+                  time={s.time} 
                   icons={s.icons}/>
           ))}
           </div>
@@ -84,7 +85,7 @@ export default function Home() {
           </div>
         </div>
         <div className="ContactForm">
-          <Form class={email ? 'form-hidden' : ''} onSubmit={sendEmail}>
+          <Form className={email ? 'form-hidden' : ''} onSubmit={sendEmail}>
             <Form.Group controlId="FirstNameTextField">
               <Form.Control name="firstname" type="text" placeholder="First Name" required />
             </Form.Group>

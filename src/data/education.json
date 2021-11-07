@@ -5,9 +5,9 @@
         "items": [
             {
                 "id": 1,
-                "title": "Software Development",
+                "title": "Associate's Degree - Software Engineering",
                 "gpa": 3.5,
-                "school": "ITLA",
+                "school": "https://itla.edu.do",
                 "location": "Dominican Republic",
                 "period": "2017 - 2020",
                 "schoolSpeciality": "classes",

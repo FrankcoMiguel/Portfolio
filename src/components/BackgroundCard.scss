@@ -1,6 +1,6 @@
-.EducationCard {
-  width: 540px;
-  height: 750px;
+.BackgroundCard {
+  width: 700px;
+  height: 700px;
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(29,96,170,.34);
   display: flex;
@@ -8,7 +8,7 @@
   justify-content: flex-start;
   padding: 70px 20px 20px 20px;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 40px;
 
   img {
     width: 110px;
@@ -16,6 +16,10 @@
     border-radius: 100%;
     padding: 15px;
     border: 1px solid #707070;
+  }
+
+  h4 {
+    margin-top: 60px;
   }
 
   .CardContent {
@@ -36,19 +40,26 @@
     .Col {
       display: flex;
       flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
       
       &:last-child {
         align-items: center;
       }
 
       h3 {
-        font-size: 24px;
+        font-size: 20px;
         color: #1D60AA;
         margin-bottom: 5px;
       }
 
       h5 {
         font-size: 17px;
+      }
+
+      p {
+        width: 30%;
+        font: 12px;
       }
 
     }
@@ -74,8 +85,12 @@
   }
 
   @media screen and (max-width: 1055px) and (min-width: 800px) {
-    width: 500px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
+
+    h4 {
+      margin-top: 30px;
+    }
 
     img {
       width: 90px;
@@ -88,7 +103,7 @@
       .Col {
       
         h3 {
-          font-size: 21.5px;
+          font-size: 18.5px;
           color: #1D60AA;
           margin-bottom: 5px;
         }
@@ -119,7 +134,7 @@
   }
 
   @media screen and (max-width: 800px) and (min-width: 600px) {
-    width: 450px;
+    width: 500px;
     height: 650px;
 
     img {
@@ -133,7 +148,7 @@
       .Col {
       
         h3 {
-          font-size: 19.5px;
+          font-size: 17.5px;
           color: #1D60AA;
           margin-bottom: 5px;
         }
@@ -164,8 +179,13 @@
   }
 
   @media screen and (max-width: 600px) and (min-width: 500px) {
-    width: 400px;
-    height: 650px;
+    width: 430px;
+    height: 430px;
+
+    h4 {
+      margin-top: 20px;
+      font-size: 18px;
+    }
 
     img {
       width: 83px;
@@ -175,18 +195,18 @@
 
     .CardContent {
 
-      padding-top: 30px;
+      padding-top: 10px;
   
       .Col {
       
         h3 {
-          font-size: 18.5px;
+          font-size: 13.5px;
           color: #1D60AA;
           margin-bottom: 5px;
         }
   
         h5 {
-          font-size: 13.7px;
+          font-size: 11.7px;
         }
   
       }
@@ -211,29 +231,34 @@
   }
 
   @media screen and (max-width: 500px) and (min-width: 458px) {
-    width: 360px;
-    height: 630px;
+    width: 430px;
+    height: 430px;
+
+    h4 {
+      margin-top: 20px;
+      font-size: 18px;
+    }
 
     img {
-      width: 80px;
-      height: 80px;
+      width: 83px;
+      height: 83px;
       padding: 11.5px;
     }
 
     .CardContent {
 
-      padding-top: 20px;
+      padding-top: 10px;
   
       .Col {
       
         h3 {
-          font-size: 18.5px;
+          font-size: 13.5px;
           color: #1D60AA;
           margin-bottom: 5px;
         }
   
         h5 {
-          font-size: 13.7px;
+          font-size: 11.7px;
         }
   
       }
@@ -257,24 +282,33 @@
 
   }
 
-  @media screen and (max-width: 458px) and (min-width: 390px) {
-    width: 320px;
-    height: 630px;
+  @media screen and (max-width: 458px) {
+    width: 300px;
+    height: 480px;
+
+    h4 {
+      margin-top: 20px;
+      font-size: 18px;
+    }
 
     img {
-      width: 70px;
-      height: 70px;
+      width: 83px;
+      height: 83px;
       padding: 11.5px;
     }
 
     .CardContent {
 
-      padding-top: 30px;
+      padding-top: 10px;
+
+      .Row {
+        flex-direction: column; 
+      }
   
       .Col {
       
         h3 {
-          font-size: 16.5px;
+          font-size: 13.5px;
           color: #1D60AA;
           margin-bottom: 5px;
         }
@@ -286,7 +320,7 @@
       }
   
       h6 {
-        font-size: 11.7px;
+        font-size: 13.7px;
       }
   
       ul {
@@ -294,7 +328,7 @@
         padding-left: 30px;
   
         li {
-          font-size: 11.5px;
+          font-size: 13.5px;
           margin-bottom: 2px;
         }
   
@@ -304,148 +338,148 @@
 
   }
 
-  @media screen and (max-width: 390px) and (min-width: 370px) {
-    width: 300px;
-    height: 630px;
+  // @media screen and (max-width: 390px) and (min-width: 370px) {
+  //   width: 300px;
+  //   height: 630px;
 
-    img {
-      width: 70px;
-      height: 70px;
-      padding: 11.5px;
-    }
+  //   img {
+  //     width: 70px;
+  //     height: 70px;
+  //     padding: 11.5px;
+  //   }
 
-    .CardContent {
+  //   .CardContent {
 
-      padding-top: 30px;
+  //     padding-top: 30px;
   
-      .Col {
+  //     .Col {
       
-        h3 {
-          font-size: 16.5px;
-          color: #1D60AA;
-          margin-bottom: 5px;
-        }
+  //       h3 {
+  //         font-size: 16.5px;
+  //         color: #1D60AA;
+  //         margin-bottom: 5px;
+  //       }
   
-        h5 {
-          font-size: 11.7px;
-        }
+  //       h5 {
+  //         font-size: 11.7px;
+  //       }
   
-      }
+  //     }
   
-      h6 {
-        font-size: 11.7px;
-        margin-left: 10px;
-      }
+  //     h6 {
+  //       font-size: 11.7px;
+  //       margin-left: 10px;
+  //     }
   
-      ul {
-        list-style-type: none;
-        padding-left: 10px;
+  //     ul {
+  //       list-style-type: none;
+  //       padding-left: 10px;
   
-        li {
-          font-size: 11.5px;
-          margin-bottom: 2px;
-        }
+  //       li {
+  //         font-size: 11.5px;
+  //         margin-bottom: 2px;
+  //       }
   
-      }
+  //     }
   
-    }
+  //   }
 
-  }
+  // }
 
-  @media screen and (max-width: 370px) and (min-width: 350px) {
-    width: 280px;
-    height: 630px;
+  // @media screen and (max-width: 370px) and (min-width: 350px) {
+  //   width: 280px;
+  //   height: 630px;
 
-    img {
-      width: 65px;
-      height: 65px;
-      padding: 11px;
-    }
+  //   img {
+  //     width: 65px;
+  //     height: 65px;
+  //     padding: 11px;
+  //   }
 
-    .CardContent {
+  //   .CardContent {
 
-      padding-top: 30px;
+  //     padding-top: 30px;
   
-      .Col {
+  //     .Col {
       
-        h3 {
-          font-size: 14.5px;
-          color: #1D60AA;
-          margin-bottom: 5px;
-        }
+  //       h3 {
+  //         font-size: 14.5px;
+  //         color: #1D60AA;
+  //         margin-bottom: 5px;
+  //       }
   
-        h5 {
-          font-size: 11.7px;
-        }
+  //       h5 {
+  //         font-size: 11.7px;
+  //       }
   
-      }
+  //     }
   
-      h6 {
-        font-size: 11.7px;
-        margin-left: 10px;
-      }
+  //     h6 {
+  //       font-size: 11.7px;
+  //       margin-left: 10px;
+  //     }
   
-      ul {
-        list-style-type: none;
-        padding-left: 10px;
+  //     ul {
+  //       list-style-type: none;
+  //       padding-left: 10px;
   
-        li {
-          font-size: 11.5px;
-          margin-bottom: 2px;
-        }
+  //       li {
+  //         font-size: 11.5px;
+  //         margin-bottom: 2px;
+  //       }
   
-      }
+  //     }
   
-    }
+  //   }
 
-  }
+  // }
 
-  @media screen and (max-width: 350px) {
-    width: 280px;
-    height: 630px;
+  // @media screen and (max-width: 350px) {
+  //   width: 280px;
+  //   height: 630px;
 
-    img {
-      width: 65px;
-      height: 65px;
-      padding: 11px;
-    }
+  //   img {
+  //     width: 65px;
+  //     height: 65px;
+  //     padding: 11px;
+  //   }
 
-    .CardContent {
+  //   .CardContent {
 
-      padding-top: 30px;
+  //     padding-top: 30px;
   
-      .Col {
+  //     .Col {
       
-        h3 {
-          font-size: 14.5px;
-          color: #1D60AA;
-          margin-bottom: 5px;
-        }
+  //       h3 {
+  //         font-size: 14.5px;
+  //         color: #1D60AA;
+  //         margin-bottom: 5px;
+  //       }
   
-        h5 {
-          font-size: 11.7px;
-        }
+  //       h5 {
+  //         font-size: 11.7px;
+  //       }
   
-      }
+  //     }
   
-      h6 {
-        font-size: 11.7px;
-        margin-left: 10px;
-      }
+  //     h6 {
+  //       font-size: 11.7px;
+  //       margin-left: 10px;
+  //     }
   
-      ul {
-        list-style-type: none;
-        padding-left: 10px;
+  //     ul {
+  //       list-style-type: none;
+  //       padding-left: 10px;
   
-        li {
-          font-size: 11.5px;
-          margin-bottom: 2px;
-        }
+  //       li {
+  //         font-size: 11.5px;
+  //         margin-bottom: 2px;
+  //       }
   
-      }
+  //     }
   
-    }
+  //   }
 
-  }
+  // }
 
 }

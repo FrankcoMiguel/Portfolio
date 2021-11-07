@@ -4,6 +4,7 @@
   background-color:#ffffff;
   margin: 40px;
   position: relative;
+  border-radius: 5%;
 
   .CardContainer {
 
@@ -105,6 +106,7 @@
     cursor: pointer;
     padding: 0px;
     transition: .35s ease-in-out;
+    border-radius: 3%;
     z-index: -1;
 
     h5 {

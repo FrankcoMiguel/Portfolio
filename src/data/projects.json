@@ -81,7 +81,7 @@
         {
             "id": 3,
             "name": "Cinema Premium",
-            "description": "A REST API that collect a wide variety of Cinema information from movies to actors.",
+            "description": "Cinema Premium is a Full Stack project that serves Filmmaking information as API response, excel worksheet and/or CSV.",
             "tags": [{
                     "id": 1,
                     "name": "Cinema",
@@ -120,7 +120,7 @@
         {
             "id": 4,
             "name": "DayToDay",
-            "description": "A Desktop Application to manage the daily tasks and the hours invested",
+            "description": "A Java Application created to manage the tickets/tasks I have to deal with every single day at work, storing the data in a Embedded Database",
             "tags": [{
                     "id": 1,
                     "name": "Desktop",
@@ -133,7 +133,7 @@
                 },
                 {
                     "id": 3,
-                    "name": "Tasks",
+                    "name": "Productivity",
                     "highlighted": true
                 }
             ],

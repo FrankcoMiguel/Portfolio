@@ -11,6 +11,34 @@ body {
   margin-top: 280px;
   margin-bottom: 220px;
 
+  svg {
+    width: 50px;
+    height: auto;
+    margin-top: 80px;
+    animation-name: mouseEffect;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+
+    @keyframes mouseEffect {
+      from {transform: translateY(0);}
+      to {transform: translateY(20px);}
+    }
+
+    path {
+      stroke: #ffffff;
+      stroke-width: 1.2px;
+    }
+    
+  }
+
+  p {
+    margin-top: 40px;
+    font-size: 17px;
+  }
+
+
   h1 {
     color: #1D60AA;
     margin-bottom: 35px;
@@ -19,13 +47,6 @@ body {
   h4 {
     width: 700px;
     text-align: center;
-  }
-
-  p {
-    width: 640px;
-    font-size: 16px;
-    font-weight: 550;
-    text-align: end;
   }
 
   @media screen and (max-width: 775px) and (min-width: 682px) {
@@ -116,8 +137,8 @@ body {
 
 .About {
   width: 100vw;
-  padding-top: 450px;
-  padding-bottom: 60px;
+  padding-top: 380px;
+  padding-bottom: 160px;
   background-image: url('../images/about/waves/wave-xl.svg');
   background-repeat: no-repeat;
   display: flex;
@@ -125,10 +146,12 @@ body {
   justify-content: center;
   align-items: center;
 
+  
+
   h3 {
     color: #fff;
-    margin-bottom: 20px;
-    font-size: 34px;
+    margin-bottom: 80px;
+    font-size: 45px;
     font-weight: 550;
 
   }

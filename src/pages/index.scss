@@ -127,7 +127,7 @@ body {
 
 .Skills {
   width: 100vw;
-  height: 1150px;
+  height: 1250px;
   padding-top: 200px;
   background-image: url('../images/index/waves/wave-xl.svg');
   background-repeat: no-repeat;
@@ -143,6 +143,7 @@ body {
       font-size: 45px;
       text-align: center;
       margin-bottom: 100px;
+      margin-top: 50px;
     }
 
     .SkillsGrid {
@@ -228,6 +229,7 @@ body {
 
 .Contact {
   width: 100vw;
+  height: 800vh;
   height: auto;
   display: flex;
   justify-content: space-evenly;
@@ -328,7 +330,7 @@ body {
 
   @media screen and (max-width: 1025px) and (min-width: 924px) {
 
-    height: 450px;
+    height: 600px;
   
     .ContactMessage {
   
