@@ -17,7 +17,7 @@ export default function About() {
     <Layout title="About Me" page={2}>
       <div className="Introduction">
         <h1>About Me</h1>
-        <h4>I am a computer programmer with more than 5 years
+        <h4>I am a computer programmer with more than 3 years
           of Experience in Web Development and Data Analysis
         </h4>
         <CgMouse />

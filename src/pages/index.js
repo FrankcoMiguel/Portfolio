@@ -4,8 +4,7 @@ import ReCAPTCHA from 'react-google-recaptcha'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import emailjs from 'emailjs-com'
-import Profile from '../images/index/about-picture.jpg'
-import Profile2 from '../images/index/profile-picture.jpg'
+import Profile from '../images/index/profile-picture.jpg'
 import EmailVector from '../images/index/email-vector.png'
 import Layout from '../components/Layout'
 import Skill from '../components/Skill'
@@ -32,22 +31,30 @@ export default function Home() {
   const sendEmail = async (e) => {
     e.preventDefault()
 
-    emailjs.sendForm('outlook_service', 'outlook_template', e.target, 'user_1ZCvBjDqmVodWw85yCqBZ')
-    .then((result) => {
-      console.log(result.text)
-    }, (error) => {
-      console.log(error.text)
-    })
+    if (verified) {
 
-    setEmail(true)
-    // e.target.reset()
+      alert("ReCAPTCHA is required")
+
+    } else {
+
+      emailjs.sendForm('outlook_service', 'outlook_template', e.target, 'user_1ZCvBjDqmVodWw85yCqBZ')
+      .then((result) => {
+        console.log(result.text)
+      }, (error) => {
+        console.log(error.text)
+      })
+  
+      setEmail(true)
+      // e.target.reset()
+
+    }
 
   }
 
   return (
     <Layout title="Home" page={1}>
       <div className="Presentation">
-        <img data-aos="zoom-right" src={Profile2} />
+        <img data-aos="zoom-right" src={Profile} />
         <div className="Greeting">
           <h4>Hey there, I am</h4>
           <h1>Frank Miguel Orozco</h1>
