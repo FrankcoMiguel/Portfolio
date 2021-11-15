@@ -5,6 +5,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import emailjs from 'emailjs-com'
 import Profile from '../images/index/about-picture.jpg'
+import Profile2 from '../images/index/profile-picture.jpg'
 import EmailVector from '../images/index/email-vector.png'
 import Layout from '../components/Layout'
 import Skill from '../components/Skill'
@@ -46,7 +47,7 @@ export default function Home() {
   return (
     <Layout title="Home" page={1}>
       <div className="Presentation">
-        <img data-aos="zoom-right" src={Profile} />
+        <img data-aos="zoom-right" src={Profile2} />
         <div className="Greeting">
           <h4>Hey there, I am</h4>
           <h1>Frank Miguel Orozco</h1>
