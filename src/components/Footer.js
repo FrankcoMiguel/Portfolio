@@ -10,7 +10,7 @@ const Footer = () => {
         <footer>
             <p>®Frank Orozco 2019 - 2021</p>
             <div className="Row">
-                <p>All rights reserved. Built with</p>
+                <p>All rights reserved. Made with</p>
                 <FaHeart />
                 <p>using</p>
                 <Tippy content="GatsbyJS" placement="right"><a href='https://www.gatsbyjs.com/'><i className="devicon-gatsby-plain colored"></i></a></Tippy>
