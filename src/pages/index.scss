@@ -11,8 +11,8 @@ body {
   margin-bottom: 200px;
 
   img {
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: auto;
     border-radius: 100%;
     margin-right: 100px;
   }
@@ -42,62 +42,68 @@ body {
   }
 
   @media screen and (max-width: 950px) and (min-width: 495px) {
-    
+
     flex-flow: column wrap;
 
-    img { margin-right: 0; }
-  
+    img {
+      margin-right: 0;
+    }
+
     .Greeting {
       align-items: center;
       padding-top: 40px;
-  
-      h3 { font-size: 24px; }
-  
-      p { text-align: center; }
-  
+
+      h3 {
+        font-size: 24px;
+      }
+
+      p {
+        text-align: center;
+      }
+
     }
 
   }
 
   @media screen and (max-width: 495px) and (min-width: 400px) {
-    
+
     flex-flow: column wrap;
 
     img {
       width: 240px;
       margin-right: 0;
     }
-  
+
     .Greeting {
       align-items: center;
       padding-top: 40px;
-  
+
       h1 {
         font-size: 32px;
       }
-  
+
       h3 {
         font-size: 22px;
       }
-  
+
       p {
         font-size: 18px;
         text-align: center;
       }
-  
+
     }
 
   }
 
   @media screen and (max-width: 400px) {
-    
+
     flex-flow: column wrap;
 
     img {
       width: 220px;
       margin-right: 0;
     }
-  
+
     .Greeting {
       align-items: center;
       padding-top: 40px;
@@ -105,15 +111,15 @@ body {
       h4 {
         font-size: 18px;
       }
-  
+
       h1 {
         font-size: 25px;
       }
-  
+
       h3 {
         font-size: 20px;
       }
-  
+
       p {
         width: 250px;
         font-size: 18px;
@@ -177,7 +183,7 @@ body {
 
   }
 
-  @media screen and (max-width:  632px) and (min-width: 495px) {
+  @media screen and (max-width: 632px) and (min-width: 495px) {
 
     height: 1500px;
     background-image: url('../images/index/waves/wave-sm.svg') !important;
@@ -201,7 +207,7 @@ body {
 
   }
 
-  @media screen and (max-width:  495px) {
+  @media screen and (max-width: 495px) {
 
     height: 1500px;
     background-image: url('../images/index/waves/wave-xs.svg') !important;
@@ -259,11 +265,11 @@ body {
       display: flex;
       flex-flow: column wrap;
       margin-top: 80px;
-  
+
       q {
         font-weight: 550;
       }
-  
+
       i {
         padding-top: 10px;
         text-align: end;
@@ -279,7 +285,7 @@ body {
     .form-hidden {
       display: none;
     }
-  
+
     .form-group {
       .form-control {
         border-radius: 0;
@@ -288,7 +294,7 @@ body {
       }
 
     }
-    
+
 
     .Recaptcha {
       margin: 15px 0px;
@@ -331,49 +337,49 @@ body {
   @media screen and (max-width: 1025px) and (min-width: 924px) {
 
     height: 600px;
-  
+
     .ContactMessage {
-  
+
       h1 {
         font-size: 35px;
       }
-  
+
       p {
         width: 360px;
         font-size: 18px;
       }
-  
+
     }
-  
+
   }
 
   @media screen and (max-width: 924px) and (min-width: 470px) {
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
-  
+
     .ContactMessage {
-  
+
       h1 {
         font-size: 35px;
       }
-  
+
       p {
         width: 360px;
         font-size: 18px;
       }
-  
+
       .Quote {
         margin-top: 30px;
       }
-  
+
     }
-  
+
     .ContactForm {
-  
+
       width: 70vw;
       margin-top: 80px;
-        
+
       button {
         margin-bottom: 60px;
       }
@@ -385,39 +391,39 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-  
+
     .ContactMessage {
-  
+
       h1 {
         font-size: 25px;
         text-align: center;
       }
-  
+
       h3 {
         font-size: 21px;
         text-align: center;
       }
-  
+
       p {
         width: 90vw;
         font-size: 16px;
         text-align: center;
 
       }
-  
+
       .Quote {
         width: 80vw;
         margin-top: 30px;
-    
+
       }
-  
+
     }
-  
+
     .ContactForm {
-  
+
       width: 80vw;
       margin-top: 80px;
-        
+
       button {
         margin-bottom: 0px;
       }
@@ -425,5 +431,3 @@ body {
     }
   }
 }
-
-
