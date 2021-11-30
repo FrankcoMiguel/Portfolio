@@ -4,7 +4,8 @@ import ReCAPTCHA from 'react-google-recaptcha'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import emailjs from 'emailjs-com'
-import Profile from '../images/index/about-picture.jpg'
+// import Profile from '../images/index/about-picture.jpg'
+import Profile from '../images/index/profile-picture.jpg'
 import EmailVector from '../images/index/email-vector.png'
 import Layout from '../components/Layout'
 import Skill from '../components/Skill'
@@ -93,20 +94,20 @@ export default function Home() {
           </div>
         </div>
         <div className="ContactForm">
-          <Form className={email ? 'form-hidden' : ''} onSubmit={sendEmail}>
-            <Form.Group controlId="FirstNameTextField">
+          <Form className={email ? 'form-hidden' : 'form'} onSubmit={sendEmail}>
+            <Form.Group className="form-group" controlId="FirstNameTextField">
               <Form.Control name="firstname" type="text" placeholder="First Name" required />
             </Form.Group>
 
-            <Form.Group controlId="LastNameTextField">
+            <Form.Group className="form-group" controlId="LastNameTextField">
               <Form.Control name="lastname" type="text" placeholder="Last Name" required />
             </Form.Group>
 
-            <Form.Group controlId="EmailTextField">
+            <Form.Group className="form-group" controlId="EmailTextField">
               <Form.Control name="email" type="email" placeholder="Email" required />
             </Form.Group>
 
-            <Form.Group controlId="MessageTextField">
+            <Form.Group className="form-group" controlId="MessageTextField">
               <Form.Control
                 name="message"
                 as="textarea"

@@ -132,7 +132,7 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     margin: 0px 0px 0px 0px !important;
-    padding: 0px 40px 30px 60px;
+    padding: 0px 60px 30px 60px;
     margin-top: 40px;
     width: 100vw;
     // transition: all 0.3s ease-out;
@@ -143,8 +143,8 @@ nav {
       align-items: center;
       justify-content: space-between;
       background-color: #ffffff;
-      padding: 0px 40px 30px 60px;
-      margin-top: 40px;
+      padding: 0px 50px 30px 70px;
+      margin-top: 50px;
 
       .NavLogo {
         width: 72px;
@@ -201,21 +201,22 @@ nav {
     .NavContent.hidden {
       display: flex;
       flex-flow: column wrap;
-      clip-path: circle(0px at 90% 10%);
-      -webkit-clip-path: circle(0px at 90% -10%);
+      clip-path: circle(0px at 100% 10%);
+      -webkit-clip-path: circle(0px at 100% -10%);
       transition: all 0s ease-out;
     }
 
     &.open {
+      width: 100vw;
       height: 100vh;
       background-color: #ffffff;
+      // background-color: #7a3838;
       display: flex;
       position: fixed;
       flex-direction: column;
       justify-content: flex-start;
       margin: 0px 0px 0px 0px !important;
       padding: 0px 0px 0 0px;
-      width: 100vw;
       // transition: all 0.3s ease-out;
     }
   }

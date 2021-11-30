@@ -18,7 +18,7 @@ const EducationCard = () => {
           <div className="Row">
             <div className="Col">
               <h3>Associate's Degree - Software Engineering</h3>
-              <h5><a href="https://itla.edu.do" target="_blank">https://itla.edu.do</a> - Dominican Republic</h5>
+              <h5><a href="https://itla.edu.do" target="_blank">ITLA</a> - Dominican Republic</h5>
             </div>
             <div className="Col">
               <h3>3.5 GPA</h3>
@@ -30,7 +30,7 @@ const EducationCard = () => {
           <div className="Row">
             <div className="Col">
               <h3>Certification - Frontend Development</h3>
-              <h5><a href="https://platzi.com/p/FrankcoMiguel29/" target="_blank">https://platzi.com/</a> - E-Learning Platform</h5>
+              <h5><a href="https://platzi.com/p/FrankcoMiguel29/" target="_blank">Platzi</a> - E-Learning Platform</h5>
             </div>
             <div className="Col">
               <h3>B+</h3>
@@ -45,7 +45,7 @@ const EducationCard = () => {
           <div className="Row">
             <div className="Col">
               <h3>Programmer / Data Analyst</h3>
-              <h5><a href="https://www.nexusdatasolutions.com" target="_blank">neXus Data Solutions</a> - On-site / Remote</h5>
+              <h5><a href="https://www.nexusdatasolutions.com" target="_blank">neXus Data Solutions</a> - Hybrid</h5>
             </div>
             <div className="Col">
               <h3>Contract</h3>

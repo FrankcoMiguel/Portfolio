@@ -11,7 +11,7 @@ body {
   margin-bottom: 200px;
 
   img {
-    width: 320px;
+    width: 380px;
     height: auto;
     border-radius: 100%;
     margin-right: 100px;
@@ -287,9 +287,12 @@ body {
     }
 
     .form-group {
+
+      padding: 8px 0px;
+
       .form-control {
         border-radius: 0;
-        padding: 15px;
+        padding: 7px 15px;
         font-weight: 540;
       }
 
@@ -405,15 +408,24 @@ body {
       }
 
       p {
-        width: 90vw;
+        width: 100vw;
         font-size: 16px;
-        text-align: center;
+        padding: 0px 20px;
+        text-align: left;
 
       }
 
       .Quote {
-        width: 80vw;
+        width: 100vw;
         margin-top: 30px;
+
+        q {
+          text-align: center;
+        }
+        
+        i {
+          text-align: center;
+        }
 
       }
 

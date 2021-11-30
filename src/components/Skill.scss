@@ -24,12 +24,18 @@
       li {
         margin: 0 10px;
 
-        i {
-          color: #fff;
-          font-size: 30px;
-          cursor: pointer;
-          font-weight: lighter;
-          // font-family: 'Segoe UI';
+        a {
+
+          text-decoration: none;
+
+          i {
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+            font-weight: lighter;
+            // font-family: 'Segoe UI';
+          }
+
         }
 
       }
