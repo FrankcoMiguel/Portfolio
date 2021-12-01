@@ -35,13 +35,14 @@ footer {
             height: auto;
             color: #ce2828;  
             animation-name: heartEffect;
-            animation-duration: 450ms;
+            animation-duration: 600ms;
             animation-iteration-count: infinite;
             animation-direction: alternate-reverse;
+            margin-bottom: 5px;
 
             @keyframes heartEffect {
-                from {width: 9px; height: 9px;}
-                to {width: 17px; height: 17px;}
+                from {width: 13px; height: 13px;}
+                to {width: 16px; height: 16px;}
               }
 
         }
