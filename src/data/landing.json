@@ -78,18 +78,6 @@
                         "name": "GatsbyJS",
                         "path": "devicon-gatsby-plain",
                         "moreInfo": "https://www.gatsbyjs.com/get-started/"
-                    },
-                    {
-                        "id": 4,
-                        "name": "NextJS",
-                        "path": "devicon-nextjs-original",
-                        "moreInfo": "https://nextjs.org/docs/getting-started"
-                    },
-                    {
-                        "id": 5,
-                        "name": "GraphQL",
-                        "path": "devicon-graphql-plain",
-                        "moreInfo": "https://graphql.org/learn/"
                     }
                 ]
             },
@@ -101,15 +89,15 @@
                 "icons": [
                     {
                         "id": 1,
-                        "name": "Microsoft SQL Server",
-                        "path": "devicon-microsoftsqlserver-plain",
-                        "moreInfo": "https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15"
-                    },
-                    {
-                        "id": 2,
                         "name": "Oracle PL/SQL",
                         "path": "devicon-oracle-original",
                         "moreInfo": "https://www.oracle.com/database/technologies/appdev/plsql.html"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Microsoft SQL Server",
+                        "path": "devicon-microsoftsqlserver-plain",
+                        "moreInfo": "https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15"
                     },
                     {
                         "id": 3,
@@ -168,12 +156,6 @@
                         "name": "Webpack",
                         "path": "devicon-webpack-plain",
                         "moreInfo": "https://devdocs.io/webpack~4/"
-                    },
-                    {
-                        "id": 4,
-                        "name": "Spring Framework",
-                        "path": "devicon-spring-plain",
-                        "moreInfo": "https://docs.spring.io/spring-framework/docs/current/reference/html/"
                     }
                 ]
             }
