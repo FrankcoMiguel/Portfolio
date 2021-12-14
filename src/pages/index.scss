@@ -15,6 +15,7 @@ body {
     height: auto;
     border-radius: 100%;
     margin-right: 100px;
+
   }
 
   .Greeting {
@@ -44,6 +45,8 @@ body {
   @media screen and (max-width: 950px) and (min-width: 495px) {
 
     flex-flow: column wrap;
+    margin-top: 230px;
+
 
     img {
       margin-right: 0;
@@ -68,6 +71,8 @@ body {
   @media screen and (max-width: 495px) and (min-width: 400px) {
 
     flex-flow: column wrap;
+    margin-top: 210px;
+    
 
     img {
       width: 240px;
@@ -98,6 +103,8 @@ body {
   @media screen and (max-width: 400px) {
 
     flex-flow: column wrap;
+    margin-top: 200px;
+
 
     img {
       width: 220px;
