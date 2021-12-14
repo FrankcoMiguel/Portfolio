@@ -4,6 +4,7 @@
             "id": 1,
             "name": "ProBackPack",
             "description": "An android application to remind your homeworks and assignments, also notify your college progress.",
+            "borderRadius": "0px",
             "tags": [{
                     "id": 1,
                     "name": "Android",
@@ -43,6 +44,7 @@
             "id": 2,
             "name": "Chick-4-All",
             "description": "A WebApp devised to manage a restaurant, including stocking and human resource development, also statistics to track the sales process.",
+            "stylborderRadiuse": "0px",
             "tags": [{
                     "id": 1,
                     "name": "Service",
@@ -82,6 +84,7 @@
             "id": 3,
             "name": "Cinema Premium",
             "description": "Cinema Premium is a Full Stack project that serves Filmmaking information as API response, excel worksheet and/or CSV.",
+            "borderRadius": "0px",
             "tags": [{
                     "id": 1,
                     "name": "Cinema",
@@ -121,6 +124,7 @@
             "id": 4,
             "name": "DayToDay",
             "description": "A Java Application created to manage the tickets/tasks I have to deal with every single day at work, storing the data in a Embedded Database",
+            "borderRadius": "0px",
             "tags": [{
                     "id": 1,
                     "name": "Desktop",
@@ -155,6 +159,46 @@
             ],
             "page": "https://drive.google.com/file/d/1cKth7ShuLr2uxxPYxKXm0gpLF0qinwxL/view?usp=sharing",
             "source": "https://github.com/FrankcoMiguel/DayToDay"
+        },
+        {
+            "id": 5,
+            "name": "Vaccinations Dashboard",
+            "description": "A dashboard with advanced Data Visualizations and Interactive Reports to deliver the COVID-19 Vaccinations data optimized and classified",
+            "borderRadius": "100%",
+            "tags": [{
+                    "id": 1,
+                    "name": "COVID-19",
+                    "highlighted": false
+                },
+                {
+                    "id": 2,
+                    "name": "Dashboard",
+                    "highlighted": false
+                },
+                {
+                    "id": 3,
+                    "name": "Data Analysis",
+                    "highlighted": true
+                }
+            ],
+            "toolsUsed": [{
+                    "id": 1,
+                    "name": "JavaScript",
+                    "path": "devicon-javascript-plain"
+                },
+                {
+                    "id": 2,
+                    "name": "Python",
+                    "path": "devicon-python-plain"
+                },
+                {
+                    "id": 3,
+                    "name": "Oracle",
+                    "path": "devicon-oracle-original"
+                }
+            ],
+            "page": "https://apex.oracle.com/pls/apex/frankslab/r/covid_vaccines/dashboard",
+            "source": "https://github.com/FrankcoMiguel/COVID19-Vaccinations"
         }
     ]
 }]

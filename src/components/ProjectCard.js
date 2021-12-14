@@ -9,7 +9,7 @@ import { ImDownload } from 'react-icons/im'
 
 import "./ProjectCard.scss"
 
-const ProjectCard = ({logo, title, description, tags = [], icons = [], page, source}) => {
+const ProjectCard = ({logo, title, description, logoRadius, tags = [], icons = [], page, source}) => {
 
   const [overlay, setOverlay] = useState(false)
   let projectRef = useRef()
@@ -39,7 +39,7 @@ const ProjectCard = ({logo, title, description, tags = [], icons = [], page, sou
   return (
     <div ref={projectRef} data-aos="zoom-out" className="ProjectCard">
       <div className="CardContainer" onClick={toggleOverlay}>
-        <img className="CardLogo" src={logo} />
+        <img className="CardLogo" src={logo} style={{borderRadius: `${logoRadius}`}} />
         <div className="CardContent">
           <h2 className="CardTitle">{title}</h2>
           <p className="CardDescription">{description}</p>

@@ -9,13 +9,14 @@ import proBackPack from '../images/projects/probackpack-project.svg'
 import chick4all from '../images/projects/chick4all-project.svg'
 import cinemaPremium from '../images/projects/cinemapremium-project.svg'
 import dayToDay from '../images/projects/daytoday-project.svg'
+import covidVaccines from '../images/projects/covid-vaccinations.svg'
 
 
 import "./projects.scss"
 
 export default function Projects() {
 
-  const logotypes = [proBackPack, chick4all, cinemaPremium, dayToDay]
+  const logotypes = [proBackPack, chick4all, cinemaPremium, dayToDay, covidVaccines]
 
   return (
     <Layout title="Projects" page={3}>
@@ -34,6 +35,7 @@ export default function Projects() {
         <ProjectCard 
               key={p.id}
               logo={logotypes[p.id - 1]}
+              logoRadius={p.borderRadius}
               title={p.name}
               description={p.description}
               tags={p.tags}
