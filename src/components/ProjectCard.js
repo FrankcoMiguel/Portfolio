@@ -5,7 +5,7 @@ import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 
 import { FaGithub } from 'react-icons/fa'
-import { ImDownload } from 'react-icons/im'
+import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 
 import "./ProjectCard.scss"
 
@@ -60,7 +60,7 @@ const ProjectCard = ({logo, title, description, logoRadius, tags = [], icons = [
       <div className={overlay ? `CardOverlay up` : `CardOverlay`} onClick={toggleOverlay}>
         <h5>Here you can download the app and visualize the source code</h5>
         <ul>
-          {page === "no" ? '' : <li><a className="download" href={page} target="_blank"><ImDownload/></a></li>}
+          {page === "no" ? '' : <li><a className="app" href={page} target="_blank"><AiOutlineFundProjectionScreen/></a></li>}
           <li><a className="github" href={source} target="_blank"><FaGithub/></a></li>
         </ul>
       </div>
