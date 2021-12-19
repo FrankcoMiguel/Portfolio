@@ -32,9 +32,10 @@ const Skill = ({ title, percentage, time, icons = []}) => {
         <span
           className="BarStatus"
           style={{ width: `${percentage}%` }}>  
-          <Tippy placement="bottom" content={`${percentage <= 50 ? 'Newbie' : 
-            percentage > 50 && percentage <= 80 ? 'Good' : 
-            percentage > 80 && percentage <=100 ? 'Expert' : 'Percentage cannot be grather than 100'} - ${time} Years of Experience`}>
+          <Tippy placement="bottom" content={`${percentage <= 30 ? 'Beginner' : 
+            percentage > 30 && percentage <= 50 ? 'Good' :
+            percentage > 50 && percentage <= 80 ? 'Professional' : 
+            percentage > 80 && percentage <=100 ? 'Expert' : 'Percentage cannot be grather than 100'}`}>
               <span className="Indicator"></span>
           </Tippy> 
         </span>

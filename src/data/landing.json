@@ -7,7 +7,7 @@
                 "id": 1,
                 "name": "Web Design",
                 "percentage": 90,
-                "time": 6,
+                "time": 4,
                 "icons": [
                     {
                         "id": 1,
@@ -32,8 +32,8 @@
             {
                 "id": 2,
                 "name": "Backend",
-                "percentage": 75,
-                "time": 4,
+                "percentage": 57,
+                "time": 3,
                 "icons": [
                     {
                         "id": 1,
@@ -43,13 +43,13 @@
                     },
                     {
                         "id": 2,
-                        "name":"C Sharp",
+                        "name":"C#",
                         "path": "devicon-csharp-plain",
                         "moreInfo": "https://docs.microsoft.com/en-us/dotnet/csharp/"
                     },
                     {
                         "id": 3,
-                        "name": "DotNet Framework Core",
+                        "name": ".NET Framework Core",
                         "path": "devicon-dotnetcore-plain",
                         "moreInfo": "https://docs.microsoft.com/en-us/dotnet/"
                     }
@@ -58,12 +58,12 @@
             {
                 "id": 3,
                 "name": "Frontend",
-                "percentage": 83,
-                "time": 5,
+                "percentage": 85,
+                "time": 4,
                 "icons": [
                     {
                         "id": 1,
-                        "name": "JavaScript ECMAScript",
+                        "name": "JavaScript",
                         "path": "devicon-javascript-plain",
                         "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                     },
@@ -83,9 +83,9 @@
             },
             {
                 "id": 4,
-                "name": "Databases",
-                "percentage": 92,
-                "time": 5,
+                "name": "Data Analysis",
+                "percentage": 88,
+                "time": 4,
                 "icons": [
                     {
                         "id": 1,
@@ -121,23 +121,23 @@
                     },
                     {
                         "id": 2,
-                        "name": "Swift",
-                        "path": "devicon-swift-plain",
-                        "moreInfo": "https://swift.org/documentation/"
+                        "name": "Material UI",
+                        "path": "devicon-materialui-plain",
+                        "moreInfo": "https://mui.com/getting-started/usage/"
                     },
                     {
                         "id": 3,
                         "name": "Adobe Xd",
                         "path": "devicon-xd-plain",
-                        "moreInfo": "https://www.adobe.io/xd/uxp/"
+                        "moreInfo": "https://www.adobe.io/xd/uxp/"   
                     }
                 ]
             },
             {
                 "id": 6,
-                "name": "Other",
-                "percentage": 47,
-                "time": 3,
+                "name": "Scripting",
+                "percentage": 50,
+                "time": 2,
                 "icons": [
                     {
                         "id": 1,
@@ -147,15 +147,15 @@
                     },
                     {
                         "id": 2,
-                        "name": "Node Package Manager",
-                        "path": "devicon-npm-original-wordmark",
-                        "moreInfo": "https://docs.npmjs.com/"
+                        "name": "Bash",
+                        "path": "devicon-bash-plain",
+                        "moreInfo": "https://www.gnu.org/software/bash/"
                     },
                     {
                         "id": 3,
-                        "name": "Webpack",
-                        "path": "devicon-webpack-plain",
-                        "moreInfo": "https://devdocs.io/webpack~4/"
+                        "name": "Node Package Manager",
+                        "path": "devicon-npm-original-wordmark",
+                        "moreInfo": "https://docs.npmjs.com/"
                     }
                 ]
             }
