@@ -17,9 +17,10 @@ export default function About() {
     <Layout title="About Me" page={2}>
       <div className="Introduction">
         <h1>About Me</h1>
-        <h4>I am a computer programmer with 4 years
-          of experience in Software Development
-        </h4>
+        <h5>
+        I am computer programmer with a strong expertise in Web Development and Data Analysis using Oracle (PL/SQL) 
+        and Microsoft Technologies Microsoft .NET Core / React / SQL Server
+        </h5>
         <CgMouse />
         <p>Scroll down to explore more</p>
       </div>
