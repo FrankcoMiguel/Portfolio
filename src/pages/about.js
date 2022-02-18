@@ -17,10 +17,9 @@ export default function About() {
     <Layout title="About Me" page={2}>
       <div className="Introduction">
         <h1>About Me</h1>
-        <h5>
-        I am computer programmer with a strong expertise in Web Development and Data Analysis using Oracle (PL/SQL) 
-        and Microsoft Technologies Microsoft .NET Core / React / SQL Server
-        </h5>
+        <h4>
+        Detail-oriented programmer specialized in web development and data analysis using Oracle and Microsoft Technologies.
+        </h4>
         <CgMouse />
         <p>Scroll down to explore more</p>
       </div>
