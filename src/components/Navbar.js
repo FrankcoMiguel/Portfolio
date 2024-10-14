@@ -54,7 +54,7 @@ function NavigationBar({option, items = []}) {
               </a>
             </li>
             <li className="NavLink">
-              <a href=" https://www.linkedin.com/in/fmorozco/" target="_blank">
+              <a href="https://www.linkedin.com/in/frankmiguel/" target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>

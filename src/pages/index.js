@@ -66,7 +66,7 @@ export default function Home() {
 
       <div className="Skills">
         <div className="SkillsContent">
-          <h1>What am I good at?</h1>
+          <h1>These are my skills</h1>
           <div className="SkillsGrid">
           {landing[0].items.map(s => (
             <Skill key={s.id} 
