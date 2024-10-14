@@ -32,7 +32,7 @@ export default function Home() {
   const sendEmail = async (e) => {
     e.preventDefault()
 
-    if (verified) {
+    if (!verified) {
 
       alert("ReCAPTCHA is required")
 
