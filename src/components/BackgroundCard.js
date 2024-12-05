@@ -11,43 +11,48 @@ const EducationCard = () => {
 
   return (
     <div data-aos="fade-up" className="BackgroundCard">
-        <h4>Educational Background</h4>
+        <h4>My Work Experience</h4>
         <div className="CardContent">
           <div className="Row">
+            <div className="Col">
+              <h3>Sr. Programmer / Data Analyst</h3>
+              <h5><a href="https://www.nexusdatasolutions.com" target="_blank">neXus Data Solutions</a></h5>
+            </div>
+            <div className="Col">
+              <h5>January 2020 - Current</h5>
+            </div>
           </div>
           <div className="Row">
-            <div className="Col">
-              <h3>Associate's of Science - Computer Science</h3>
-              <h5><a href="https://itla.edu.do" target="_blank">Las Americas Institute of Technology</a> - Dominican Republic</h5>
-            </div>
-            <div className="Col">
-              <h5>(2017 - 2019)</h5>
-            </div>
+            <ul>
+                <li>Design, develop and deploy Oracle APEX applications.</li>
+                <li>Translate business requirements into software specifications.</li>
+                <li>Backend development, packages, procedures and functions using PL/SQL.</li>
+                <li>Implement Dynamic Actions, Automatic and Manual Processes (PL/SQL), Shared Components,
+                    Authentication/Authorization Schemes, JET Charts, Classic/Interactive Reports (and Interactive
+                    Grid), Universal Theme components.
+                </li>
+              </ul>
           </div>
         </div>
+
         <div className="CardContent">
           <div className="Row">
             <div className="Col">
-              <h3>Certification - Frontend Development</h3>
-              <h5><a href="https://platzi.com/p/FrankcoMiguel29/" target="_blank">Platzi</a> - E-Learning Platform</h5>
+              <h3>Oracle APEX Developer Lead</h3>
+              <h5><a href="https://www.cigna.com/" target="_blank">Cigna Healthcare</a></h5>
             </div>
             <div className="Col">
-              <h5>(2019 - 2020)</h5>
+              <h5>March 2022 - Current</h5>
             </div>
           </div>
-        </div>
-        <h4>Most Recent Work Experience</h4>
-        <div className="CardContent">
+
           <div className="Row">
-          </div>
-          <div className="Row">
-            <div className="Col">
-              <h3>Programmer / Data Analyst</h3>
-              <h5><a href="https://www.nexusdatasolutions.com" target="_blank">neXus Data Solutions</a> - Hybrid</h5>
-            </div>
-            <div className="Col">
-              <h5>(Since January 2020)</h5>
-            </div>
+            <ul>
+                <li>Develop REST APIs within Oracle APEX and ORDS.</li>
+                <li>Lead the Development of the Rating Tool that supports all sales markets for Vision.</li>
+                <li>Support Underwriters and Actuarial Analysts to mitigate problems in production.</li>
+                <li>Retrieved data from external APIs using the APEX Webservice package and ETL processes.</li>
+              </ul>
           </div>
         </div>
     </div>

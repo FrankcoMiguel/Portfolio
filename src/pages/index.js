@@ -59,8 +59,8 @@ export default function Home() {
         <div className="Greeting">
           <h4>Hey there, I am</h4>
           <h1>Frank Miguel Orozco</h1>
-          <h3>Software Developer</h3>
-          <p>I'm a young man who loves designing and coding solutions</p>
+          <h3>Oracle APEX Developer</h3>
+          {/* <p>OCI and Autonomous Database</p> */}
         </div>
       </div>
 
@@ -83,15 +83,14 @@ export default function Home() {
         <div className="ContactMessage">
           <h1>Don't be a stranger</h1>
           <h3>Just say hello.</h3>
-          <p>Feel free to get in touch. I am always open to
-            help and use my knowledge to implement the best
-            solutions
+          <p>Feel free to get in touch. I am looking to
+            explore new opportunities and use my knowledge to achieve the best results
           </p>
 
-          <div className="Quote">
+          {/* <div className="Quote">
             <q>Greatness from small beginnings</q>
             <i> - Sir Francis Drake.</i>
-          </div>
+          </div> */}
         </div>
         <div className="ContactForm">
           <Form className={email ? 'form-hidden' : 'form'} onSubmit={sendEmail}>

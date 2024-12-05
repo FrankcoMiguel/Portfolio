@@ -18,7 +18,7 @@ export default function About() {
       <div className="Introduction">
         <h1>About Me</h1>
         <h4>
-        Detail-oriented programmer specialized in web development and data analysis using Oracle and Microsoft Technologies.
+        Detail-oriented programmer with in web development and data analysis using Oracle and Microsoft Technologies.
         </h4>
         <CgMouse />
         <p>Scroll down to explore more</p>
