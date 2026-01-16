@@ -1,10 +1,10 @@
-@import "tailwindcss";
-
 /* Custom fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 /* Devicons for tech icons */
 @import url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css');
+
+@import "tailwindcss";
 
 :root {
   --primary: #6366f1;
