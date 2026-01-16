@@ -1,54 +1,38 @@
 {
-  "name": "Portfolio",
+  "name": "frankslab",
   "private": true,
-  "description": "A Portfolio created with React",
-  "version": "0.1.0",
-  "license": "0BSD",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-regular-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@icon/devicons": "^1.8.0-alpha.3",
-    "@tippyjs/react": "^4.2.5",
+    "@emailjs/browser": "^4.4.1",
+    "@tippyjs/react": "^4.2.6",
     "aos": "^2.3.4",
-    "axios": "^0.24.0",
-    "bootstrap": "^5.1.3",
-    "devicon": "^2.14.0",
-    "emailjs-com": "^3.2.0",
-    "gatsby": "^4.2.0",
-    "gatsby-cli": "4.2.0",
-    "gatsby-plugin-fontawesome-css": "^1.2.0",
-    "gatsby-plugin-react-helmet": "^5.2.0",
-    "gatsby-plugin-sass": "^5.2.0",
-    "sass": "^1.69.0",
-    "react": "17.0.2",
-    "react-bootstrap": "2.0.2",
-    "react-dom": "17.0.2",
-    "react-google-recaptcha": "2.1.0",
-    "react-helmet": "6.1.0",
-    "react-icons": "4.3.1",
-    "recaptcha-v3": "^1.10.0"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.12.0",
+    "tippy.js": "^6.3.7"
   },
   "devDependencies": {
-    "prettier": "2.5.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "@eslint/js": "^9.39.1",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "tailwindcss": "^4.1.18",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^7.2.4"
   }
 }

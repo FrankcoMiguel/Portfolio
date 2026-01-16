@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Devicons for tech icons */
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css');
+
+:root {
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --secondary: #22d3ee;
+  --dark: #0f172a;
+  --dark-light: #1e293b;
+  --gray: #64748b;
+  --light: #f8fafc;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Devicon styling */
+[class^="devicon-"],
+[class*=" devicon-"] {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+[class^="devicon-"]:hover,
+[class*=" devicon-"]:hover {
+  transform: scale(1.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* AOS animations fallback */
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+[data-aos="fade-up"] {
+  transform: translateY(50px);
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+}
+
+[data-aos="fade-down"] {
+  transform: translateY(-50px);
+}
+
+[data-aos="fade-down"].aos-animate {
+  transform: translateY(0);
+}
+
+[data-aos="zoom-out"] {
+  transform: scale(1.1);
+}
+
+[data-aos="zoom-out"].aos-animate {
+  transform: scale(1);
+}
