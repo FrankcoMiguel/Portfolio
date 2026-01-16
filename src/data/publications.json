@@ -1,0 +1,17 @@
+[
+    {
+        "id": "Publications",
+        "items": [
+            {
+                "id": 1,
+                "title": "Rebuilding ProBackPack: From Android to Cross-Platform",
+                "excerpt": "Transforming a college Android app into a modern cross-platform solution for student organization.",
+                "content": "Students juggle multiple classes, each with its own assignments, deadlines, and grading systems. Tracking everything across syllabi, emails, and sticky notes leads to missed deadlines and unnecessary stress.\n\nProBackPack solves this by centralizing everything in one place: assignments with priority sorting, class schedules at a glance, and grade calculations that answer \"what do I need on the final?\"\n\nThe original Android app worked but felt limited. The rebuild brings it to iOS and Android with React Native, adds cloud sync across devices, and delivers a modern UI that stays out of your way.\n\nYour backpack, always in your pocket.",
+                "date": "2026-01-15",
+                "readTime": "1 min read",
+                "tags": ["Mobile Development", "React Native", "Education", "Side Project"],
+                "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800"
+            }
+        ]
+    }
+]

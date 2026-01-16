@@ -4,6 +4,7 @@
             "id": 1,
             "name": "ProBackPack",
             "description": "An android application to remind your homeworks and assignments, also notify your college progress.",
+            "fullDescription": "ProBackPack was born from a simple observation: students struggle to keep track of their assignments, deadlines, and academic progress. Built as a native Android application, it serves as your digital school bag — organizing everything you need for academic success in one place.\n\nThe app features a clean, intuitive interface that allows students to add assignments with due dates, set reminders, and track their overall college progress. Firebase integration ensures data is synced across devices and never lost.\n\nThis project is currently being remade with React Native and Expo to bring it to both iOS and Android with a modern, cross-platform approach.",
             "borderRadius": "0px",
             "tags": [{
                     "id": 1,
@@ -37,14 +38,28 @@
                     "path": "devicon-firebase-plain"
                 }
             ],
+            "features": [
+                "Assignment tracking with due dates and reminders",
+                "College progress monitoring",
+                "Push notifications for upcoming deadlines",
+                "Cloud sync with Firebase",
+                "Clean Material Design interface"
+            ],
+            "screenshots": [
+                "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800",
+                "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800",
+                "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800"
+            ],
             "page": "no",
-            "source": "https://github.com/FrankcoMiguel/ProBackPack"
+            "source": "https://github.com/FrankcoMiguel/ProBackPack",
+            "status": "Remaking"
         },
         {
             "id": 2,
             "name": "Chick-4-All",
             "description": "A WebApp devised to manage a restaurant, including stocking and human resource development, also statistics to track the sales process.",
-            "stylborderRadiuse": "0px",
+            "fullDescription": "Chick-4-All is a comprehensive restaurant management system designed to streamline daily operations. From inventory management to employee scheduling, this web application covers all aspects of running a successful food service business.\n\nThe system provides real-time statistics and analytics to help restaurant owners make data-driven decisions about their menu, staffing, and inventory. The responsive design ensures managers can access critical information from any device.\n\nBuilt with React for a smooth user experience and MongoDB for flexible data storage, the application handles complex relationships between inventory, orders, and staff efficiently.",
+            "borderRadius": "0px",
             "tags": [{
                     "id": 1,
                     "name": "Service",
@@ -77,13 +92,27 @@
                     "path": "devicon-visualstudio-plain"
                 }
             ],
+            "features": [
+                "Inventory and stock management",
+                "Human resource scheduling",
+                "Sales tracking and statistics",
+                "Real-time analytics dashboard",
+                "Responsive design for all devices"
+            ],
+            "screenshots": [
+                "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800",
+                "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800",
+                "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"
+            ],
             "page": "no",
-            "source": "https://github.com/FrankcoMiguel/Chick-4-All-Java"
+            "source": "https://github.com/FrankcoMiguel/Chick-4-All-Java",
+            "status": "Completed"
         },
         {
             "id": 3,
             "name": "Cinema Premium",
             "description": "Cinema Premium is a Full Stack project that serves Filmmaking information as API response, excel worksheet and/or CSV.",
+            "fullDescription": "Cinema Premium is a comprehensive Full Stack application that provides filmmaking information through multiple formats. Whether you need data via REST API, Excel worksheets, or CSV files, Cinema Premium has you covered.\n\nThe project demonstrates proficiency in building robust APIs with C# and .NET Framework, backed by Microsoft SQL Server for reliable data storage. The API follows RESTful principles and includes comprehensive documentation.\n\nThis project showcases the ability to transform raw data into various consumable formats, making it invaluable for developers, analysts, and cinema enthusiasts alike.",
             "borderRadius": "0px",
             "tags": [{
                     "id": 1,
@@ -103,7 +132,7 @@
             ],
             "toolsUsed": [{
                     "id": 1,
-                    "name": "Micrsoft SQL Server",
+                    "name": "Microsoft SQL Server",
                     "path": "devicon-microsoftsqlserver-plain"
                 },
                 {
@@ -117,13 +146,27 @@
                     "path": "devicon-visualstudio-plain"
                 }
             ],
+            "features": [
+                "RESTful API for filmmaking data",
+                "Export to Excel and CSV formats",
+                "Comprehensive API documentation",
+                "SQL Server database backend",
+                "Clean and maintainable codebase"
+            ],
+            "screenshots": [
+                "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800",
+                "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800",
+                "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800"
+            ],
             "page": "https://cinemapremiumapi.com",
-            "source": "https://github.com/FrankcoMiguel/CinemaAPI"
+            "source": "https://github.com/FrankcoMiguel/CinemaAPI",
+            "status": "Completed"
         },
         {
             "id": 4,
             "name": "DayToDay",
             "description": "A Java Application created to manage the tickets/tasks I have to deal with every single day at work, storing the data in a Embedded Database",
+            "fullDescription": "DayToDay is a personal productivity tool born from the need to manage daily work tasks efficiently. Built with JavaFX, it provides a desktop application that helps track tickets, tasks, and daily responsibilities.\n\nThe application uses an embedded database to store all data locally, ensuring quick access and no dependency on external services. The clean CSS-styled interface makes it pleasant to use throughout the workday.\n\nDesigned for personal productivity, DayToDay helps maintain focus by organizing tasks, tracking progress, and providing a clear overview of daily responsibilities.",
             "borderRadius": "0px",
             "tags": [{
                     "id": 1,
@@ -157,13 +200,27 @@
                     "path": "devicon-intellij-plain"
                 }
             ],
+            "features": [
+                "Task and ticket management",
+                "Embedded database for local storage",
+                "Daily task overview",
+                "Progress tracking",
+                "Clean JavaFX interface with CSS styling"
+            ],
+            "screenshots": [
+                "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800",
+                "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800",
+                "https://images.unsplash.com/photo-1517842645767-c639042777db?w=800"
+            ],
             "page": "https://drive.google.com/file/d/1cKth7ShuLr2uxxPYxKXm0gpLF0qinwxL/view?usp=sharing",
-            "source": "https://github.com/FrankcoMiguel/DayToDay"
+            "source": "https://github.com/FrankcoMiguel/DayToDay",
+            "status": "Completed"
         },
         {
             "id": 5,
             "name": "Vaccinations Dashboard",
             "description": "A dashboard with advanced Data Visualizations and Interactive Reports to deliver the COVID-19 Vaccinations data optimized and classified",
+            "fullDescription": "The Vaccinations Dashboard is an advanced data visualization project that presents COVID-19 vaccination data in an optimized and easily digestible format. Built on Oracle APEX, it leverages powerful database capabilities for data processing.\n\nThe dashboard features interactive reports, real-time data updates, and multiple visualization types to help users understand vaccination trends, coverage rates, and demographic distributions.\n\nThis project demonstrates proficiency in data analysis, visualization design, and working with large datasets using Python for ETL processes and JavaScript for interactive frontend elements.",
             "borderRadius": "100%",
             "tags": [{
                     "id": 1,
@@ -197,8 +254,21 @@
                     "path": "devicon-oracle-original"
                 }
             ],
+            "features": [
+                "Interactive data visualizations",
+                "Real-time vaccination statistics",
+                "Demographic breakdown analysis",
+                "Python ETL data processing",
+                "Oracle APEX powered dashboard"
+            ],
+            "screenshots": [
+                "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=800",
+                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
+                "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800"
+            ],
             "page": "https://apex.oracle.com/pls/apex/frankslab/r/covid_vaccines/dashboard",
-            "source": "https://github.com/FrankcoMiguel/COVID19-Vaccinations"
+            "source": "https://github.com/FrankcoMiguel/COVID19-Vaccinations",
+            "status": "Completed"
         }
     ]
 }]

@@ -5,157 +5,321 @@
         "items": [
             {
                 "id": 1,
-                "name": "Web Design",
-                "percentage": 90,
-                "time": 4,
-                "icons": [
-                    {
-                        "id": 1,
-                        "name":"HTML 5",
-                        "path": "devicon-html5-plain",
-                        "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Sass",
-                        "path": "devicon-sass-original",
-                        "moreInfo": "https://sass-lang.com/documentation"
-                    },
-                    {
-                        "id": 3,
-                        "name": "Bootstrap",
-                        "path": "devicon-bootstrap-plain",
-                        "moreInfo": "https://getbootstrap.com/docs/4.1/getting-started/introduction/"
-                    }
-                ]
-            },
-            {
-                "id": 2,
-                "name": "Backend",
-                "percentage": 57,
-                "time": 3,
-                "icons": [
-                    {
-                        "id": 1,
-                        "name": "Java",
-                        "path": "devicon-java-plain",
-                        "moreInfo": "https://docs.oracle.com/javase/7/docs/api/"
-                    },
-                    {
-                        "id": 2,
-                        "name":"C#",
-                        "path": "devicon-csharp-plain",
-                        "moreInfo": "https://docs.microsoft.com/en-us/dotnet/csharp/"
-                    },
-                    {
-                        "id": 3,
-                        "name": ".NET Framework Core",
-                        "path": "devicon-dotnetcore-plain",
-                        "moreInfo": "https://docs.microsoft.com/en-us/dotnet/"
-                    }
-                ]
-            },
-            {
-                "id": 3,
                 "name": "Frontend",
-                "percentage": 85,
-                "time": 4,
                 "icons": [
                     {
                         "id": 1,
+                        "name": "React",
+                        "path": "devicon-react-original",
+                        "moreInfo": "https://react.dev"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Next.js",
+                        "path": "devicon-nextjs-plain",
+                        "moreInfo": "https://nextjs.org/docs"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Tailwind CSS",
+                        "path": "devicon-tailwindcss-plain",
+                        "moreInfo": "https://tailwindcss.com/docs"
+                    },
+                    {
+                        "id": 4,
+                        "name": "TypeScript",
+                        "path": "devicon-typescript-plain",
+                        "moreInfo": "https://www.typescriptlang.org/docs"
+                    },
+                    {
+                        "id": 5,
                         "name": "JavaScript",
                         "path": "devicon-javascript-plain",
                         "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                     },
                     {
+                        "id": 6,
+                        "name": "CSS",
+                        "path": "devicon-css3-plain",
+                        "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+                    },
+                    {
+                        "id": 7,
+                        "name": "HTML",
+                        "path": "devicon-html5-plain",
+                        "moreInfo": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+                    },
+                    {
+                        "id": 8,
+                        "name": "JSON",
+                        "path": "devicon-json-plain",
+                        "moreInfo": "https://www.json.org/json-en.html"
+                    }
+ 
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Backend",
+                "icons": [
+                    {
+                        "id": 1,
+                        "name": "Flask",
+                        "path": "devicon-flask-plain",
+                        "moreInfo": "https://flask.palletsprojects.com/en/2.2.x/"
+                    },
+                    {
                         "id": 2,
-                        "name": "React",
-                        "path": "devicon-react-original",
-                        "moreInfo": "https://reactjs.org/docs/getting-started.html"
+                        "name": "FastAPI",
+                        "path": "devicon-fastapi-plain",
+                        "moreInfo": "https://fastapi.tiangolo.com"
                     },
                     {
                         "id": 3,
-                        "name": "GatsbyJS",
-                        "path": "devicon-gatsby-plain",
-                        "moreInfo": "https://www.gatsbyjs.com/get-started/"
+                        "name": "Node.js",
+                        "path": "devicon-nodejs-plain",
+                        "moreInfo": "https://nodejs.org/en/docs/"
+                    },
+                    {
+                        "id": 4,
+                        "name": ".NET Framework",
+                        "path": "devicon-dotnetcore-plain",
+                        "moreInfo": "https://docs.microsoft.com/en-us/dotnet/"
+                    },
+                    {
+                        "id": 5,
+                        "name": "GraphQL",
+                        "path": "devicon-graphql-plain",
+                        "moreInfo": "https://graphql.org/learn/"
+                    },
+                    {
+                        "id": 6,
+                        "name": "OAuth",
+                        "path": "devicon-oauth-plain",
+                        "moreInfo": "https://www.oauth.net/"
+                    },
+                    {
+                        "id": 7,
+                        "name": "REST API",
+                        "path": "devicon-restapi-plain",
+                        "moreInfo": "https://restfulapi.net/"
+                    }
+                    
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Mobile",
+                "icons": [
+                    {
+                        "id": 1,
+                        "name": "React Native",
+                        "path": "devicon-react-original",
+                        "moreInfo": "https://reactnative.dev/docs/getting-started"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Expo",
+                        "path": "devicon-react-original",
+                        "moreInfo": "https://docs.expo.dev"
+                    },
+                    {
+                        "id": 3,
+                        "name": "EAS",
+                        "path": "devicon-react-original",
+                        "moreInfo": "https://docs.expo.dev/eas"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Material Design",
+                        "path": "devicon-materialui-plain",
+                        "moreInfo": "https://m3.material.io/"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Java",
+                        "path": "devicon-java-plain",
+                        "moreInfo": "https://docs.oracle.com/en/java/"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Kotlin",
+                        "path": "devicon-kotlin-plain",
+                        "moreInfo": "https://kotlinlang.org/docs/home.html"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Swift",
+                        "path": "devicon-swift-plain",
+                        "moreInfo": "https://developer.apple.com/swift/"
                     }
                 ]
             },
             {
                 "id": 4,
-                "name": "Data Analysis",
-                "percentage": 88,
-                "time": 4,
+                "name": "Databases",
                 "icons": [
                     {
                         "id": 1,
-                        "name": "Oracle PL/SQL",
+                        "name": "Oracle",
                         "path": "devicon-oracle-original",
-                        "moreInfo": "https://www.oracle.com/database/technologies/appdev/plsql.html"
+                        "moreInfo": "https://www.oracle.com/database/"
                     },
                     {
                         "id": 2,
-                        "name": "Microsoft SQL Server",
-                        "path": "devicon-microsoftsqlserver-plain",
-                        "moreInfo": "https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15"
+                        "name": "PostgreSQL",
+                        "path": "devicon-postgresql-plain",
+                        "moreInfo": "https://www.postgresql.org/docs/"
                     },
                     {
                         "id": 3,
                         "name": "MongoDB",
                         "path": "devicon-mongodb-plain",
                         "moreInfo": "https://docs.mongodb.com/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Redis",
+                        "path": "devicon-redis-plain",
+                        "moreInfo": "https://redis.io/docs/"
+                    },
+                    {
+                        "id": 5,
+                        "name": "SQLite",
+                        "path": "devicon-sqlite-plain",
+                        "moreInfo": "https://www.sqlite.org/docs.html"
+                    },
+                    {
+                        "id": 6,
+                        "name": "ERD",
+                        "path": "devicon-azuresqldatabase-plain",
+                        "moreInfo": "https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model"
+                    },
+                    {
+                        "id": 7,
+                        "name": "ETL",
+                        "path": "devicon-apacheairflow-plain",
+                        "moreInfo": "https://en.wikipedia.org/wiki/Extract,_transform,_load"
                     }
                 ]
             },
             {
                 "id": 5,
-                "name": "Mobile",
-                "percentage": 30,
-                "time": 2,
+                "name": "Cloud Computing",
                 "icons": [
                     {
                         "id": 1,
-                        "name": "Android Studio",
-                        "path": "devicon-android-plain",
-                        "moreInfo": "https://developer.android.com/docs"
+                        "name": "OCI",
+                        "path": "devicon-oracle-original",
+                        "moreInfo": "https://docs.oracle.com/en-us/iaas/Content/home.htm"
                     },
                     {
                         "id": 2,
-                        "name": "Material UI",
-                        "path": "devicon-materialui-plain",
-                        "moreInfo": "https://mui.com/getting-started/usage/"
+                        "name": "AWS",
+                        "path": "devicon-amazonwebservices-original",
+                        "moreInfo": "https://docs.aws.amazon.com/"
                     },
                     {
                         "id": 3,
-                        "name": "Adobe Xd",
-                        "path": "devicon-xd-plain",
-                        "moreInfo": "https://www.adobe.io/xd/uxp/"   
+                        "name": "GitHub Actions",
+                        "path": "devicon-githubactions-plain",
+                        "moreInfo": "https://docs.github.com/en/actions"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Jenkins",
+                        "path": "devicon-jenkins-plain",
+                        "moreInfo": "https://www.jenkins.io/doc/"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Docker",
+                        "path": "devicon-docker-plain",
+                        "moreInfo": "https://docs.docker.com/"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Cloudflare",
+                        "path": "devicon-cloudflare-plain",
+                        "moreInfo": "https://developers.cloudflare.com/"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Vercel",
+                        "path": "devicon-vercel-original",
+                        "moreInfo": "https://vercel.com/docs"
+                    },
+                    {
+                        "id": 8,
+                        "name": "Netlify",
+                        "path": "devicon-netlify-plain",
+                        "moreInfo": "https://docs.netlify.com/"
                     }
                 ]
             },
             {
                 "id": 6,
-                "name": "Scripting",
-                "percentage": 50,
-                "time": 2,
+                "name": "Testing",
                 "icons": [
                     {
                         "id": 1,
-                        "name": "Python 3x",
-                        "path": "devicon-python-plain",
-                        "moreInfo": "https://docs.python.org/3/"
+                        "name": "TDD",
+                        "path": "devicon-jest-plain",
+                        "moreInfo": "https://en.wikipedia.org/wiki/Test-driven_development"
                     },
                     {
                         "id": 2,
-                        "name": "Bash",
-                        "path": "devicon-bash-plain",
-                        "moreInfo": "https://www.gnu.org/software/bash/"
+                        "name": "BDD",
+                        "path": "devicon-cucumber-plain",
+                        "moreInfo": "https://cucumber.io/docs/bdd/"
                     },
                     {
                         "id": 3,
-                        "name": "Node Package Manager",
-                        "path": "devicon-npm-original-wordmark",
-                        "moreInfo": "https://docs.npmjs.com/"
+                        "name": "Jest",
+                        "path": "devicon-jest-plain",
+                        "moreInfo": "https://jestjs.io/docs/getting-started"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Cypress",
+                        "path": "devicon-cypressio-plain",
+                        "moreInfo": "https://docs.cypress.io/"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "name": "Other Tools",
+                "icons": [
+                    {
+                        "id": 1,
+                        "name": "Jira",
+                        "path": "devicon-jira-plain",
+                        "moreInfo": "https://www.atlassian.com/software/jira"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Google Suite",
+                        "path": "devicon-google-plain",
+                        "moreInfo": "https://workspace.google.com/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "GitHub",
+                        "path": "devicon-github-original",
+                        "moreInfo": "https://docs.github.com/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Microsoft 365",
+                        "path": "devicon-azure-plain",
+                        "moreInfo": "https://www.microsoft.com/en-us/microsoft-365"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Excel",
+                        "path": "devicon-azure-plain",
+                        "moreInfo": "https://support.microsoft.com/en-us/excel"
                     }
                 ]
             }

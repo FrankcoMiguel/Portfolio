@@ -1,0 +1,172 @@
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { FaBars, FaTimes, FaGithub, FaStackOverflow, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import type { NavItem } from '../types';
+import navItems from '../data/navbar.json';
+
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const items = navItems as NavItem[];
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? 'hidden' : 'unset';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
+
+  const getCurrentPage = () => {
+    const path = location.pathname;
+    const item = items.find(i => i.url === path);
+    return item?.id || 1;
+  };
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <Link to="/" className="flex items-center">
+            <span className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">
+              Frank's Lab
+            </span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            {items.map((item) => (
+              <Link
+                key={item.id}
+                to={item.url}
+                className={`text-sm font-medium transition-colors hover:text-indigo-400 ${
+                  getCurrentPage() === item.id
+                    ? 'text-indigo-400'
+                    : 'text-slate-300'
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+            
+            {/* Social Links */}
+            <div className="flex items-center space-x-4 pl-4 border-l border-slate-700">
+              <a
+                href="https://github.com/FrankcoMiguel"
+                target="_blank"
+                rel="noreferrer"
+                className="text-slate-400 hover:text-indigo-400 transition-colors"
+                aria-label="GitHub"
+              >
+                <FaGithub size={20} />
+              </a>
+              <a
+                href="https://stackoverflow.com/users/15623280/franco-js"
+                target="_blank"
+                rel="noreferrer"
+                className="text-slate-400 hover:text-indigo-400 transition-colors"
+                aria-label="Stack Overflow"
+              >
+                <FaStackOverflow size={20} />
+              </a>
+              <a
+                href="https://www.instagram.com/franco.js/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-slate-400 hover:text-indigo-400 transition-colors"
+                aria-label="Instagram"
+              >
+                <FaInstagram size={20} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/frankmiguel/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-slate-400 hover:text-indigo-400 transition-colors"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin size={20} />
+              </a>
+            </div>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={toggleMenu}
+            className="md:hidden text-slate-300 hover:text-white p-2"
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden fixed inset-0 top-16 bg-slate-900 z-40 transform transition-transform duration-300 ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex flex-col items-center justify-center h-full space-y-8">
+          {items.map((item) => (
+            <Link
+              key={item.id}
+              to={item.url}
+              onClick={() => setIsMenuOpen(false)}
+              className={`text-2xl font-medium transition-colors hover:text-indigo-400 ${
+                getCurrentPage() === item.id
+                  ? 'text-indigo-400'
+                  : 'text-slate-300'
+              }`}
+            >
+              {item.name}
+            </Link>
+          ))}
+          
+          <div className="flex items-center space-x-6 pt-8 border-t border-slate-700">
+            <a
+              href="https://github.com/FrankcoMiguel"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-400 hover:text-indigo-400 transition-colors"
+              aria-label="GitHub"
+            >
+              <FaGithub size={28} />
+            </a>
+            <a
+              href="https://stackoverflow.com/users/15623280/franco-js"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-400 hover:text-indigo-400 transition-colors"
+              aria-label="Stack Overflow"
+            >
+              <FaStackOverflow size={28} />
+            </a>
+            <a
+              href="https://www.instagram.com/franco.js/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-400 hover:text-indigo-400 transition-colors"
+              aria-label="Instagram"
+            >
+              <FaInstagram size={28} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/frankmiguel/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-400 hover:text-indigo-400 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin size={28} />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

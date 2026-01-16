@@ -6,12 +6,12 @@
     },
     {
         "id": 2,
-        "name": "About",
-        "url": "/about"
+        "name": "Projects",
+        "url": "/projects"
     },
     {
         "id": 3,
-        "name": "Projects",
-        "url": "/projects"
+        "name": "Publications",
+        "url": "/publications"
     }
 ]
