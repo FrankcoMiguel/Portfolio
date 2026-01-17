@@ -8,7 +8,6 @@ import { FaGithub, FaExternalLinkAlt, FaInfoCircle } from 'react-icons/fa';
 import type { Tag, Tool } from '../types';
 
 interface ProjectCardProps {
-  id: number;
   logo: string;
   title: string;
   description: string;
@@ -20,7 +19,6 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({
-  id,
   logo,
   title,
   description,
