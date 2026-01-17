@@ -10,11 +10,22 @@ const Navbar = () => {
   const items = navItems as NavItem[];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
+  // Close menu on route change
   useEffect(() => {
-    document.body.style.overflow = isMenuOpen ? 'hidden' : 'unset';
+    closeMenu();
+  }, [location.pathname]);
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = '';
     };
   }, [isMenuOpen]);
 
@@ -95,26 +106,47 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden text-slate-300 hover:text-white p-2"
+            className="md:hidden text-slate-300 hover:text-white p-2 z-50 relative"
             aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
       </div>
 
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div
+          className="md:hidden fixed inset-0 bg-black/50 z-40"
+          onClick={closeMenu}
+          aria-hidden="true"
+        />
+      )}
+
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed inset-0 top-16 bg-slate-900 z-40 transform transition-transform duration-300 ${
+        className={`md:hidden fixed top-0 right-0 h-full w-full max-w-sm bg-slate-900 z-50 transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="flex flex-col items-center justify-center h-full space-y-8">
+        {/* Close button inside mobile menu */}
+        <div className="flex justify-end p-4">
+          <button
+            onClick={closeMenu}
+            className="text-slate-300 hover:text-white p-2"
+            aria-label="Close menu"
+          >
+            <FaTimes size={24} />
+          </button>
+        </div>
+        
+        <div className="flex flex-col items-center pt-16 h-[calc(100%-80px)] space-y-8 px-6">
           {items.map((item) => (
             <Link
               key={item.id}
               to={item.url}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={closeMenu}
               className={`text-2xl font-medium transition-colors hover:text-indigo-400 ${
                 getCurrentPage() === item.id
                   ? 'text-indigo-400'
@@ -125,7 +157,7 @@ const Navbar = () => {
             </Link>
           ))}
           
-          <div className="flex items-center space-x-6 pt-8 border-t border-slate-700">
+          <div className="flex items-center space-x-6 pt-8 border-t border-slate-700 w-full justify-center">
             <a
               href="https://github.com/FrankcoMiguel"
               target="_blank"

@@ -36,6 +36,8 @@ build/Release
 node_modules/
 jspm_packages/
 
+dist/
+
 # Typescript v1 declaration files
 typings/
 
@@ -67,3 +69,4 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+.vercel

@@ -47,6 +47,7 @@ export interface Project {
   toolsUsed: Tool[];
   features?: string[];
   screenshots?: string[];
+  isMobile?: boolean;
   page: string;
   source: string;
   status?: string;

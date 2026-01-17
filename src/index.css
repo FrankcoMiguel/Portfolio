@@ -1,10 +1,10 @@
-@import "tailwindcss";
-
 /* Custom fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 /* Devicons for tech icons */
 @import url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css');
+
+@import "tailwindcss";
 
 :root {
   --primary: #6366f1;
@@ -90,4 +90,205 @@ html {
 
 [data-aos="zoom-out"].aos-animate {
   transform: scale(1);
+}
+
+/* ===== Background Icon Animations ===== */
+
+/* Flask wobble animation (like boiling) */
+@keyframes flask-wobble {
+  0%, 100% { transform: rotate(-3deg) translateY(0); }
+  25% { transform: rotate(2deg) translateY(-2px); }
+  50% { transform: rotate(-2deg) translateY(0); }
+  75% { transform: rotate(3deg) translateY(-1px); }
+}
+
+.animate-flask-wobble {
+  animation: flask-wobble 2s ease-in-out infinite;
+}
+
+/* Bubble animations for flask */
+@keyframes bubble-rise-1 {
+  0% { transform: translateY(0) scale(1); opacity: 0.6; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(-20px) scale(0.5); opacity: 0; }
+}
+
+@keyframes bubble-rise-2 {
+  0% { transform: translateY(0) scale(1); opacity: 0.5; }
+  50% { opacity: 0.7; }
+  100% { transform: translateY(-25px) scale(0.3); opacity: 0; }
+}
+
+@keyframes bubble-rise-3 {
+  0% { transform: translateY(0) scale(1); opacity: 0.4; }
+  50% { opacity: 0.6; }
+  100% { transform: translateY(-18px) scale(0.4); opacity: 0; }
+}
+
+.animate-bubble-1 {
+  animation: bubble-rise-1 1.5s ease-out infinite;
+}
+
+.animate-bubble-2 {
+  animation: bubble-rise-2 2s ease-out infinite 0.3s;
+}
+
+.animate-bubble-3 {
+  animation: bubble-rise-3 1.8s ease-out infinite 0.6s;
+}
+
+/* Slow spinning for atom */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+/* Code floating animation */
+@keyframes code-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-8px) rotate(3deg); }
+  50% { transform: translateY(-4px) rotate(-2deg); }
+  75% { transform: translateY(-10px) rotate(2deg); }
+}
+
+.animate-code-float {
+  animation: code-float 4s ease-in-out infinite;
+}
+
+/* Database pulse animation */
+@keyframes db-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.2; }
+  50% { transform: scale(1.05); opacity: 0.3; }
+}
+
+.animate-db-pulse {
+  animation: db-pulse 2s ease-in-out infinite;
+}
+
+/* Data flow particles */
+@keyframes data-flow-1 {
+  0% { transform: translateY(0); opacity: 0; }
+  20% { opacity: 0.8; }
+  100% { transform: translateY(30px); opacity: 0; }
+}
+
+@keyframes data-flow-2 {
+  0% { transform: translateY(0); opacity: 0; }
+  20% { opacity: 0.6; }
+  100% { transform: translateY(28px); opacity: 0; }
+}
+
+@keyframes data-flow-3 {
+  0% { transform: translateY(0); opacity: 0; }
+  20% { opacity: 0.7; }
+  100% { transform: translateY(32px); opacity: 0; }
+}
+
+.animate-data-flow-1 {
+  animation: data-flow-1 1.5s ease-in infinite;
+}
+
+.animate-data-flow-2 {
+  animation: data-flow-2 1.5s ease-in infinite 0.2s;
+}
+
+.animate-data-flow-3 {
+  animation: data-flow-3 1.5s ease-in infinite 0.4s;
+}
+
+/* Cloud drift animation */
+@keyframes cloud-drift {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  25% { transform: translateX(10px) translateY(-3px); }
+  50% { transform: translateX(5px) translateY(2px); }
+  75% { transform: translateX(-5px) translateY(-2px); }
+}
+
+.animate-cloud-drift {
+  animation: cloud-drift 6s ease-in-out infinite;
+}
+
+/* Terminal glow animation */
+@keyframes terminal-glow {
+  0%, 100% { opacity: 0.2; filter: brightness(1); }
+  50% { opacity: 0.35; filter: brightness(1.2); }
+}
+
+.animate-terminal-glow {
+  animation: terminal-glow 3s ease-in-out infinite;
+}
+
+/* Cursor blink animation */
+@keyframes cursor-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.animate-cursor-blink {
+  animation: cursor-blink 1s step-end infinite;
+}
+
+/* Lightbulb glow animation */
+@keyframes lightbulb-glow {
+  0%, 100% { 
+    opacity: 0.2; 
+    filter: brightness(1) drop-shadow(0 0 0 transparent);
+  }
+  50% { 
+    opacity: 0.4; 
+    filter: brightness(1.3) drop-shadow(0 0 8px rgba(250, 204, 21, 0.3));
+  }
+}
+
+.animate-lightbulb-glow {
+  animation: lightbulb-glow 2s ease-in-out infinite;
+}
+
+/* Light ray pulse */
+@keyframes ray-pulse {
+  0%, 100% { opacity: 0; transform: scale(0.8); }
+  50% { opacity: 0.5; transform: scale(1.2); }
+}
+
+.animate-ray-pulse {
+  animation: ray-pulse 2s ease-in-out infinite;
+}
+
+/* Book floating animation */
+@keyframes book-float {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  25% { transform: translateY(-6px) rotate(0deg); }
+  50% { transform: translateY(-3px) rotate(2deg); }
+  75% { transform: translateY(-8px) rotate(0deg); }
+}
+
+.animate-book-float {
+  animation: book-float 5s ease-in-out infinite;
+}
+
+/* Pen writing animation */
+@keyframes pen-write {
+  0%, 100% { transform: translateX(0) translateY(0) rotate(-45deg); }
+  25% { transform: translateX(3px) translateY(2px) rotate(-40deg); }
+  50% { transform: translateX(6px) translateY(0) rotate(-45deg); }
+  75% { transform: translateX(3px) translateY(-2px) rotate(-50deg); }
+}
+
+.animate-pen-write {
+  animation: pen-write 3s ease-in-out infinite;
+}
+
+/* Document floating animation */
+@keyframes document-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(-5px) rotate(2deg); }
+  66% { transform: translateY(-8px) rotate(-2deg); }
+}
+
+.animate-document-float {
+  animation: document-float 4s ease-in-out infinite;
 }

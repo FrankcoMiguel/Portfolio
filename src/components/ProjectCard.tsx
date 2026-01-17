@@ -8,7 +8,6 @@ import { FaGithub, FaExternalLinkAlt, FaInfoCircle } from 'react-icons/fa';
 import type { Tag, Tool } from '../types';
 
 interface ProjectCardProps {
-  id: number;
   logo: string;
   title: string;
   description: string;
@@ -20,7 +19,6 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({
-  id,
   logo,
   title,
   description,
@@ -115,7 +113,7 @@ const ProjectCard = ({
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3">
           <Link
-            to={`/projects/${id}`}
+            to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}
             className="flex items-center space-x-2 px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg transition-colors"
           >
             <FaInfoCircle />
