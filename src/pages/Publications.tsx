@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import { CgMouse } from 'react-icons/cg';
 import { FaCalendar, FaClock } from 'react-icons/fa';
 import Layout from '../components/Layout';
+import { PublicationsBackgroundIcons } from '../components/BackgroundIcons';
 import type { PublicationsCategory } from '../types';
 import publicationsData from '../data/publications.json';
 
@@ -18,14 +19,17 @@ const Publications = () => {
   return (
     <Layout title="Publications">
       {/* Hero Section */}
-      <section className="min-h-[60vh] flex flex-col items-center justify-center px-4 py-20 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-slate-100 mb-6">
+      <section className="min-h-[60vh] flex flex-col items-center justify-center px-4 py-20 text-center relative overflow-hidden">
+        {/* Animated background icons */}
+        <PublicationsBackgroundIcons />
+        
+        <h1 className="text-4xl md:text-6xl font-bold text-slate-100 mb-6 relative z-10">
           Publications
         </h1>
-        <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mb-12">
+        <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mb-12 relative z-10">
           Thoughts, tutorials, and insights from my journey in software engineering.
         </p>
-        <div className="flex flex-col items-center text-slate-400 animate-bounce">
+        <div className="flex flex-col items-center text-slate-400 animate-bounce relative z-10">
           <CgMouse size={32} />
           <p className="text-sm mt-2">Scroll down to read more</p>
         </div>

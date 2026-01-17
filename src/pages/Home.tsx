@@ -2,22 +2,19 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { FaFlask, FaCode, FaDatabase, FaCloud, FaTerminal, FaRocket } from 'react-icons/fa';
-import { BiAtom } from 'react-icons/bi';
+import { FaFlask, FaCode, FaDatabase, FaCloud, FaRocket } from 'react-icons/fa';
 import Layout from '../components/Layout';
 import Skill from '../components/Skill';
+import { 
+  BoilingFlask, 
+  SpinningAtom, 
+  FloatingCode, 
+  PulsingDatabase, 
+  DriftingCloud, 
+  BlinkingTerminal 
+} from '../components/BackgroundIcons';
 import type { SkillsCategory } from '../types';
 import landingData from '../data/landing.json';
-
-// Floating lab icons animation
-const FloatingIcon = ({ children, delay, className }: { children: React.ReactNode; delay: string; className?: string }) => (
-  <div 
-    className={`absolute text-indigo-500/20 animate-pulse ${className}`}
-    style={{ animationDelay: delay }}
-  >
-    {children}
-  </div>
-);
 
 const Home = () => {
   const skills = (landingData as SkillsCategory[])[0].items;
@@ -30,13 +27,13 @@ const Home = () => {
     <Layout title="Home">
       {/* Hero Section - The Lab */}
       <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center px-4 py-20 relative overflow-hidden">
-        {/* Floating background icons */}
-        <FloatingIcon delay="0s" className="top-20 left-10 text-4xl md:text-6xl"><FaFlask /></FloatingIcon>
-        <FloatingIcon delay="0.5s" className="top-40 right-20 text-3xl md:text-5xl"><FaCode /></FloatingIcon>
-        <FloatingIcon delay="1s" className="bottom-32 left-20 text-3xl md:text-5xl"><FaDatabase /></FloatingIcon>
-        <FloatingIcon delay="1.5s" className="bottom-20 right-10 text-4xl md:text-6xl"><BiAtom /></FloatingIcon>
-        <FloatingIcon delay="2s" className="top-1/3 left-1/4 text-2xl md:text-4xl"><FaCloud /></FloatingIcon>
-        <FloatingIcon delay="2.5s" className="bottom-1/3 right-1/4 text-2xl md:text-4xl"><FaTerminal /></FloatingIcon>
+        {/* Animated background icons */}
+        <BoilingFlask className="top-20 left-10 text-4xl md:text-6xl" />
+        <FloatingCode className="top-40 right-20 text-3xl md:text-5xl" />
+        <PulsingDatabase className="bottom-32 left-20 text-3xl md:text-5xl" />
+        <SpinningAtom className="bottom-20 right-10 text-4xl md:text-6xl" />
+        <DriftingCloud className="top-1/3 left-1/4 text-2xl md:text-4xl" />
+        <BlinkingTerminal className="bottom-1/3 right-1/4 text-2xl md:text-4xl" />
         
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <h1 data-aos="zoom-in" className="text-5xl md:text-7xl font-bold text-slate-100 mb-6">

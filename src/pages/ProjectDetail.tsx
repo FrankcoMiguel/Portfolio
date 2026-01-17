@@ -6,21 +6,27 @@ import { FaArrowLeft, FaGithub, FaExternalLinkAlt, FaCheckCircle, FaTimes } from
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import Layout from '../components/Layout';
+import { ProjectDetailBackgroundIcons } from '../components/BackgroundIcons';
 import type { ProjectsCategory } from '../types';
 import projectsData from '../data/projects.json';
 
-const projectLogos: Record<number, string> = {
-  1: '/probackpack-project.svg',
-  2: '/chick4all-project.svg',
-  3: '/cinemapremium-project.svg',
-  4: '/daytoday-project.svg',
-  5: '/covid-vaccinations.svg',
+const projectLogos: Record<string, string> = {
+  'probackpack': '/probackpack-project.svg',
+  'chick-4-all': '/chick4all-project.svg',
+  'cinema-premium': '/cinemapremium-project.svg',
+  'daytoday': '/daytoday-project.svg',
+  'covid-vaccinations': '/covid-vaccinations.svg',
+};
+
+// Helper function to create URL-friendly slugs
+const createSlug = (name: string): string => {
+  return name.toLowerCase().replace(/\s+/g, '-');
 };
 
 const ProjectDetail = () => {
-  const { id } = useParams<{ id: string }>();
+  const { slug } = useParams<{ slug: string }>();
   const projects = (projectsData as ProjectsCategory[])[0].items;
-  const project = projects.find((p) => p.id === Number(id));
+  const project = projects.find((p) => createSlug(p.name) === slug);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   useEffect(() => {
@@ -45,8 +51,13 @@ const ProjectDetail = () => {
 
   return (
     <Layout title={project.name}>
+      {/* Animated background icons */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <ProjectDetailBackgroundIcons />
+      </div>
+
       {/* Hero Section */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <Link
             to="/projects"
@@ -61,7 +72,7 @@ const ProjectDetail = () => {
             <div className="lg:col-span-2">
               <div className="flex items-start gap-6 mb-6">
                 <img
-                  src={projectLogos[project.id]}
+                  src={projectLogos[createSlug(project.name)]}
                   alt={`${project.name} logo`}
                   className="w-20 h-20 object-contain"
                   style={{ borderRadius: project.borderRadius }}
@@ -175,7 +186,7 @@ const ProjectDetail = () => {
             <h2 data-aos="fade-up" className="text-2xl font-bold text-slate-100 mb-8">
               Screenshots
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className={`grid gap-6 ${project.isMobile ? 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'}`}>
               {project.screenshots.map((screenshot, index) => (
                 <div
                   key={index}
@@ -184,13 +195,31 @@ const ProjectDetail = () => {
                   className="group cursor-pointer"
                   onClick={() => setSelectedImage(screenshot)}
                 >
-                  <div className="aspect-video rounded-xl overflow-hidden border border-slate-700 hover:border-indigo-500/50 transition-all">
-                    <img
-                      src={screenshot}
-                      alt={`${project.name} screenshot ${index + 1}`}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
+                  {project.isMobile ? (
+                    <div className="relative mx-auto" style={{ maxWidth: '200px' }}>
+                      {/* Phone frame */}
+                      <div className="relative bg-slate-900 rounded-[2rem] p-2 border-4 border-slate-700 hover:border-indigo-500/50 transition-all shadow-xl">
+                        {/* Notch */}
+                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-5 bg-slate-900 rounded-b-xl z-10"></div>
+                        {/* Screen */}
+                        <div className="aspect-[9/19.5] rounded-[1.5rem] overflow-hidden bg-slate-800">
+                          <img
+                            src={screenshot}
+                            alt={`${project.name} screenshot ${index + 1}`}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="aspect-video rounded-xl overflow-hidden border border-slate-700 hover:border-indigo-500/50 transition-all">
+                      <img
+                        src={screenshot}
+                        alt={`${project.name} screenshot ${index + 1}`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaCalendar, FaClock, FaArrowLeft } from 'react-icons/fa';
 import Layout from '../components/Layout';
+import { PublicationDetailBackgroundIcons } from '../components/BackgroundIcons';
 import type { PublicationsCategory } from '../types';
 import publicationsData from '../data/publications.json';
 
@@ -22,8 +23,13 @@ const PublicationDetail = () => {
 
   return (
     <Layout title={publication.title}>
+      {/* Animated background icons */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <PublicationDetailBackgroundIcons />
+      </div>
+
       {/* Hero Section */}
-      <section className="relative">
+      <section className="relative z-10">
         <div className="aspect-[21/9] max-h-[400px] overflow-hidden">
           <img
             src={publication.image}
