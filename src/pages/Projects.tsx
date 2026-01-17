@@ -10,7 +10,7 @@ import projectsData from '../data/projects.json';
 
 // Project logos from static folder
 const projectLogos: Record<number, string> = {
-  1: '/probackpack-project.svg',
+  1: '/backpackpro-project.svg',
   2: '/chick4all-project.svg',
   3: '/cinemapremium-project.svg',
   4: '/daytoday-project.svg',
