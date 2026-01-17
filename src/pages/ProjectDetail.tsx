@@ -11,7 +11,7 @@ import type { ProjectsCategory } from '../types';
 import projectsData from '../data/projects.json';
 
 const projectLogos: Record<string, string> = {
-  'backpackpro': '/backpackpro-project.svg',
+  'backpack-pro': '/backpackpro-project.svg',
   'chick-4-all': '/chick4all-project.svg',
   'cinema-premium': '/cinemapremium-project.svg',
   'daytoday': '/daytoday-project.svg',
