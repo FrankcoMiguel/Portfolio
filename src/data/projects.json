@@ -46,12 +46,12 @@
                 "Clean Material Design interface"
             ],
             "screenshots": [
-                "/src/assets/backpackpro/IMG_2989.PNG",
-                "/src/assets/backpackpro/IMG_2990.PNG",
-                "/src/assets/backpackpro/IMG_2992.PNG",
-                "/src/assets/backpackpro/IMG_2993.PNG",
-                "/src/assets/backpackpro/IMG_2994.PNG",
-                "/src/assets/backpackpro/IMG_2995.PNG"
+                "/backpackpro/IMG_2989.PNG",
+                "/backpackpro/IMG_2990.PNG",
+                "/backpackpro/IMG_2992.PNG",
+                "/backpackpro/IMG_2993.PNG",
+                "/backpackpro/IMG_2994.PNG",
+                "/backpackpro/IMG_2995.PNG"
             ],
             "isMobile": true,
             "page": "no",
