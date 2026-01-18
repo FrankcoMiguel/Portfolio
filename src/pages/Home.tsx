@@ -132,13 +132,13 @@ const Home = () => {
               <div className="p-8 lg:p-12 flex flex-col justify-center order-2 lg:order-1">
                 <div className="flex items-center gap-3 mb-4">
                   <img
-                    src="/probackpack-project.svg"
-                    alt="ProBackPack logo"
+                    src="/backpackpro-project.svg"
+                    alt="BackPack Pro logo"
                     className="w-16 h-16 rounded-2xl"
                   />
                   <div>
                     <h3 className="text-2xl md:text-3xl font-bold text-slate-100">
-                      ProBackPack
+                      BackPack Pro
                     </h3>
                     <p className="text-indigo-400 font-medium">Mobile App Remake</p>
                   </div>
@@ -149,7 +149,7 @@ const Home = () => {
                 </p>
                 
                 <p className="text-slate-400 mb-6 text-lg leading-relaxed">
-                  The original ProBackPack was an Android app built to help students manage homework and track college progress. Now, it's being rebuilt from the ground up with React Native, Expo, and modern cloud services — bringing it to both iOS and Android with a fresh, intuitive design.
+                  The original BackPack Pro was an Android app built to help students manage homework and track college progress. Now, it's being rebuilt from the ground up with React Native, Expo, and modern cloud services — bringing it to both iOS and Android with a fresh, intuitive design.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
@@ -169,7 +169,7 @@ const Home = () => {
 
                 <div className="flex flex-wrap gap-4">
                   <Link
-                    to="/projects"
+                    to="/projects/backpack-pro"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-lg transition-colors"
                   >
                     <FaRocket />
