@@ -15,7 +15,7 @@ const projectLogos: Record<string, string> = {
   'chick-4-all': '/chick4all-project.svg',
   'cinema-premium': '/cinemapremium-project.svg',
   'daytoday': '/daytoday-project.svg',
-  'covid-vaccinations': '/covid-vaccinations.svg',
+  'vaccinations-dashboard': '/covid-vaccinations.svg',
 };
 
 // Helper function to create URL-friendly slugs

@@ -141,7 +141,7 @@ const Navbar = () => {
           </button>
         </div>
         
-        <div className="flex flex-col items-center pt-16 h-[calc(100%-80px)] space-y-8 px-6">
+        <div className="flex flex-col items-center pt-16 h-auto space-y-8 px-6">
           {items.map((item) => (
             <Link
               key={item.id}

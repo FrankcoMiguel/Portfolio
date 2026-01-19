@@ -4,36 +4,57 @@
             "id": 1,
             "name": "BackPack Pro",
             "description": "Your personal academic companion to stay organized and succeed.",
-            "fullDescription": "ProBackPack was born from a simple observation: students struggle to keep track of their assignments, deadlines, and academic progress. Built as a native Android application, it serves as your digital school bag — organizing everything you need for academic success in one place.\n\nThe app features a clean, intuitive interface that allows students to add assignments with due dates, set reminders, and track their overall college progress. Firebase integration ensures data is synced across devices and never lost.\n\nThis project is currently being remade with React Native and Expo to bring it to both iOS and Android with a modern, cross-platform approach.",
+            "fullDescription": "ProBackPack was born back in 2018 from a simple observation: students struggle to keep track of their assignments, deadlines, and academic progress. Built as a native Android application, it serves as your digital school bag — organizing everything you need for academic success in one place.\n\nThe app features a clean, intuitive interface that allows students to add assignments with due dates, set reminders, and track their overall college progress. Firebase integration ensures data is synced across devices and never lost.\n\nThis project is currently being remade with React Native and Expo to bring it to both iOS and Android with a modern, cross-platform approach.",
             "borderRadius": "0px",
             "tags": [{
                     "id": 1,
-                    "name": "Android",
+                    "name": "iOS",
                     "highlighted": false
                 },
                 {
                     "id": 2,
-                    "name": "Mobile",
+                    "name": "Android",
                     "highlighted": false
                 },
                 {
                     "id": 3,
                     "name": "School",
                     "highlighted": true
+                },
+                {
+                    "id": 4,
+                    "name": "Productivity",
+                    "highlighted": false
                 }
             ],
-            "toolsUsed": [{
+            "toolsUsed": [
+                {
                     "id": 1,
-                    "name": "Java",
-                    "path": "devicon-java-plain"
+                    "name": "React Native",
+                    "path": "devicon-react-original"
                 },
                 {
                     "id": 2,
+                    "name": "Expo",
+                    "path": "devicon-expo-original"
+                },
+                {
+                    "id": 3,
+                    "name": "EAS",
+                    "path": "devicon-eas-plain"
+                },
+                {
+                    "id": 4,
+                    "name": "TypeScript",
+                    "path": "devicon-typescript-plain"
+                },
+                {
+                    "id": 5,
                     "name": "Android Studio",
                     "path": "devicon-android-plain"
                 },
                 {
-                    "id": 3,
+                    "id": 6,
                     "name": "Firebase",
                     "path": "devicon-firebase-plain"
                 }
@@ -228,7 +249,7 @@
             "borderRadius": "100%",
             "tags": [{
                     "id": 1,
-                    "name": "COVID-19",
+                    "name": "Python",
                     "highlighted": false
                 },
                 {

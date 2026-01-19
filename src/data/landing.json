@@ -289,6 +289,78 @@
             },
             {
                 "id": 7,
+                "name": "Niche",
+                "icons": [
+                    {
+                        "id": 1,
+                        "name": "Excel VBA",
+                        "path": "devicon-microsoftoffice-plain",
+                        "moreInfo": "https://docs.microsoft.com/en-us/office/vba/api/overview/excel"
+                    },
+                    {
+                        "id": 2,
+                        "name": "JavaFX",
+                        "path": "devicon-java-plain",
+                        "moreInfo": "https://openjfx.io/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "PL/SQL",
+                        "path": "devicon-oracle-original",
+                        "moreInfo": "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/index.html"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Unity 3D",
+                        "path": "devicon-unity-original",
+                        "moreInfo": "https://docs.unity3d.com/"
+                    },
+                    {
+                        "id": 5,
+                        "name": "MATLAB",
+                        "path": "devicon-matlab-plain",
+                        "moreInfo": "https://www.mathworks.com/help/matlab/"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "name": "Oracle APEX",
+                "icons": [
+                    {
+                        "id": 1,
+                        "name": "Universal Theme",
+                        "path": "devicon-oracle-original",
+                        "moreInfo": "https://apex.oracle.com/pls/apex/apex_pm/r/ut/getting-started"
+                    },
+                    {
+                        "id": 2,
+                        "name": "APEX Collections",
+                        "path": "devicon-oracle-original",
+                        "moreInfo": "https://docs.oracle.com/en/database/oracle/apex/23.2/aeapi/APEX_COLLECTION.html"
+                    },
+                    {
+                        "id": 3,
+                        "name": "JET Charts",
+                        "path": "devicon-oracle-original",
+                        "moreInfo": "https://www.oracle.com/webfolder/technetwork/jet/jetCookbook.html"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Interactive Grid",
+                        "path": "devicon-oracle-original",
+                        "moreInfo": "https://docs.oracle.com/en/database/oracle/apex/23.2/htmdb/managing-interactive-grids.html"
+                    },
+                    {
+                        "id": 5,
+                        "name": "APEX Office Print (AOP)",
+                        "path": "devicon-oracle-original",
+                        "moreInfo": "https://www.apexofficeprint.com/"
+                    }
+                ]
+            },
+                        {
+                "id": 9,
                 "name": "Other Tools",
                 "icons": [
                     {
