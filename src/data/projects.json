@@ -137,7 +137,7 @@
         {
             "id": 3,
             "name": "Cinema Premium",
-            "description": "Cinema Premium is a Full Stack project that serves Filmmaking information as API response, excel worksheet and/or CSV.",
+            "description": "Cinema Premium is an API to deliver film data, built on ASP.NET Core (Clean Architecture)",
             "fullDescription": "Cinema Premium is a comprehensive Full Stack application that provides filmmaking information through multiple formats. Whether you need data via REST API, Excel worksheets, or CSV files, Cinema Premium has you covered.\n\nThe project demonstrates proficiency in building robust APIs with C# and .NET Framework, backed by Microsoft SQL Server for reliable data storage. The API follows RESTful principles and includes comprehensive documentation.\n\nThis project showcases the ability to transform raw data into various consumable formats, making it invaluable for developers, analysts, and cinema enthusiasts alike.",
             "borderRadius": "0px",
             "tags": [{
