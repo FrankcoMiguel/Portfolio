@@ -125,9 +125,10 @@
                 "Responsive design for all devices"
             ],
             "screenshots": [
-                "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800",
-                "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800",
-                "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"
+                "/chick-4-all/CHICK4ALL-001.png",
+                "/chick-4-all/CHICK4ALL-002.png",
+                "/chick-4-all/CHICK4ALL-003.png",
+                "/chick-4-all/CHICK4ALL-004.png"
             ],
             "page": "no",
             "source": "https://github.com/FrankcoMiguel/Chick-4-All-Java",
