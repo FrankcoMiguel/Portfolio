@@ -162,7 +162,7 @@
                 },
                 {
                     "id": 2,
-                    "name": "C Sharp",
+                    "name": "C#",
                     "path": "devicon-csharp-plain"
                 },
                 {
@@ -179,11 +179,14 @@
                 "Clean and maintainable codebase"
             ],
             "screenshots": [
-                "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800",
-                "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800",
-                "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800"
+                "/cinema-api/CINEMA-API-001.png",
+                "/cinema-api/CINEMA-API-002.png",
+                "/cinema-api/CINEMA-API-003.png",
+                "/cinema-api/CINEMA-API-004.png",
+                "/cinema-api/CINEMA-API-005.png",
+                "/cinema-api/CINEMA-API-006.png"
             ],
-            "page": "https://cinemapremiumapi.com",
+            "page": "https://cinema-api-green.vercel.app/",
             "source": "https://github.com/FrankcoMiguel/CinemaAPI",
             "status": "Completed"
         },
