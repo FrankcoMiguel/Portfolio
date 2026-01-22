@@ -48,6 +48,8 @@ export interface Project {
   features?: string[];
   screenshots?: string[];
   isMobile?: boolean;
+  appStoreUrl?: string;
+  playStoreUrl?: string;
   page: string;
   source: string;
   status?: string;

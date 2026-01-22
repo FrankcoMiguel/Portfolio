@@ -75,6 +75,8 @@
                 "/backpackpro/IMG_2995.PNG"
             ],
             "isMobile": true,
+            "appStoreUrl": "https://apps.apple.com/app/backpack-pro",
+            "playStoreUrl": "https://play.google.com/store/apps/details?id=com.backpackpro",
             "page": "no",
             "source": "https://github.com/FrankcoMiguel/ProBackPack",
             "status": "Remaking"
@@ -195,7 +197,7 @@
             "id": 4,
             "name": "eFinance",
             "description": "Transform the way you manage your spendings, maximize savings and invest all in one app.",
-            "fullDescription": "EFinance is a comprehensive personal finance management application designed to help users take control of their financial lives. With EFinance, users can track their expenses, create budgets, set financial goals, and monitor investments all in one place.\n\nThe app features an intuitive interface built with JavaFX, providing a seamless user experience. It includes an embedded database for secure local storage of financial data, ensuring that users' information is always accessible and protected.\n\nKey functionalities include daily expense tracking, budget creation, progress monitoring towards financial goals, and detailed reports to help users understand their spending habits. EFinance empowers users to make informed financial decisions and achieve their monetary objectives.",
+            "fullDescription": "EFinance is a comprehensive personal finance management application designed to help users take control of their financial lives. With eFinance, users can track their expenses, create budgets, set financial goals, and monitor investments all in one place.\n\nThe app features an intuitive interface built with React Native, providing a seamless user experience. It includes an embedded database for secure local storage of financial data, ensuring that users' information is always accessible and protected.\n\nKey functionalities include daily expense tracking, budget creation, progress monitoring towards financial goals, and detailed reports to help users understand their spending habits. EFinance empowers users to make informed financial decisions and achieve their monetary objectives.",
             "borderRadius": "0px",
             "tags": [{
                     "id": 1,
@@ -245,6 +247,9 @@
                 "/efinance/EFINANCE-006.PNG"
             ],
             "isMobile": true,
+            "appStoreUrl": "https://apps.apple.com/app/efinance",
+            "playStoreUrl": "https://play.google.com/store/apps/details?id=com.efinance",
+            "page": "no",
             "source": "no",
             "status": "Completed"
         },

@@ -175,6 +175,50 @@ const ProjectDetail = () => {
                     </a>
                   )}
                 </div>
+
+                {/* App Store Links */}
+                {project.isMobile && (project.appStoreUrl || project.playStoreUrl) && (
+                  <>
+                    <h3 className="text-lg font-semibold text-slate-100 mb-4 mt-6">Available On</h3>
+                    <div className="space-y-3">
+                      {project.appStoreUrl && (
+                        <a
+                          href={project.appStoreUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex items-center gap-3 px-4 py-3 bg-black hover:bg-gray-900 rounded-xl text-white transition-colors border border-slate-600"
+                        >
+                          <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                          </svg>
+                          <div className="flex flex-col">
+                            <span className="text-xs text-slate-300">Download on the</span>
+                            <span className="text-lg font-semibold -mt-1">App Store</span>
+                          </div>
+                        </a>
+                      )}
+                      {project.playStoreUrl && (
+                        <a
+                          href={project.playStoreUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex items-center gap-3 px-4 py-3 bg-black hover:bg-gray-900 rounded-xl text-white transition-colors border border-slate-600"
+                        >
+                          <svg className="w-7 h-7" viewBox="0 0 24 24">
+                            <path fill="#4285F4" d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594z"/>
+                            <path fill="#34A853" d="M5.255 21.75c.167.161.403.244.693.204a2.07 2.07 0 0 0 .678-.247l9.95-5.632-3.493-3.47-7.828 9.145z"/>
+                            <path fill="#FBBC04" d="M3.287 3.692C3.1 4.025 3 4.42 3 4.865v14.27c0 .445.1.84.287 1.173l8.213-8.213-8.213-8.403z"/>
+                            <path fill="#EA4335" d="M14.584 8.605l-8.01-4.538a2.07 2.07 0 0 0-.678-.247.78.78 0 0 0-.641.18l8.196 8.179 3.133-3.094z"/>
+                          </svg>
+                          <div className="flex flex-col">
+                            <span className="text-xs text-slate-300">GET IT ON</span>
+                            <span className="text-lg font-semibold -mt-1">Google Play</span>
+                          </div>
+                        </a>
+                      )}
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           </div>
