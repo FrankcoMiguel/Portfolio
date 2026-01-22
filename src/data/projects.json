@@ -193,18 +193,18 @@
         },
         {
             "id": 4,
-            "name": "DayToDay",
-            "description": "A Java Application created to manage the tickets/tasks I have to deal with every single day at work, storing the data in a Embedded Database",
-            "fullDescription": "DayToDay is a personal productivity tool born from the need to manage daily work tasks efficiently. Built with JavaFX, it provides a desktop application that helps track tickets, tasks, and daily responsibilities.\n\nThe application uses an embedded database to store all data locally, ensuring quick access and no dependency on external services. The clean CSS-styled interface makes it pleasant to use throughout the workday.\n\nDesigned for personal productivity, DayToDay helps maintain focus by organizing tasks, tracking progress, and providing a clear overview of daily responsibilities.",
+            "name": "eFinance",
+            "description": "Transform the way you manage your spendings, maximize savings and invest all in one app.",
+            "fullDescription": "EFinance is a comprehensive personal finance management application designed to help users take control of their financial lives. With EFinance, users can track their expenses, create budgets, set financial goals, and monitor investments all in one place.\n\nThe app features an intuitive interface built with JavaFX, providing a seamless user experience. It includes an embedded database for secure local storage of financial data, ensuring that users' information is always accessible and protected.\n\nKey functionalities include daily expense tracking, budget creation, progress monitoring towards financial goals, and detailed reports to help users understand their spending habits. EFinance empowers users to make informed financial decisions and achieve their monetary objectives.",
             "borderRadius": "0px",
             "tags": [{
                     "id": 1,
-                    "name": "Desktop",
+                    "name": "Mobile",
                     "highlighted": false
                 },
                 {
                     "id": 2,
-                    "name": "Work",
+                    "name": "Finance",
                     "highlighted": false
                 },
                 {
@@ -215,34 +215,37 @@
             ],
             "toolsUsed": [{
                     "id": 1,
-                    "name": "JavaFX",
-                    "path": "devicon-java-plain"
+                    "name": "React Native",
+                    "path": "devicon-react-original"
                 },
                 {
                     "id": 2,
-                    "name": "CSS3",
-                    "path": "devicon-css3-plain"
+                    "name": "AWS",
+                    "path": "devicon-aws-plain"
                 },
                 {
                     "id": 3,
-                    "name": "Intellij IDEA",
-                    "path": "devicon-intellij-plain"
+                    "name": "Python",
+                    "path": "devicon-python-plain"
                 }
             ],
             "features": [
-                "Task and ticket management",
-                "Embedded database for local storage",
-                "Daily task overview",
-                "Progress tracking",
-                "Clean JavaFX interface with CSS styling"
+                "Bank Statement Analysis",
+                "Expense tracking",
+                "Budget creation and tracking",
+                "Progress tracking"
             ],
+            "logo": "/efinance.png",
             "screenshots": [
-                "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800",
-                "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800",
-                "https://images.unsplash.com/photo-1517842645767-c639042777db?w=800"
+                "/efinance/EFINANCE-001.PNG",
+                "/efinance/EFINANCE-002.PNG",
+                "/efinance/EFINANCE-003.PNG",
+                "/efinance/EFINANCE-004.PNG",
+                "/efinance/EFINANCE-005.PNG",
+                "/efinance/EFINANCE-006.PNG"
             ],
-            "page": "https://drive.google.com/file/d/1cKth7ShuLr2uxxPYxKXm0gpLF0qinwxL/view?usp=sharing",
-            "source": "https://github.com/FrankcoMiguel/DayToDay",
+            "isMobile": true,
+            "source": "no",
             "status": "Completed"
         },
         {

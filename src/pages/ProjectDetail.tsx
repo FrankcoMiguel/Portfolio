@@ -14,7 +14,7 @@ const projectLogos: Record<string, string> = {
   'backpack-pro': '/backpackpro-project.svg',
   'chick-4-all': '/chick4all-project.svg',
   'cinema-premium': '/cinemapremium-project.svg',
-  'daytoday': '/daytoday-project.svg',
+  'efinance': '/efinance.png',
   'vaccinations-dashboard': '/covid-vaccinations.svg',
 };
 
@@ -152,15 +152,17 @@ const ProjectDetail = () => {
                 {/* Links */}
                 <h3 className="text-lg font-semibold text-slate-100 mb-4">Links</h3>
                 <div className="space-y-3">
-                  <a
-                    href={project.source}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-3 px-4 py-3 bg-slate-700/50 hover:bg-slate-700 rounded-lg text-slate-300 hover:text-white transition-colors"
-                  >
-                    <FaGithub className="text-xl" />
-                    <span>View Source Code</span>
-                  </a>
+                  {project.source && project.source !== 'no' && (
+                    <a
+                      href={project.source}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-3 px-4 py-3 bg-slate-700/50 hover:bg-slate-700 rounded-lg text-slate-300 hover:text-white transition-colors"
+                    >
+                      <FaGithub className="text-xl" />
+                      <span>View Source Code</span>
+                    </a>
+                  )}
                   {project.page !== 'no' && (
                     <a
                       href={project.page}
@@ -199,8 +201,8 @@ const ProjectDetail = () => {
                     <div className="relative mx-auto" style={{ maxWidth: '200px' }}>
                       {/* Phone frame */}
                       <div className="relative bg-slate-900 rounded-[2rem] p-2 border-4 border-slate-700 hover:border-indigo-500/50 transition-all shadow-xl">
-                        {/* Notch */}
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-5 bg-slate-900 rounded-b-xl z-10"></div>
+                        {/* Dynamic Island */}
+                        <div className="absolute top-4 left-1/2 -translate-x-1/2 w-12 h-3 bg-black rounded-full z-10"></div>
                         {/* Screen */}
                         <div className="aspect-[9/19.5] rounded-[1.5rem] overflow-hidden bg-slate-800">
                           <img

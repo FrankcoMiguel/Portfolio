@@ -13,7 +13,7 @@ const projectLogos: Record<number, string> = {
   1: '/backpackpro-project.svg',
   2: '/chick4all-project.svg',
   3: '/cinemapremium-project.svg',
-  4: '/daytoday-project.svg',
+  4: '/efinance.png',
   5: '/covid-vaccinations.svg',
 };
 

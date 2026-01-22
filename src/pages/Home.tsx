@@ -182,8 +182,8 @@ const Home = () => {
                 <div className="relative">
                   {/* Phone mockup */}
                   <div className="w-48 md:w-64 h-96 md:h-[480px] bg-slate-900 rounded-[3rem] border-4 border-slate-700 shadow-2xl overflow-hidden relative">
-                    {/* Phone notch */}
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-slate-900 rounded-b-2xl z-10"></div>
+                    {/* Dynamic Island */}
+                    <div className="absolute top-3 left-1/2 -translate-x-1/2 w-16 h-4 bg-black rounded-full z-10"></div>
                     {/* Screen content */}
                     <div className="w-full h-full bg-gradient-to-b from-indigo-600 to-purple-700 p-4 pt-8">
                       <div className="text-center text-white mb-6">
