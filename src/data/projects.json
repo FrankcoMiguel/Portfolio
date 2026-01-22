@@ -78,7 +78,7 @@
             "appStoreUrl": "https://apps.apple.com/app/backpack-pro",
             "playStoreUrl": "https://play.google.com/store/apps/details?id=com.backpackpro",
             "page": "no",
-            "source": "https://github.com/FrankcoMiguel/ProBackPack",
+            "source": "no",
             "status": "Remaking"
         },
         {
@@ -197,7 +197,7 @@
             "id": 4,
             "name": "eFinance",
             "description": "Transform the way you manage your spendings, maximize savings and invest all in one app.",
-            "fullDescription": "EFinance is a comprehensive personal finance management application designed to help users take control of their financial lives. With eFinance, users can track their expenses, create budgets, set financial goals, and monitor investments all in one place.\n\nThe app features an intuitive interface built with React Native, providing a seamless user experience. It includes an embedded database for secure local storage of financial data, ensuring that users' information is always accessible and protected.\n\nKey functionalities include daily expense tracking, budget creation, progress monitoring towards financial goals, and detailed reports to help users understand their spending habits. EFinance empowers users to make informed financial decisions and achieve their monetary objectives.",
+            "fullDescription": "eFinance is a comprehensive personal finance management application designed to help users take control of their financial lives. With eFinance, users can intelligently track expenses, create customized budgets, set achievable financial goals, and monitor investments—all in one elegant, intuitive platform.\n\nThe app features a sleek interface built with React Native, delivering a seamless cross-platform experience on both iOS and Android. It includes an embedded SQLite database for secure, encrypted local storage of sensitive financial data, ensuring users' information remains private and always accessible offline.\n\nPowered by AWS Lambda and Claude AI, eFinance provides intelligent financial insights and recommendations. The app analyzes your spending patterns, identifies saving opportunities, and helps optimize your financial decisions. All data processing is handled securely in the cloud with automatic cleanup, maintaining both performance and privacy.",
             "borderRadius": "0px",
             "tags": [{
                     "id": 1,
@@ -222,13 +222,23 @@
                 },
                 {
                     "id": 2,
-                    "name": "AWS",
-                    "path": "devicon-aws-plain"
+                    "name": "AWS Lambda",
+                    "path": "devicon-amazonwebservices-plain"
                 },
                 {
                     "id": 3,
                     "name": "Python",
                     "path": "devicon-python-plain"
+                },
+                {
+                    "id": 4,
+                    "name": "Claude",
+                    "path": "devicon-anthropic-plain"
+                },
+                {
+                    "id": 5,
+                    "name": "SQLite",
+                    "path": "devicon-sqlite-plain"
                 }
             ],
             "features": [

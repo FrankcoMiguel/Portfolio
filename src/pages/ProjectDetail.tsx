@@ -179,7 +179,7 @@ const ProjectDetail = () => {
                 {/* App Store Links */}
                 {project.isMobile && (project.appStoreUrl || project.playStoreUrl) && (
                   <>
-                    <h3 className="text-lg font-semibold text-slate-100 mb-4 mt-6">Available On</h3>
+                    {/* <h3 className="text-lg font-semibold text-slate-100 mb-4 mt-6">Available On</h3> */}
                     <div className="space-y-3">
                       {project.appStoreUrl && (
                         <a
