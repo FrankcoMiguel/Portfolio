@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { FaArrowLeft, FaGithub, FaExternalLinkAlt, FaCheckCircle, FaTimes } from 'react-icons/fa';
+import { FaArrowLeft, FaGithub, FaExternalLinkAlt, FaCheckCircle, FaTimes, FaBookOpen } from 'react-icons/fa';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import Layout from '../components/Layout';
 import { ProjectDetailBackgroundIcons } from '../components/BackgroundIcons';
-import type { ProjectsCategory } from '../types';
+import type { ProjectsCategory, PublicationsCategory } from '../types';
 import projectsData from '../data/projects.json';
+import publicationsData from '../data/publications.json';
 
 const projectLogos: Record<string, string> = {
   'backpack-pro': '/backpackpro-project.svg',
@@ -293,6 +294,149 @@ const ProjectDetail = () => {
           />
         </div>
       )}
+
+      {/* Other Projects */}
+      {(() => {
+        const currentTags = project.tags.map(t => t.name.toLowerCase());
+        const otherProjects = projects
+          .filter(p => p.id !== project.id)
+          .map(p => ({
+            ...p,
+            matchCount: p.tags.filter(t => currentTags.includes(t.name.toLowerCase())).length
+          }))
+          .sort((a, b) => b.matchCount - a.matchCount)
+          .slice(0, 3);
+        
+        if (otherProjects.length === 0) return null;
+        
+        return (
+          <section className="py-12 px-4 bg-gradient-to-b from-transparent to-slate-900/50">
+            <div className="max-w-6xl mx-auto">
+              <h2 data-aos="fade-up" className="text-2xl font-bold text-slate-100 mb-8 text-center">
+                Check Out These Other Projects
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {otherProjects.map((otherProject, index) => (
+                  <Link
+                    key={otherProject.id}
+                    to={`/projects/${createSlug(otherProject.name)}`}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                    className="group bg-slate-800/50 rounded-xl p-6 border border-slate-700 hover:border-indigo-500/50 transition-all hover:bg-slate-800/80"
+                  >
+                    <div className="flex items-start gap-4 mb-4">
+                      <img
+                        src={projectLogos[createSlug(otherProject.name)]}
+                        alt={`${otherProject.name} logo`}
+                        className="w-12 h-12 object-contain"
+                        style={{ borderRadius: otherProject.borderRadius }}
+                      />
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-lg font-semibold text-slate-100 group-hover:text-indigo-400 transition-colors truncate">
+                          {otherProject.name}
+                        </h3>
+                        {otherProject.status && (
+                          <span className={`inline-block px-2 py-0.5 text-xs rounded-full border mt-1 ${getStatusColor(otherProject.status)}`}>
+                            {otherProject.status}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                    <p className="text-slate-400 text-sm line-clamp-2 mb-4">
+                      {otherProject.description}
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {otherProject.tags.slice(0, 3).map((tag) => (
+                        <span
+                          key={tag.id}
+                          className={`px-2 py-0.5 text-xs rounded-full border ${
+                            currentTags.includes(tag.name.toLowerCase())
+                              ? 'bg-indigo-500/20 text-indigo-400 border-indigo-500/30'
+                              : 'bg-slate-700/50 text-slate-400 border-slate-600'
+                          }`}
+                        >
+                          {tag.name}
+                        </span>
+                      ))}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
+
+      {/* Related Publications */}
+      {(() => {
+        const publications = (publicationsData as PublicationsCategory[])[0].items;
+        const projectTags = project.tags.map(t => t.name.toLowerCase());
+        const projectName = project.name.toLowerCase();
+        const projectWords = projectName.split(/[\s-]+/).filter(w => w.length > 2);
+        
+        const relatedPublications = publications.filter(pub => {
+          const pubTags = pub.tags.map(t => t.toLowerCase());
+          const pubText = (pub.title + ' ' + pub.content).toLowerCase();
+          
+          // Check if publication tags match project tags
+          const hasMatchingTag = pubTags.some(tag => 
+            projectTags.some(pTag => tag.includes(pTag) || pTag.includes(tag))
+          );
+          
+          // Check if publication mentions any significant word from the project name
+          const mentionsProjectWord = projectWords.some(word => pubText.includes(word));
+          
+          // Check if project is mobile and publication is about mobile
+          const isMobileRelated = project.isMobile && pubTags.some(tag => 
+            tag.includes('mobile') || tag.includes('react native') || tag.includes('ios') || tag.includes('android')
+          );
+          
+          return hasMatchingTag || mentionsProjectWord || isMobileRelated;
+        });
+        
+        if (relatedPublications.length === 0) return null;
+        
+        return (
+          <section className="py-12 px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 data-aos="fade-up" className="text-2xl font-bold text-slate-100 mb-8 text-center">
+                Related Publications
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {relatedPublications.slice(0, 3).map((publication, index) => (
+                  <Link
+                    key={publication.id}
+                    to={`/publications/${publication.id}`}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                    className="group bg-slate-800/50 rounded-xl overflow-hidden border border-slate-700 hover:border-indigo-500/50 transition-all hover:bg-slate-800/80"
+                  >
+                    <div className="aspect-video overflow-hidden">
+                      <img
+                        src={publication.image}
+                        alt={publication.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="p-5">
+                      <div className="flex items-center gap-2 text-slate-400 text-sm mb-2">
+                        <FaBookOpen className="text-indigo-400" />
+                        <span>{publication.readTime}</span>
+                      </div>
+                      <h3 className="text-lg font-semibold text-slate-100 group-hover:text-indigo-400 transition-colors line-clamp-2 mb-2">
+                        {publication.title}
+                      </h3>
+                      <p className="text-slate-400 text-sm line-clamp-2">
+                        {publication.excerpt}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       {/* Back to Projects */}
       <section className="py-12 px-4">

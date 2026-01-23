@@ -32,10 +32,10 @@ const Projects = () => {
         <ProjectsBackgroundIcons />
         
         <h1 className="text-4xl md:text-6xl font-bold text-slate-100 mb-6 relative z-10">
-          Personal Projects
+          Projects
         </h1>
         <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mb-12 relative z-10">
-          Here are a few personal projects I have worked on since I started.
+          Projects 
         </p>
         <div className="flex flex-col items-center text-slate-400 animate-bounce relative z-10">
           <CgMouse size={32} />
