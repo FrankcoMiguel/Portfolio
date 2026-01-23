@@ -7,7 +7,7 @@ import 'tippy.js/dist/tippy.css';
 import { FaGithub, FaExternalLinkAlt, FaInfoCircle } from 'react-icons/fa';
 import type { Tag, Tool } from '../types';
 
-interface ProjectCardProps {
+interface ExperimentCardProps {
   logo: string;
   title: string;
   description: string;
@@ -18,7 +18,7 @@ interface ProjectCardProps {
   source: string;
 }
 
-const ProjectCard = ({
+const ExperimentCard = ({
   logo,
   title,
   description,
@@ -27,7 +27,7 @@ const ProjectCard = ({
   icons,
   page,
   source,
-}: ProjectCardProps) => {
+}: ExperimentCardProps) => {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -113,7 +113,7 @@ const ProjectCard = ({
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3">
           <Link
-            to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}
+            to={`/experiments/${title.toLowerCase().replace(/\s+/g, '-')}`}
             className="flex items-center space-x-2 px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg transition-colors"
           >
             <FaInfoCircle />
@@ -151,4 +151,4 @@ const ProjectCard = ({
   );
 };
 
-export default ProjectCard;
+export default ExperimentCard;

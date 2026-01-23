@@ -6,12 +6,12 @@ import { FaArrowLeft, FaGithub, FaExternalLinkAlt, FaCheckCircle, FaTimes, FaBoo
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import Layout from '../components/Layout';
-import { ProjectDetailBackgroundIcons } from '../components/BackgroundIcons';
-import type { ProjectsCategory, PublicationsCategory } from '../types';
-import projectsData from '../data/projects.json';
+import { ExperimentDetailBackgroundIcons } from '../components/BackgroundIcons';
+import type { ExperimentsCategory, PublicationsCategory } from '../types';
+import experimentsData from '../data/experiments.json';
 import publicationsData from '../data/publications.json';
 
-const projectLogos: Record<string, string> = {
+const experimentLogos: Record<string, string> = {
   'backpack-pro': '/backpackpro-project.svg',
   'chick-4-all': '/chick4all-project.svg',
   'cinema-premium': '/cinemapremium-project.svg',
@@ -24,18 +24,18 @@ const createSlug = (name: string): string => {
   return name.toLowerCase().replace(/\s+/g, '-');
 };
 
-const ProjectDetail = () => {
+const ExperimentDetail = () => {
   const { slug } = useParams<{ slug: string }>();
-  const projects = (projectsData as ProjectsCategory[])[0].items;
-  const project = projects.find((p) => createSlug(p.name) === slug);
+  const experiments = (experimentsData as ExperimentsCategory[])[0].items;
+  const experiment = experiments.find((p) => createSlug(p.name) === slug);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   useEffect(() => {
     AOS.init({ duration: 800 });
   }, []);
 
-  if (!project) {
-    return <Navigate to="/projects" replace />;
+  if (!experiment) {
+    return <Navigate to="/experiments" replace />;
   }
 
   const getStatusColor = (status?: string) => {
@@ -51,51 +51,51 @@ const ProjectDetail = () => {
   };
 
   return (
-    <Layout title={project.name}>
+    <Layout title={experiment.name}>
       {/* Animated background icons */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <ProjectDetailBackgroundIcons />
+        <ExperimentDetailBackgroundIcons />
       </div>
 
       {/* Hero Section */}
       <section className="py-12 px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <Link
-            to="/projects"
+            to="/experiments"
             className="inline-flex items-center gap-2 text-slate-400 hover:text-indigo-400 mb-8 transition-colors"
           >
             <FaArrowLeft />
-            Back to Projects
+            Back to Experiments
           </Link>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Project Info */}
+            {/* Experiment Info */}
             <div className="lg:col-span-2">
               <div className="flex items-start gap-6 mb-6">
                 <img
-                  src={projectLogos[createSlug(project.name)]}
-                  alt={`${project.name} logo`}
+                  src={experimentLogos[createSlug(experiment.name)]}
+                  alt={`${experiment.name} logo`}
                   className="w-20 h-20 object-contain"
-                  style={{ borderRadius: project.borderRadius }}
+                  style={{ borderRadius: experiment.borderRadius }}
                 />
                 <div>
                   <div className="flex items-center gap-3 mb-2 flex-wrap">
                     <h1 data-aos="fade-up" className="text-3xl md:text-4xl font-bold text-slate-100">
-                      {project.name}
+                      {experiment.name}
                     </h1>
-                    {project.status && (
-                      <span className={`px-3 py-1 text-sm rounded-full border ${getStatusColor(project.status)}`}>
-                        {project.status}
+                    {experiment.status && (
+                      <span className={`px-3 py-1 text-sm rounded-full border ${getStatusColor(experiment.status)}`}>
+                        {experiment.status}
                       </span>
                     )}
                   </div>
-                  <p className="text-slate-400 text-lg">{project.description}</p>
+                  <p className="text-slate-400 text-lg">{experiment.description}</p>
                 </div>
               </div>
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2 mb-8">
-                {project.tags.map((tag) => (
+                {experiment.tags.map((tag) => (
                   <span
                     key={tag.id}
                     className={`px-3 py-1 text-sm rounded-full border ${
@@ -111,7 +111,7 @@ const ProjectDetail = () => {
 
               {/* Full Description */}
               <div data-aos="fade-up" className="prose prose-invert max-w-none mb-8">
-                {project.fullDescription?.split('\n\n').map((paragraph, index) => (
+                {experiment.fullDescription?.split('\n\n').map((paragraph, index) => (
                   <p key={index} className="text-slate-300 leading-relaxed mb-4">
                     {paragraph}
                   </p>
@@ -119,11 +119,11 @@ const ProjectDetail = () => {
               </div>
 
               {/* Features */}
-              {project.features && project.features.length > 0 && (
+              {experiment.features && experiment.features.length > 0 && (
                 <div data-aos="fade-up" className="mb-8">
                   <h2 className="text-xl font-bold text-slate-100 mb-4">Key Features</h2>
                   <ul className="space-y-3">
-                    {project.features.map((feature, index) => (
+                    {experiment.features.map((feature, index) => (
                       <li key={index} className="flex items-start gap-3 text-slate-300">
                         <FaCheckCircle className="text-indigo-400 mt-1 flex-shrink-0" />
                         <span>{feature}</span>
@@ -140,7 +140,7 @@ const ProjectDetail = () => {
                 {/* Tech Stack */}
                 <h3 className="text-lg font-semibold text-slate-100 mb-4">Tech Stack</h3>
                 <div className="flex flex-wrap gap-3 mb-6">
-                  {project.toolsUsed.map((tool) => (
+                  {experiment.toolsUsed.map((tool) => (
                     <Tippy key={tool.id} content={tool.name}>
                       <span className="flex items-center gap-2 px-3 py-2 bg-slate-700/50 rounded-lg text-slate-300">
                         <i className={`${tool.path} text-xl`}></i>
@@ -153,9 +153,9 @@ const ProjectDetail = () => {
                 {/* Links */}
                 <h3 className="text-lg font-semibold text-slate-100 mb-4">Links</h3>
                 <div className="space-y-3">
-                  {project.source && project.source !== 'no' && (
+                  {experiment.source && experiment.source !== 'no' && (
                     <a
-                      href={project.source}
+                      href={experiment.source}
                       target="_blank"
                       rel="noreferrer"
                       className="flex items-center gap-3 px-4 py-3 bg-slate-700/50 hover:bg-slate-700 rounded-lg text-slate-300 hover:text-white transition-colors"
@@ -164,9 +164,9 @@ const ProjectDetail = () => {
                       <span>View Source Code</span>
                     </a>
                   )}
-                  {project.page !== 'no' && (
+                  {experiment.page !== 'no' && (
                     <a
-                      href={project.page}
+                      href={experiment.page}
                       target="_blank"
                       rel="noreferrer"
                       className="flex items-center gap-3 px-4 py-3 bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white transition-colors"
@@ -178,13 +178,13 @@ const ProjectDetail = () => {
                 </div>
 
                 {/* App Store Links */}
-                {project.isMobile && (project.appStoreUrl || project.playStoreUrl) && (
+                {experiment.isMobile && (experiment.appStoreUrl || experiment.playStoreUrl) && (
                   <>
                     {/* <h3 className="text-lg font-semibold text-slate-100 mb-4 mt-6">Available On</h3> */}
                     <div className="space-y-3">
-                      {project.appStoreUrl && (
+                      {experiment.appStoreUrl && (
                         <a
-                          href={project.appStoreUrl}
+                          href={experiment.appStoreUrl}
                           target="_blank"
                           rel="noreferrer"
                           className="flex items-center gap-3 px-4 py-3 bg-black hover:bg-gray-900 rounded-xl text-white transition-colors border border-slate-600"
@@ -198,9 +198,9 @@ const ProjectDetail = () => {
                           </div>
                         </a>
                       )}
-                      {project.playStoreUrl && (
+                      {experiment.playStoreUrl && (
                         <a
-                          href={project.playStoreUrl}
+                          href={experiment.playStoreUrl}
                           target="_blank"
                           rel="noreferrer"
                           className="flex items-center gap-3 px-4 py-3 bg-black hover:bg-gray-900 rounded-xl text-white transition-colors border border-slate-600"
@@ -227,14 +227,14 @@ const ProjectDetail = () => {
       </section>
 
       {/* Screenshots Section */}
-      {project.screenshots && project.screenshots.length > 0 && (
+      {experiment.screenshots && experiment.screenshots.length > 0 && (
         <section className="py-12 px-4 bg-slate-800/30">
           <div className="max-w-6xl mx-auto">
             <h2 data-aos="fade-up" className="text-2xl font-bold text-slate-100 mb-8">
               Screenshots
             </h2>
-            <div className={`grid gap-6 ${project.isMobile ? 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'}`}>
-              {project.screenshots.map((screenshot, index) => (
+            <div className={`grid gap-6 ${experiment.isMobile ? 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'}`}>
+              {experiment.screenshots.map((screenshot, index) => (
                 <div
                   key={index}
                   data-aos="fade-up"
@@ -242,7 +242,7 @@ const ProjectDetail = () => {
                   className="group cursor-pointer"
                   onClick={() => setSelectedImage(screenshot)}
                 >
-                  {project.isMobile ? (
+                  {experiment.isMobile ? (
                     <div className="relative mx-auto" style={{ maxWidth: '200px' }}>
                       {/* Phone frame */}
                       <div className="relative bg-slate-900 rounded-[2rem] p-2 border-4 border-slate-700 hover:border-indigo-500/50 transition-all shadow-xl">
@@ -252,7 +252,7 @@ const ProjectDetail = () => {
                         <div className="aspect-[9/19.5] rounded-[1.5rem] overflow-hidden bg-slate-800">
                           <img
                             src={screenshot}
-                            alt={`${project.name} screenshot ${index + 1}`}
+                            alt={`${experiment.name} screenshot ${index + 1}`}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
                         </div>
@@ -262,7 +262,7 @@ const ProjectDetail = () => {
                     <div className="aspect-video rounded-xl overflow-hidden border border-slate-700 hover:border-indigo-500/50 transition-all">
                       <img
                         src={screenshot}
-                        alt={`${project.name} screenshot ${index + 1}`}
+                        alt={`${experiment.name} screenshot ${index + 1}`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
@@ -295,11 +295,11 @@ const ProjectDetail = () => {
         </div>
       )}
 
-      {/* Other Projects */}
+      {/* Other Experiments */}
       {(() => {
-        const currentTags = project.tags.map(t => t.name.toLowerCase());
-        const otherProjects = projects
-          .filter(p => p.id !== project.id)
+        const currentTags = experiment.tags.map(t => t.name.toLowerCase());
+        const otherExperiments = experiments
+          .filter(p => p.id !== experiment.id)
           .map(p => ({
             ...p,
             matchCount: p.tags.filter(t => currentTags.includes(t.name.toLowerCase())).length
@@ -307,46 +307,46 @@ const ProjectDetail = () => {
           .sort((a, b) => b.matchCount - a.matchCount)
           .slice(0, 3);
         
-        if (otherProjects.length === 0) return null;
+        if (otherExperiments.length === 0) return null;
         
         return (
           <section className="py-12 px-4 bg-gradient-to-b from-transparent to-slate-900/50">
             <div className="max-w-6xl mx-auto">
               <h2 data-aos="fade-up" className="text-2xl font-bold text-slate-100 mb-8 text-center">
-                Check Out These Other Projects
+                Check Out These Other Experiments
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {otherProjects.map((otherProject, index) => (
+                {otherExperiments.map((otherExperiment, index) => (
                   <Link
-                    key={otherProject.id}
-                    to={`/projects/${createSlug(otherProject.name)}`}
+                    key={otherExperiment.id}
+                    to={`/experiments/${createSlug(otherExperiment.name)}`}
                     data-aos="fade-up"
                     data-aos-delay={index * 100}
                     className="group bg-slate-800/50 rounded-xl p-6 border border-slate-700 hover:border-indigo-500/50 transition-all hover:bg-slate-800/80"
                   >
                     <div className="flex items-start gap-4 mb-4">
                       <img
-                        src={projectLogos[createSlug(otherProject.name)]}
-                        alt={`${otherProject.name} logo`}
+                        src={experimentLogos[createSlug(otherExperiment.name)]}
+                        alt={`${otherExperiment.name} logo`}
                         className="w-12 h-12 object-contain"
-                        style={{ borderRadius: otherProject.borderRadius }}
+                        style={{ borderRadius: otherExperiment.borderRadius }}
                       />
                       <div className="flex-1 min-w-0">
                         <h3 className="text-lg font-semibold text-slate-100 group-hover:text-indigo-400 transition-colors truncate">
-                          {otherProject.name}
+                          {otherExperiment.name}
                         </h3>
-                        {otherProject.status && (
-                          <span className={`inline-block px-2 py-0.5 text-xs rounded-full border mt-1 ${getStatusColor(otherProject.status)}`}>
-                            {otherProject.status}
+                        {otherExperiment.status && (
+                          <span className={`inline-block px-2 py-0.5 text-xs rounded-full border mt-1 ${getStatusColor(otherExperiment.status)}`}>
+                            {otherExperiment.status}
                           </span>
                         )}
                       </div>
                     </div>
                     <p className="text-slate-400 text-sm line-clamp-2 mb-4">
-                      {otherProject.description}
+                      {otherExperiment.description}
                     </p>
                     <div className="flex flex-wrap gap-1.5">
-                      {otherProject.tags.slice(0, 3).map((tag) => (
+                      {otherExperiment.tags.slice(0, 3).map((tag) => (
                         <span
                           key={tag.id}
                           className={`px-2 py-0.5 text-xs rounded-full border ${
@@ -370,28 +370,28 @@ const ProjectDetail = () => {
       {/* Related Publications */}
       {(() => {
         const publications = (publicationsData as PublicationsCategory[])[0].items;
-        const projectTags = project.tags.map(t => t.name.toLowerCase());
-        const projectName = project.name.toLowerCase();
-        const projectWords = projectName.split(/[\s-]+/).filter(w => w.length > 2);
+        const experimentTags = experiment.tags.map(t => t.name.toLowerCase());
+        const experimentName = experiment.name.toLowerCase();
+        const experimentWords = experimentName.split(/[\s-]+/).filter(w => w.length > 2);
         
         const relatedPublications = publications.filter(pub => {
           const pubTags = pub.tags.map(t => t.toLowerCase());
           const pubText = (pub.title + ' ' + pub.content).toLowerCase();
           
-          // Check if publication tags match project tags
+          // Check if publication tags match experiment tags
           const hasMatchingTag = pubTags.some(tag => 
-            projectTags.some(pTag => tag.includes(pTag) || pTag.includes(tag))
+            experimentTags.some(pTag => tag.includes(pTag) || pTag.includes(tag))
           );
           
-          // Check if publication mentions any significant word from the project name
-          const mentionsProjectWord = projectWords.some(word => pubText.includes(word));
+          // Check if publication mentions any significant word from the experiment name
+          const mentionsExperimentWord = experimentWords.some(word => pubText.includes(word));
           
-          // Check if project is mobile and publication is about mobile
-          const isMobileRelated = project.isMobile && pubTags.some(tag => 
+          // Check if experiment is mobile and publication is about mobile
+          const isMobileRelated = experiment.isMobile && pubTags.some(tag => 
             tag.includes('mobile') || tag.includes('react native') || tag.includes('ios') || tag.includes('android')
           );
           
-          return hasMatchingTag || mentionsProjectWord || isMobileRelated;
+          return hasMatchingTag || mentionsExperimentWord || isMobileRelated;
         });
         
         if (relatedPublications.length === 0) return null;
@@ -438,15 +438,15 @@ const ProjectDetail = () => {
         );
       })()}
 
-      {/* Back to Projects */}
+      {/* Back to Experiments */}
       <section className="py-12 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <Link
-            to="/projects"
+            to="/experiments"
             className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-100 rounded-lg transition-colors"
           >
             <FaArrowLeft />
-            Back to all projects
+            Back to all experiments
           </Link>
         </div>
       </section>
@@ -454,4 +454,4 @@ const ProjectDetail = () => {
   );
 };
 
-export default ProjectDetail;
+export default ExperimentDetail;

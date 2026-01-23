@@ -29,15 +29,15 @@ export interface Tag {
   highlighted: boolean;
 }
 
-// Tool used in projects
+// Tool used in experiments
 export interface Tool {
   id: number;
   name: string;
   path: string;
 }
 
-// Project item
-export interface Project {
+// Experiment item
+export interface Experiment {
   id: number;
   name: string;
   description: string;
@@ -55,10 +55,10 @@ export interface Project {
   status?: string;
 }
 
-// Projects category
-export interface ProjectsCategory {
+// Experiments category
+export interface ExperimentsCategory {
   id: string;
-  items: Project[];
+  items: Experiment[];
 }
 
 // Subject in education

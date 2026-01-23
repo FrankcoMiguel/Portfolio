@@ -103,7 +103,7 @@ export const FloatingDocument = ({ className }: { className?: string }) => (
 );
 
 // Pre-configured layouts for different pages
-export const ProjectsBackgroundIcons = () => (
+export const ExperimentsBackgroundIcons = () => (
   <>
     <BoilingFlask className="top-20 left-[5%] text-4xl md:text-6xl" />
     <FloatingCode className="top-32 right-[10%] text-3xl md:text-5xl" />
@@ -114,7 +114,7 @@ export const ProjectsBackgroundIcons = () => (
   </>
 );
 
-export const ProjectDetailBackgroundIcons = () => (
+export const ExperimentDetailBackgroundIcons = () => (
   <>
     <FloatingCode className="top-32 left-[3%] text-3xl md:text-5xl" />
     <SpinningAtom className="top-48 right-[5%] text-4xl md:text-6xl" />

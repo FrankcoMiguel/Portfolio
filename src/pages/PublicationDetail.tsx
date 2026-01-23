@@ -5,11 +5,11 @@ import 'aos/dist/aos.css';
 import { FaCalendar, FaClock, FaArrowLeft, FaBookOpen } from 'react-icons/fa';
 import Layout from '../components/Layout';
 import { PublicationDetailBackgroundIcons } from '../components/BackgroundIcons';
-import type { PublicationsCategory, ProjectsCategory } from '../types';
+import type { PublicationsCategory, ExperimentsCategory } from '../types';
 import publicationsData from '../data/publications.json';
-import projectsData from '../data/projects.json';
+import experimentsData from '../data/experiments.json';
 
-const projectLogos: Record<string, string> = {
+const experimentLogos: Record<string, string> = {
   'backpack-pro': '/backpackpro-project.svg',
   'chick-4-all': '/chick4all-project.svg',
   'cinema-premium': '/cinemapremium-project.svg',
@@ -176,73 +176,73 @@ const PublicationDetail = () => {
         </div>
       </section>
 
-      {/* Related Projects */}
+      {/* Related Experiments */}
       {(() => {
-        const projects = (projectsData as ProjectsCategory[])[0].items;
+        const experiments = (experimentsData as ExperimentsCategory[])[0].items;
         const pubTags = publication.tags.map(t => t.toLowerCase());
         const pubText = (publication.title + ' ' + publication.content).toLowerCase();
         
-        const relatedProjects = projects.filter(proj => {
-          const projectTags = proj.tags.map(t => t.name.toLowerCase());
-          const projectName = proj.name.toLowerCase();
-          const projectWords = projectName.split(/[\s-]+/).filter(w => w.length > 2);
+        const relatedExperiments = experiments.filter(exp => {
+          const experimentTags = exp.tags.map(t => t.name.toLowerCase());
+          const experimentName = exp.name.toLowerCase();
+          const experimentWords = experimentName.split(/[\s-]+/).filter(w => w.length > 2);
           
-          // Check if project tags match publication tags
-          const hasMatchingTag = projectTags.some(tag => 
+          // Check if experiment tags match publication tags
+          const hasMatchingTag = experimentTags.some(tag => 
             pubTags.some(pTag => tag.includes(pTag) || pTag.includes(tag))
           );
           
-          // Check if publication mentions any significant word from the project name
-          const mentionsProjectWord = projectWords.some(word => pubText.includes(word));
+          // Check if publication mentions any significant word from the experiment name
+          const mentionsExperimentWord = experimentWords.some(word => pubText.includes(word));
           
-          // Check if project is mobile and publication is about mobile
-          const isMobileRelated = proj.isMobile && pubTags.some(tag => 
+          // Check if experiment is mobile and publication is about mobile
+          const isMobileRelated = exp.isMobile && pubTags.some(tag => 
             tag.includes('mobile') || tag.includes('react native') || tag.includes('ios') || tag.includes('android')
           );
           
-          return hasMatchingTag || mentionsProjectWord || isMobileRelated;
+          return hasMatchingTag || mentionsExperimentWord || isMobileRelated;
         });
         
-        if (relatedProjects.length === 0) return null;
+        if (relatedExperiments.length === 0) return null;
         
         return (
           <section className="py-12 px-4 bg-slate-800/30">
             <div className="max-w-6xl mx-auto">
               <h2 data-aos="fade-up" className="text-2xl font-bold text-slate-100 mb-8 text-center">
-                Related Projects
+                Related Experiments
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {relatedProjects.slice(0, 3).map((project, index) => (
+                {relatedExperiments.slice(0, 3).map((experiment, index) => (
                   <Link
-                    key={project.id}
-                    to={`/projects/${createSlug(project.name)}`}
+                    key={experiment.id}
+                    to={`/experiments/${createSlug(experiment.name)}`}
                     data-aos="fade-up"
                     data-aos-delay={index * 100}
                     className="group bg-slate-800/50 rounded-xl p-6 border border-slate-700 hover:border-indigo-500/50 transition-all hover:bg-slate-800/80"
                   >
                     <div className="flex items-start gap-4 mb-4">
                       <img
-                        src={projectLogos[createSlug(project.name)]}
-                        alt={`${project.name} logo`}
+                        src={experimentLogos[createSlug(experiment.name)]}
+                        alt={`${experiment.name} logo`}
                         className="w-12 h-12 object-contain"
-                        style={{ borderRadius: project.borderRadius }}
+                        style={{ borderRadius: experiment.borderRadius }}
                       />
                       <div className="flex-1 min-w-0">
                         <h3 className="text-lg font-semibold text-slate-100 group-hover:text-indigo-400 transition-colors truncate">
-                          {project.name}
+                          {experiment.name}
                         </h3>
-                        {project.status && (
-                          <span className={`inline-block px-2 py-0.5 text-xs rounded-full border mt-1 ${getStatusColor(project.status)}`}>
-                            {project.status}
+                        {experiment.status && (
+                          <span className={`inline-block px-2 py-0.5 text-xs rounded-full border mt-1 ${getStatusColor(experiment.status)}`}>
+                            {experiment.status}
                           </span>
                         )}
                       </div>
                     </div>
                     <p className="text-slate-400 text-sm line-clamp-2 mb-4">
-                      {project.description}
+                      {experiment.description}
                     </p>
                     <div className="flex flex-wrap gap-1.5">
-                      {project.tags.slice(0, 3).map((tag) => (
+                      {experiment.tags.slice(0, 3).map((tag) => (
                         <span
                           key={tag.id}
                           className={`px-2 py-0.5 text-xs rounded-full border ${

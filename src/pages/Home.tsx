@@ -43,8 +43,8 @@ const Home = () => {
           </h1>
           
           <p data-aos="fade-up" data-aos-delay="200" className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
-            Welcome to my digital laboratory — where ideas are engineered, 
-            code is crafted, and solutions are born.
+            Welcome to my digital laboratory — where ideas are born, 
+            code is crafted, and solutions are engineered.
           </p>
           
           <div data-aos="fade-up" data-aos-delay="400" className="flex flex-wrap justify-center gap-4 mb-12">
@@ -93,7 +93,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Project Section */}
+      {/* Featured Experiment Section */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-8">
@@ -106,10 +106,10 @@ const Home = () => {
               </p>
             </div>
             <Link
-              to="/projects"
+              to="/experiments"
               className="hidden md:inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 font-medium transition-colors"
             >
-              View all projects →
+              View all experiments →
             </Link>
           </div>
           
@@ -169,11 +169,11 @@ const Home = () => {
 
                 <div className="flex flex-wrap gap-4">
                   <Link
-                    to="/projects/backpack-pro"
+                    to="/experiments/backpack-pro"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-lg transition-colors"
                   >
                     <FaRocket />
-                    View Project
+                    View Experiment
                   </Link>
                 </div>
               </div>
@@ -221,10 +221,10 @@ const Home = () => {
 
           <div className="text-center mt-8 md:hidden">
             <Link
-              to="/projects"
+              to="/experiments"
               className="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 font-medium transition-colors"
             >
-              View all projects →
+              View all experiments →
             </Link>
           </div>
         </div>

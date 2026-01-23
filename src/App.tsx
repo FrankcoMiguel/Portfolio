@@ -1,18 +1,26 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useParams } from 'react-router-dom';
 import Home from './pages/Home';
-import Projects from './pages/Projects';
-import ProjectDetail from './pages/ProjectDetail';
+import Experiments from './pages/Experiments';
+import ExperimentDetail from './pages/ExperimentDetail';
 import Publications from './pages/Publications';
 import PublicationDetail from './pages/PublicationDetail';
 import NotFound from './pages/NotFound';
+
+// Redirect component for dynamic routes
+const ProjectRedirect = () => {
+  const { slug } = useParams();
+  return <Navigate to={`/experiments/${slug}`} replace />;
+};
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/:slug" element={<ProjectDetail />} />
+        <Route path="/experiments" element={<Experiments />} />
+        <Route path="/experiments/:slug" element={<ExperimentDetail />} />
+        <Route path="/projects" element={<Navigate to="/experiments" replace />} />
+        <Route path="/projects/:slug" element={<ProjectRedirect />} />
         <Route path="/publications" element={<Publications />} />
         <Route path="/publications/:id" element={<PublicationDetail />} />
         <Route path="*" element={<NotFound />} />
